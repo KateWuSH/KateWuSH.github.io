@@ -1,4 +1,8 @@
 @charset "utf-8";
+.main {
+    overflow: hidden;
+}
+
 header {
     position: relative;
 }
@@ -1111,7 +1115,7 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .service .text {
         width: 55%;
-        padding: 40px 5%;
+        padding: 40px 5% 40px 0;
     }
     .service .text article {
         margin-bottom: 15px;
@@ -1214,9 +1218,6 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:320px) {
-    .service .text {
-        padding: 40px 5% 40px 0;
-    }
     .service .text article {
         letter-spacing: 0px;
         line-height: 1.5rem;
