@@ -119,7 +119,8 @@ header {
     padding: 0;
 }
 
-.top-banner-pc-slick .slick-dots {
+.top-banner-pc-slick .slick-dots,
+.top-banner-mobile-slick .slick-dots {
     bottom: 30px;
 }
 
@@ -127,11 +128,13 @@ header {
     margin-bottom: 0;
 }
 
-.top-banner-pc-slick .slick-dots li {
+.top-banner-pc-slick .slick-dots li,
+.top-banner-mobile-slick .slick-dots li {
     margin: 0 10px;
 }
 
-.top-banner-pc-slick .slick-dots button:before {
+.top-banner-pc-slick .slick-dots button:before,
+.top-banner-mobile-slick .slick-dots button:before {
     content: '';
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -139,14 +142,16 @@ header {
     opacity: 1;
 }
 
-.top-banner-pc-slick .slick-dots li.slick-active button:before {
+.top-banner-pc-slick .slick-dots li.slick-active button:before,
+.top-banner-mobile-slick .slick-dots li.slick-active button:before {
     width: 12px;
     height: 12px;
     background-color: white;
     opacity: 1;
 }
 
-.top-banner-pc-slick .slick-dots li button:before {
+.top-banner-pc-slick .slick-dots li button:before,
+.top-banner-mobile-slick .slick-dots li button:before {
     width: 13px;
     height: 13px;
     border: 3px solid white;
@@ -162,7 +167,7 @@ header {
 .technology {
     text-align: center;
     background-color: #080925;
-    padding: 128px 0 120px;
+    padding: 128px 31% 120px;
 }
 
 .technology p {
@@ -363,7 +368,7 @@ header {
 
 .recruit .sectionL {
     background: url(../../upload/home/recruitBg.jpg) no-repeat;
-    padding: 1200px 0 170px 0;
+    padding: 1200px 0 170px;
     color: white;
     text-align: center;
 }
@@ -377,7 +382,7 @@ header {
 .recruit .sectionL article {
     font-size: 1.875rem;
     line-height: 3rem;
-    margin-bottom: 90px;
+    margin: 0 8% 90px;
 }
 
 .recruit .sectionL a {
@@ -485,12 +490,18 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:1680px) {
+    .technology {
+        padding: 128px 28% 120px;
+    }
     .future .wrapper {
         padding: 85px 12% 80px;
     }
 }
 
 @media screen and (max-width:1440px) {
+    .technology {
+        padding: 120px 24%;
+    }
     .global .bg {
         background-position: bottom center;
     }
@@ -574,6 +585,7 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .recruit .sectionL article {
         font-size: 1.5rem;
+        margin: 0 3% 90px;
     }
     .recruit .sectionL p {
         font-size: 2.8rem;
@@ -600,6 +612,9 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .top-banner-pc-slick .slick-dots {
         bottom: 15px;
+    }
+    .technology {
+        padding: 120px 21%;
     }
     .technology p,
     .application .text p,
@@ -630,7 +645,8 @@ footer .down .decorate ul li:not(:last-child) {
         height: 820px;
     }
     .global .bg {
-        background-position: center;
+        background-position: center bottom;
+        background-size: 1440px 710px;
     }
     .application .img img {
         width: 110%;
@@ -661,6 +677,9 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .recruit .sectionR .text {
         padding: 150px 0;
+    }
+    .recruit .sectionL article {
+        margin: 0 18% 90px;
     }
     .quality p {
         font-size: 2.3rem;
@@ -723,6 +742,9 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:900px) {
+    .technology {
+        padding: 100px 17%;
+    }
     .application .wrapper {
         flex-wrap: wrap;
     }
@@ -784,11 +806,435 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .top-banner-pc-slick {
+        display: none;
+    }
+    .top-banner-mobile-slick {
+        display: block;
+    }
+    .top-menu-R .main-menu {
+        display: none;
+    }
+    .top-menu-R {
+        border: none;
+        padding: 70px 40px 5px 0;
+    }
+    .top-menu-L {
+        width: 65%;
+    }
+    .top-menu-L img {
+        width: 100%;
+    }
+    .technology p,
+    .application .text p,
+    .service .text p {
+        font-size: 2.25rem;
+        letter-spacing: .5px;
+        margin-bottom: 30px;
+    }
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 1.25rem;
+        line-height: 2.3rem;
+        letter-spacing: 2px;
+    }
+    .technology {
+        padding: 100px 14%;
+    }
+    .global .bg {
+        background-size: 1240px 611px;
+    }
+    .global .wrapper {
+        height: 635px;
+    }
+    .global .content {
+        padding: 100px 6% 0 35%;
+    }
+    .application .text {
+        width: 80%;
+    }
+    .service .img img {
+        width: 125%;
+    }
+    .service .img {
+        width: 50%;
+    }
+    .service .text {
+        width: 50%;
+        padding: 80px 5%;
+    }
+    .service .text p {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .future .content article {
+        line-height: 1.8rem;
+    }
+    .future .content p {
+        font-size: 1.75rem;
+        margin: 25px 0 8px;
+    }
+    .recruit .sectionL {
+        padding: 250px 0 80px 0;
+    }
+    .recruit .sectionL article {
+        margin: 0 11% 90px;
+    }
+}
 
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:640px) {
+    .global .bg {
+        background-size: 1024px 505px;
+    }
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 1px;
+    }
+    .technology p,
+    .application .text p,
+    .service .text p {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .global .content p {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .global .content a,
+    .service .text a,
+    .recruit .sectionL a {
+        width: 76px;
+        padding: 15px 25px;
+        letter-spacing: 3px;
+    }
+    .global .wrapper {
+        height: 520px;
+    }
+    .global .content {
+        padding: 80px 6% 0 26%;
+    }
+    .global .content article {
+        margin-bottom: 25px;
+    }
+    .application .text {
+        padding: 50px 0 0;
+    }
+    .application .img {
+        width: 55%;
+        padding: 35px 6% 50px 0;
+    }
+    .service .text p {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .service .text {
+        width: 40%;
+    }
+    .future .wrapper {
+        padding: 65px 5%;
+    }
+    .future .content p {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin: 20px 0 8px;
+    }
+    .recruit .sectionR .text {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        padding: 100px 5%;
+    }
+    .future .content article {
+        line-height: 1.3rem;
+    }
+    .quality p {
+        padding: 100px 5%;
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 1px;
+    }
+    footer .up h2 {
+        letter-spacing: 2px;
+        font-size: 1.2rem;
+    }
+    footer .up h3 {
+        margin-bottom: 23px;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+    footer .up p {
+        font-size: 0.875rem;
+        letter-spacing: .5px;
+        line-height: 1.4rem;
+    }
+    footer .up .logo {
+        padding-top: 30px;
+    }
+    footer .up .logo img {
+        width: 75%;
+    }
+    footer .up {
+        padding: 50px 5% 25px;
+    }
+    footer .down .decorate ul li:not(:last-child) {
+        margin-right: 15px;
+    }
+    footer .down .copyright {
+        font-size: 0.75rem;
+        letter-spacing: .5px;
+        margin-top: 0px;
+    }
+}
 
-@media screen and (max-width:1440px) {}
+@media screen and (max-width:480px) {
+    .top-menu-R {
+        border: none;
+        padding: 38px 25px 5px 0;
+    }
+    .top-banner-mobile-slick .slick-dots li {
+        margin: 0 5px;
+    }
+    .top-banner-mobile-slick .slick-dots li.slick-active button:before {
+        width: 8px;
+        height: 8px;
+    }
+    .top-banner-mobile-slick .slick-dots li button:before {
+        width: 9px;
+        height: 9px;
+    }
+    .technology {
+        padding: 80px 10%;
+    }
+    .global .wrapper {
+        height: 450px;
+    }
+    .global .content {
+        padding: 80px 8% 0;
+    }
+    .global .bg {
+        background-size: 768px 378px;
+    }
+    .service .img {
+        width: 42%;
+    }
+    .service .text {
+        width: 47%;
+        padding: 50px 5%;
+    }
+    .service .text p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
+    .global .content a,
+    .service .text a,
+    .recruit .sectionL a {
+        width: 60px;
+        padding: 10px 15px;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+    }
+    .future .content p {
+        font-size: 1.25rem;
+        letter-spacing: .5px;
+    }
+    .future .content article {
+        line-height: 1.1rem;
+        font-size: 0.875rem;
+        letter-spacing: .5px;
+    }
+    .future .content.middle {
+        padding: 0 5%;
+    }
+    .recruit .sectionL {
+        padding: 150px 12% 80px;
+    }
+    .recruit .sectionR .text {
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+    }
+    .quality p {
+        padding: 80px 5%;
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+        letter-spacing: .5px;
+    }
+    footer .up {
+        flex-wrap: wrap-reverse;
+        padding: 35px 5%;
+    }
+    footer .up .info,
+    footer .up .logo {
+        width: 100%;
+    }
+    footer .up .logo {
+        padding-top: 0;
+        text-align: center;
+    }
+    footer .up .info {
+        padding: 15px 5% 0 17%;
+    }
+    footer .up .logo img {
+        width: 65%;
+    }
+    footer .down {
+        flex-wrap: wrap;
+    }
+    footer .down .copyright {
+        text-align: center;
+        width: 100%;
+    }
+    footer .down .decorate {
+        width: 162px;
+        margin: 25px auto 0;
+    }
+    .application .img {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .top-banner-mobile-slick .slick-dots {
+        bottom: 20px;
+    }
+    .service .img {
+        width: 38%;
+    }
+    .service .text {
+        width: 55%;
+        padding: 40px 5%;
+    }
+    .service .text article {
+        margin-bottom: 15px;
+    }
+    .future .content {
+        width: calc(100% / 2);
+    }
+    .future .content:last-child {
+        display: none;
+    }
+    .future .content.middle {
+        padding: 0 0 0 8%;
+    }
+    .recruit .sectionL {
+        padding: 150px 10% 80px;
+    }
+    .recruit .sectionL article {
+        margin: 0 0 40px;
+    }
+    .recruit .sectionR .text {
+        font-size: 2.25rem;
+        letter-spacing: 1px;
+    }
+    .recruit .sectionR .img .col {
+        width: 50%;
+    }
+    .recruit .sectionR .img .col img,
+    .recruit .sectionR .img .colwide img {
+        width: 100%;
+    }
+    .recruit .sectionR .img .colwide {
+        width: 100%;
+    }
+    .recruit .sectionR .img .col.order1 {
+        order: 1;
+    }
+    .recruit .sectionR .img .col.order2 {
+        order: 2;
+    }
+    .recruit .sectionR .img .colwide.order3 {
+        order: 3;
+    }
+    .recruit .sectionR .img .col.order4 {
+        order: 4;
+    }
+    .recruit .sectionR .img .col.order5 {
+        order: 5;
+    }
+    .recruit .sectionR .img .colwide.order6 {
+        order: 6;
+    }
+    .recruit .sectionR .img .col.close,
+    .recruit .sectionR .img .colwide.close {
+        display: none;
+    }
+    .service .img img {
+        width: 165%;
+    }
+    .service .img {
+        width: 35%;
+    }
+    .service .text {
+        width: 65%;
+        padding: 40px 5%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .technology {
+        padding: 60px 8%;
+    }
+    .technology p,
+    .application .text p {
+        font-size: 1.8rem;
+        margin-bottom: 18px;
+    }
+    .global .content {
+        padding: 60px 8% 0;
+    }
+    .recruit .sectionL {
+        padding: 120px 8% 65px;
+    }
+    .recruit .sectionR .text {
+        padding: 80px 5%;
+        font-size: 2rem;
+    }
+    .top-banner-mobile-slick .slick-dots {
+        bottom: 13px;
+    }
+    footer .up .info {
+        padding: 15px 5% 0 11%;
+    }
+    footer .up .logo {
+        text-align: left;
+        margin: 0 5% 0 11%;
+    }
+    footer .up .logo img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .service .text {
+        padding: 40px 5% 40px 0;
+    }
+    .service .text article {
+        letter-spacing: 0px;
+        line-height: 1.5rem;
+    }
+    .service .img img {
+        width: 130%;
+    }
+    .recruit .sectionR .text,
+    .quality p {
+        padding: 60px 5%;
+    }
+    footer .up .info {
+        padding: 15px 5% 0;
+    }
+    footer .up .logo img {
+        width: 96%;
+    }
+}
 
 @media screen and (max-width:1440px) {}
 
