@@ -1042,7 +1042,7 @@ footer .down .decorate ul li:not(:last-child) {
     .global .content a,
     .service .text a,
     .recruit .sectionL a {
-        width: 61px;
+        width: 65px;
         padding: 10px 15px;
         letter-spacing: 1px;
         font-size: 0.875rem;
