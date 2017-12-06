@@ -1,4 +1,86 @@
 @charset "utf-8";
+
+/*-- waypoints --*/
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUpArticle {
+    0% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.technology p,
+.technology article,
+.global .content p,
+.global .content article,
+.global .content a .btn,
+.application .text p,
+.application .text article,
+.service .text article,
+.service .text p,
+.service .text a .btn,
+.future .content,
+.recruit .sectionL p,
+.recruit .sectionL article,
+.recruit .sectionL a .btn,
+.recruit .sectionR .text,
+.quality p,
+.footer {
+    opacity: 0;
+}
+
+.technology.movein p,
+.global.movein .content p,
+.application.movein .text p,
+.recruit.movein .sectionL p {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.global.movein .content a .btn,
+.service.movein .text a .btn,
+.recruit.movein .sectionL a .btn {
+    animation: fadeInUp 1.5s forwards .8s;
+}
+
+.service.movein .text article,
+.service.movein .text p,
+.future.movein .content:first-child,
+.recruit.movein .sectionR .text,
+.quality.movein p,
+.footer.movein {
+    animation: fadeInUpArticle 1.5s forwards;
+}
+
+.technology.movein article,
+.global.movein .content article,
+.application.movein .text article,
+.future.movein .content:nth-child(2),
+.recruit.movein .sectionL article {
+    animation: fadeInUpArticle 1.5s forwards .4s;
+}
+
+.future.movein .content:last-child {
+    animation: fadeInUpArticle 1.5s forwards .8s;
+}
+
+
+/*-- content --*/
+
 .main {
     overflow: hidden;
 }
