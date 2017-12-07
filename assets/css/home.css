@@ -79,6 +79,102 @@
 }
 
 
+/*-- fixed menu --*/
+
+body {
+    transition: .5s ease;
+}
+
+body.menuOn {
+    margin-left: -385px;
+    padding-right: 385px;
+    transition: .5s ease;
+}
+
+body.menuOn .fixed-menu {
+    right: 0;
+    transition: .5s ease;
+}
+
+body.menuOn .fixed-hamburger {
+    right: 385px;
+}
+
+body.menuOn .global .bg {
+    background-position-x: -385px;
+}
+
+.fixed-hamburger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(34, 157, 194, .5);
+    background-color: rgba(142, 77, 186, .5);
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    cursor: pointer;
+    transition: .5s ease;
+    /* display: none; */
+}
+
+.fixed-hamburger:hover {
+    background-color: rgba(34, 157, 194, 1);
+    background-color: rgba(142, 77, 186, 1);
+    transition: .5s ease;
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+
+.fixed-menu {
+    position: fixed;
+    height: auto;
+    right: -385px;
+    top: 0;
+    z-index: 2;
+    width: 385px;
+    height: 100%;
+    background-color: #222;
+    transition: .5s ease;
+}
+
+.fixed-menu .menu {
+    background-color: #222;
+}
+
+.fixed-menu .menu-top {
+    padding: 20px;
+}
+
+.fixed-menu .menu-top .logo img {
+    width: 220px;
+}
+
+.fixed-menu .content {
+    color: white
+}
+
+.fixed-menu .content ul li p {
+    font-size: 2.125rem;
+    padding: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.fixed-menu .content ul li ul li {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+    background-color: #0c0c0c;
+}
+
+.fixed-menu .content ul li ul li:last-child {
+    padding: 15px 40px 25px;
+}
+
+
 /*-- content --*/
 
 .main {
@@ -218,106 +314,8 @@ header {
     transition: .5s ease;
 }
 
-
-/*-- fixed menu --*/
-
-body {
-    transition: .5s ease;
-}
-
-body.menuOn {
-    margin-left: -385px;
-    padding-right: 385px;
-    transition: .5s ease;
-}
-
-body.menuOn .fixed-menu {
-    right: 0;
-    transition: .5s ease;
-}
-
-body.menuOn .fixed-hamburger {
-    right: 385px;
-}
-
-body.menuOn .global .bg {
-    background-position-x: -385px;
-}
-
-.fixed-hamburger {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 2;
-    background-color: rgba(34, 157, 194, .5);
-    background-color: rgba(142, 77, 186, .5);
-    width: 30px;
-    height: 30px;
-    padding: 30px;
-    cursor: pointer;
-    transition: .5s ease;
-    /* display: none; */
-}
-
-.fixed-hamburger:hover {
-    background-color: rgba(34, 157, 194, 1);
-    background-color: rgba(142, 77, 186, 1);
-    transition: .5s ease;
-}
-
 .fixed-hamburger span {
     right: 30px;
-}
-
-.mCSB_inside>.mCSB_container {
-    margin-right: 0;
-}
-
-.fixed-menu {
-    position: fixed;
-    height: auto;
-    right: -385px;
-    top: 0;
-    z-index: 2;
-    width: 385px;
-    height: 100%;
-    background-color: #222;
-    transition: .5s ease;
-}
-
-.fixed-menu .menu {
-    background-color: #222;
-}
-
-.fixed-menu .menu-top {
-    padding: 20px;
-}
-
-.fixed-menu .menu-top .logo img {
-    width: 220px;
-}
-
-.fixed-menu .content {
-    color: white
-}
-
-.fixed-menu .content .levelOne li {}
-
-.fixed-menu .content ul li p {
-    font-size: 2.125rem;
-    padding: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
-}
-
-.fixed-menu .content ul li ul li {
-    font-size: 1.5rem;
-    padding: 15px 40px;
-    background-color: #0c0c0c;
-}
-
-.fixed-menu .content ul li ul li:last-child {
-    padding: 15px 40px 25px;
 }
 
 
