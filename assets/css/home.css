@@ -24,6 +24,26 @@
     }
 }
 
+@keyframes closeFirst {
+    0% {
+        top: 8px;
+    }
+    100% {
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes closeLast {
+    0% {
+        top: 8px;
+    }
+    100% {
+        top: 8px;
+        transform: rotate(45deg);
+    }
+}
+
 .technology p,
 .technology article,
 .global .content p,
@@ -104,27 +124,6 @@ body.menuOn .global .bg {
     background-position-x: -385px;
 }
 
-.fixed-hamburger {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 2;
-    background-color: rgba(34, 157, 194, .5);
-    background-color: rgba(142, 77, 186, .5);
-    width: 30px;
-    height: 30px;
-    padding: 30px;
-    cursor: pointer;
-    transition: .5s ease;
-    /* display: none; */
-}
-
-.fixed-hamburger:hover {
-    background-color: rgba(34, 157, 194, 1);
-    background-color: rgba(142, 77, 186, 1);
-    transition: .5s ease;
-}
-
 .mCSB_inside>.mCSB_container {
     margin-right: 0;
 }
@@ -147,10 +146,38 @@ body.menuOn .global .bg {
 
 .fixed-menu .menu-top {
     padding: 20px;
+    display: flex;
 }
 
 .fixed-menu .menu-top .logo img {
     width: 220px;
+}
+
+.fixed-menu .menu-top .close {
+    position: relative;
+    margin: 20px 30px 0 105px;
+    transform: rotate(45deg);
+    transform-origin: top;
+    display: none;
+    cursor: pointer;
+}
+
+.fixed-menu .menu-top .close span {
+    position: absolute;
+    background-color: white;
+}
+
+.fixed-menu .menu-top .close span:first-child {
+    width: 30px;
+    height: 1px;
+    top: 15px;
+}
+
+.fixed-menu .menu-top .close span:last-child {
+    width: 1px;
+    height: 30px;
+    left: 15px;
+    top: 0;
 }
 
 .fixed-menu .content {
@@ -168,10 +195,17 @@ body.menuOn .global .bg {
     font-size: 1.5rem;
     padding: 15px 40px;
     background-color: #0c0c0c;
+    transition: .5s ease;
 }
 
 .fixed-menu .content ul li ul li:last-child {
     padding: 15px 40px 25px;
+}
+
+.fixed-menu .content ul li ul li:hover,
+.fixed-menu .content ul li ul li.active {
+    opacity: .5;
+    transition: .5s ease;
 }
 
 
@@ -309,13 +343,48 @@ header {
 }
 
 .top-menu-R .hamburger:hover span,
-.fixed-hamburger:hover span {
+.fixed-hamburger:hover span,
+.fixed-hamburger.close span {
     width: 30px;
+    transition: .5s ease;
+}
+
+.fixed-hamburger {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(34, 157, 194, .5);
+    background-color: rgba(142, 77, 186, .5);
+    width: 30px;
+    height: 30px;
+    padding: 30px;
+    cursor: pointer;
+    transition: .5s ease;
+    /* display: none; */
+}
+
+.fixed-hamburger:hover,
+.fixed-hamburger.close {
+    background-color: rgba(34, 157, 194, 1);
+    background-color: rgba(142, 77, 186, 1);
     transition: .5s ease;
 }
 
 .fixed-hamburger span {
     right: 30px;
+}
+
+.fixed-hamburger.close span:nth-child(2) {
+    display: none;
+}
+
+.fixed-hamburger.close span:first-child {
+    animation: closeFirst 1s forwards;
+}
+
+.fixed-hamburger.close span:last-child {
+    animation: closeLast 1s forwards;
 }
 
 
@@ -537,13 +606,6 @@ header {
     transition: all 0.3s;
     background-color: rgba(255, 255, 255, 1);
 }
-
-
-/* .global .content a:hover,
-.service .text a:hover {
-    transition: .5s ease;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
-} */
 
 
 /*-- application --*/
@@ -1397,6 +1459,18 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .application .img {
         width: 65%;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .fixed-menu .menu-top .close {
+        display: block;
+    }
+    .fixed-menu {
+        width: 100%;
+    }
+    body.menuOn .fixed-hamburger {
+        right: -90px;
     }
 }
 
