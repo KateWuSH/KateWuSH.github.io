@@ -58,4 +58,13 @@ $(document).ready(function() {
     }, {
         offset: '80%'
     });
+
+    $('.fixed-hamburger').click(function() {
+        $('body').toggleClass('menuOn');
+    });
+
+    $("nav .fixed-menu").mCustomScrollbar({
+        axis: "y",
+
+    });
 })
