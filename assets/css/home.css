@@ -411,7 +411,7 @@
     font-size: 4.5rem;
     font-weight: bold;
     text-align: center;
-    padding: 330px 0;
+    padding: 329px 0;
     color: #2a9ba7;
     background: linear-gradient(90deg, #2a9ba7 0%, #2d71a2 50%, #4f4e94 100%);
     -webkit-background-clip: text;
@@ -862,10 +862,6 @@
 }
 
 @media screen and (max-width:480px) {
-    .top-menu-R {
-        border: none;
-        padding: 38px 25px 5px 0;
-    }
     .top-banner-mobile-slick .slick-dots li {
         margin: 0 5px;
     }

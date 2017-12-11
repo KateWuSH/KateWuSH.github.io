@@ -18,7 +18,6 @@ $(document).ready(function() {
     });
 
     /*----- waypoints -----*/
-    // home
     $('#home .technology').waypoint(function() {
         $('.technology').addClass('movein');
     }, {

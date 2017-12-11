@@ -150,7 +150,7 @@ header {
     background-color: rgba(142, 77, 186, .5);
     width: 30px;
     height: 30px;
-    padding: 15px;
+    padding: 15px 15px 10px;
     cursor: pointer;
     transition: .3s ease;
 }
@@ -214,7 +214,7 @@ header {
 .main .topBanner .text article {
     font-size: 1.875rem;
     line-height: 2.8rem;
-    margin-left: 60px;
+    margin: 0 45% 0 60px;
 }
 
 
@@ -444,6 +444,35 @@ footer .down .decorate ul li:not(:last-child) {
 
 /*-- RWD --*/
 
+@media screen and (max-width:1680px) {
+    .main .topBanner .text h1 {
+        font-size: 6.5rem;
+        margin-bottom: 10px;
+    }
+    .main .topBanner .text p {
+        font-size: 3rem;
+        margin: 0 0 15px 55px;
+    }
+    .main .topBanner .text article {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .main .topBanner .text h1 {
+        font-size: 6rem;
+    }
+    .main .topBanner .text p {
+        font-size: 2.75rem;
+        margin: 0 0 15px 50px;
+    }
+    .main .topBanner .text article {
+        font-size: 1.75rem;
+        line-height: 2.6rem;
+        margin: 0 45% 0 50px;
+    }
+}
+
 @media screen and (max-width:1250px) {
     footer .up {
         padding: 60px 5%;
@@ -478,6 +507,22 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .top-menu-R .main-menu ul li {
         font-size: 1.125rem;
+    }
+    .main .topBanner .text {
+        left: 45%;
+        transform: translateX(-28%);
+    }
+    .main .topBanner .text h1 {
+        font-size: 5.5rem;
+    }
+    .main .topBanner .text p {
+        font-size: 2.5rem;
+        margin: 0 0 15px 45px;
+    }
+    .main .topBanner .text article {
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        margin: 0 2% 0 45px;
     }
 }
 
@@ -520,9 +565,39 @@ footer .down .decorate ul li:not(:last-child) {
     .top-menu-L img {
         width: 100%;
     }
+    .main .topBanner .text {
+        top: 240px;
+        left: 38%;
+        transform: translateX(-30%);
+    }
+    .main .topBanner .text h1 {
+        font-size: 4.5rem;
+    }
+    .main .topBanner .text p {
+        font-size: 2.25rem;
+        margin: 0 0 15px 38px;
+    }
+    .main .topBanner .text article {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+        margin: 0 4% 0 38px;
+    }
 }
 
 @media screen and (max-width:640px) {
+    .main .topBanner .text {
+        left: 26%;
+        transform: translateX(-4%);
+    }
+    .main .topBanner .text h1 {
+        font-size: 4.25rem;
+    }
+    .main .topBanner .text p {
+        margin: 0 0 10px 35px;
+    }
+    .main .topBanner .text article {
+        margin-left: 35px;
+    }
     footer .up h2 {
         letter-spacing: 2px;
         font-size: 1.2rem;
@@ -557,6 +632,18 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:480px) {
+    .top-menu-R {
+        border: none;
+        padding: 38px 25px 5px 0;
+    }
+    .main .topBanner .text {
+        top: 245px;
+        left: 10%;
+        transform: translateX(-4%);
+    }
+    .main .topBanner .text h1 {
+        font-size: 3.75rem;
+    }
     footer .up {
         flex-wrap: wrap-reverse;
         padding: 35px 5%;
@@ -586,6 +673,12 @@ footer .down .decorate ul li:not(:last-child) {
         width: 162px;
         margin: 25px auto 0;
     }
+    .fixed-hamburger.show {
+        top: 0px;
+    }
+    .fixed-hamburger {
+        right: 0;
+    }
 }
 
 @media screen and (max-width:479px) {
@@ -594,9 +687,26 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .fixed-menu {
         width: 100%;
+        right: -100%;
     }
     body.menuOn .fixed-hamburger {
         right: -90px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .main .topBanner .text h1 {
+        font-size: 3.5rem;
+    }
+    .main .topBanner .text p {
+        margin: 0 0 10px 27px;
+        font-size: 2rem;
+    }
+    .main .topBanner .text article {
+        margin: 0 10% 0 27px;
+    }
+    .main .topBanner .text {
+        left: 14%;
     }
 }
 
