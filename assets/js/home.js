@@ -16,6 +16,7 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear'
     });
+
     /*----- waypoints -----*/
     // home
     $('#home .technology').waypoint(function() {
@@ -58,31 +59,4 @@ $(document).ready(function() {
     }, {
         offset: '80%'
     });
-
-    $('.fixed-hamburger').click(function() {
-        $('body').toggleClass('menuOn');
-        $(this).toggleClass('close');
-    });
-
-    $('.fixed-menu .close').click(function() {
-        $('body').removeClass('menuOn');
-        $('.fixed-hamburger').removeClass('close');
-    });
-
-    // menu scrollbar
-    $("nav .fixed-menu").mCustomScrollbar({
-        axis: "y",
-    });
 })
-
-
-
-document.getElementById("home").onscroll = function() {
-    var bodyHeight = document.getElementById("home").scrollTop;
-    if (bodyHeight < 500) {
-        console.log(bodyHeight)
-    } else {
-        console.log('已超過500')
-    }
-
-}

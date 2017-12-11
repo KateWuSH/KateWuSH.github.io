@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+/* .main .topBanner {
+    background: url(../../upload/about/topBg.jpg) no-repeat;
+} */
+
+.main .topBanner .text p {
+    color: #0adbc6;
+}
+
+
+/*-- info --*/
+
+.info .wrapper {
+    display: flex;
+}
+
+.info .wrapper .imgL {
+    width: 45%;
+    background: url(../../upload/about/building.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.info .wrapper .textR {
+    width: 55%;
+}
+
+.info .intro {
+    background-color: #0b0827;
+    color: white;
+    padding: 45px 100px 60px;
+}
+
+.info .mission {
+    padding: 65px 100px 60px;
+}
+
+.info .intro p,
+.info .mission p,
+.value .text p,
+.cis .down .text p {
+    font-size: 3.75rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.info .intro p {
+    color: #0adbc6;
+}
+
+.info .mission p,
+.value .text p,
+.cis .down .text p {
+    color: #268bc3;
+}
+
+.info .intro article,
+.info .mission article,
+.value .text article ul li,
+.cis .down .text article {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    letter-spacing: .5px;
+}
+
+.info .mission ul {
+    margin-top: 15px;
+    list-style: lower-greek;
+    padding-left: 30px;
+}
+
+
+/*-- value --*/
+
+.value .wrapper {
+    padding: 275px 0 260px;
+    background: url(../../upload/about/hand.jpg) no-repeat center center;
+    background-attachment: fixed;
+}
+
+.value .text {
+    width: calc(50% - 330px);
+    background-color: white;
+    padding: 120px 200px 120px 130px;
+}
+
+
+/*-- CIS --*/
+
+.cis .up {
+    background-color: #282b30;
+}
+
+.cis .up img {
+    margin-top: -355px;
+}
+
+.cis .down {
+    background-color: #269ac1;
+    padding: 0 0 5px 140px;
+}
+
+.cis .down .text {
+    background-color: #fff;
+    padding: 70px 5% 100px;
+    transform: translateY(-135px);
+}
