@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    $('#about .topBanner').waypoint(function() {
-        $('.topBanner').addClass('movein');
-    }, {
-        offset: '80%'
-    });
 
     $('#about .intro').waypoint(function() {
         $('.intro').addClass('movein');

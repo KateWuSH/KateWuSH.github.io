@@ -22,6 +22,13 @@ $(document).ready(function() {
         axis: "y",
     });
 
+    // waypoints
+    $('.topBanner').waypoint(function() {
+        $('.topBanner').addClass('movein');
+    }, {
+        offset: '80%'
+    });
+
 
     window.onscroll = function() {
         var windowHeight = this.scrollY;

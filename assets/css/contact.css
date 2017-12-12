@@ -2,6 +2,9 @@
 
 /*-- waypoints --*/
 
+.topBanner .text h1,
+.topBanner .text p,
+.topBanner .text article,
 .info .intro p,
 .info .intro article,
 .info .mission p,
@@ -13,11 +16,20 @@
     opacity: 0;
 }
 
+.topBanner.movein .text h1,
 .info .intro.movein p,
 .info .mission.movein p,
 .value .text.movein p,
 .cis .text.movein p {
     animation: fadeInUp 1.5s forwards;
+}
+
+.topBanner.movein .text p {
+    animation: fadeInUp 1.5s forwards .6s;
+}
+
+.topBanner.movein .text article {
+    animation: fadeInUpArticle 1.5s forwards 1s;
 }
 
 .info .intro.movein article,
@@ -41,107 +53,15 @@
 }
 
 
-/*-- info --*/
+/*-- map --*/
 
-.info .wrapper {
-    display: flex;
+.map .wrapper {
+    width: 70%;
+    margin: 85px auto;
 }
 
-.info .wrapper .imgL {
-    width: 45%;
-    background: url(../../upload/about/building.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.info .wrapper .textR {
-    width: 55%;
-}
-
-.info .intro {
-    background-color: #0b0827;
-    color: white;
-    padding: 45px 100px 60px;
-}
-
-.info .mission {
-    padding: 65px 100px 60px;
-}
-
-.info .mission ul li {
-    margin-bottom: 10px;
-}
-
-.info .intro p,
-.info .mission p,
-.value .text p,
-.cis .down .text p {
-    font-size: 3.75rem;
-    letter-spacing: 3px;
-    font-weight: bold;
-    margin-bottom: 25px;
-}
-
-.info .intro p {
-    color: #0adbc6;
-}
-
-.info .mission p,
-.value .text p,
-.cis .down .text p {
-    color: #268bc3;
-}
-
-.info .intro article,
-.info .mission article,
-.value .text article ul li,
-.cis .down .text article {
-    font-size: 1.5rem;
-    line-height: 2.8rem;
-    letter-spacing: .5px;
-}
-
-.info .mission ul {
-    margin-top: 15px;
-    list-style: lower-greek;
-    padding-left: 30px;
-}
-
-
-/*-- value --*/
-
-.value .wrapper {
-    padding: 275px 0 260px;
-    background: url(../../upload/about/hand.jpg) no-repeat center center;
-    background-attachment: fixed;
-}
-
-.value .text {
-    width: calc(50% - 330px);
-    background-color: white;
-    padding: 120px 200px 120px 130px;
-}
-
-
-/*-- CIS --*/
-
-.cis .up {
-    background-color: #282b30;
-}
-
-.cis .up img {
-    margin-top: -355px;
+.map .wrapper iframe {
     width: 100%;
-}
-
-.cis .down {
-    background-color: #269ac1;
-    padding: 0 0 5px 140px;
-}
-
-.cis .down .text {
-    background-color: #fff;
-    padding: 70px 5% 100px;
-    transform: translateY(-135px);
 }
 
 
@@ -165,51 +85,42 @@
     .info .intro article,
     .info .mission article,
     .value .text article ul li,
-    .cis .down .text article font-size: 1.25rem;
-    line-height: 2.4rem;
+    .cis .down .text article {
+        font-size: 1.25rem;
+        line-height: 2.4rem;
+    }
+    .info .intro {
+        padding: 45px 80px 60px;
+    }
+    .info .mission {
+        padding: 65px 80px 60px;
+    }
+    .value .text {
+        width: 35%;
+        padding: 120px 100px 120px;
+    }
+    .cis .down .text {
+        padding: 70px 7% 100px;
+    }
 }
 
-.info .intro {
-    padding: 45px 80px 60px;
-}
-
-.info .mission {
-    padding: 65px 80px 60px;
-}
-
-.value .text {
-    width: 35%;
-    padding: 120px 100px 120px;
-}
-
-.cis .down .text {
-    padding: 70px 7% 100px;
-}
-
-
-}
 @media screen and (max-width:1024px) {
     .info .wrapper {
         flex-wrap: wrap;
     }
-    
     .info .wrapper .imgL,
     .info .wrapper .textR {
         width: 100%;
     }
-    
     .info .wrapper .imgL {
         min-height: 1200px;
     }
-    
     .info .intro {
         padding: 45px 10% 60px;
     }
-    
     .info .mission {
         padding: 65px 10% 60px;
     }
-    
     .info .intro p,
     .info .mission p,
     .value .text p,
@@ -218,62 +129,53 @@
         letter-spacing: 2px;
         margin-bottom: 15px;
     }
-    
     .value .wrapper {
         padding: 260px 0;
         background: url(../../upload/about/hand.jpg) no-repeat right center;
         background-attachment: fixed;
     }
-    
     .value .text article ul li {
         line-height: 2rem;
         margin-bottom: 10px;
     }
-    
     .value .text {
         padding: 80px 5%;
         width: 50%;
     }
-    
     .cis .up img {
         margin-top: -245px;
     }
-    
     .cis .down {
         padding: 0 0 0 120px;
     }
-    
     .cis .down .text {
         transform: translateY(-120px);
     }
 }
+
 @media screen and (max-width:768px) {
     .value .text {
         width: 65%;
     }
-    
     .cis .down {
         padding: 0 0 0 90px;
     }
-    
     .cis .down .text {
         transform: translateY(-90px);
     }
-    
     .cis .up img {
         margin-top: -150px;
     }
 }
+
 @media screen and (max-width:640px) {
     .info .wrapper .imgL {
         min-height: 800px;
     }
-    
     .value .text {
         width: 62%;
         padding: 80px 10%;
     }
-    
     .info .intro p,
     .info .mission p,
     .value .text p,
@@ -281,7 +183,6 @@
         font-size: 2.75rem;
         letter-spacing: 1px;
     }
-    
     .info .intro article,
     .info .mission article,
     .value .text article ul li,
@@ -289,77 +190,73 @@
         font-size: 1rem;
         line-height: 2rem;
     }
-    
     .info .mission ul {
         padding-left: 20px;
     }
-    
     .value .text article ul li {
         margin-bottom: 3px;
     }
-    
     .cis .down .text {
         padding: 50px 7% 80px;
         transform: translateY(-45px);
     }
-    
     .cis .up img {
         margin-top: -130px;
     }
-    
     .cis .down {
         padding: 1px 0 0 45px;
     }
 }
+
 @media screen and (max-width:480px) {
     .info .wrapper .imgL {
         min-height: 580px;
     }
-    
     .value .text {
         width: 100%;
         padding: 60px 8%;
     }
-    
     .cis .down {
         padding: 1px 0 0 30px;
     }
-    
     .cis .down .text {
         transform: translateY(-30px);
     }
-    
     .cis .down .text {
         padding: 50px 10% 70px;
     }
-    
     .value .wrapper {
         padding: 360px 0 0;
     }
-    
     .cis .up img {
         margin-top: -75px;
     }
 }
+
 @media screen and (max-width:420px) {
     .info .wrapper .imgL {
         min-height: 500px;
     }
-    
     .value .text {
         width: 80%;
         padding: 60px 10%;
     }
-    
     .value .text article ul li {
         line-height: 1.5rem;
         margin-bottom: 10px;
     }
 }
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}
+
 @media screen and (max-width:1250px) {}

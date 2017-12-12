@@ -208,13 +208,13 @@ header {
 
 .main .topBanner .text p {
     font-size: 3.125rem;
-    margin: 0 0 15px 60px;
+    margin: 0 0 15px 55px;
 }
 
 .main .topBanner .text article {
     font-size: 1.875rem;
     line-height: 2.8rem;
-    margin: 0 45% 0 60px;
+    margin: 0 45% 0 55px;
 }
 
 
@@ -388,6 +388,24 @@ footer .down .decorate ul li:not(:last-child) {
 
 /*-- waypoints --*/
 
+.topBanner .text h1,
+.topBanner .text p,
+.topBanner .text article {
+    opacity: 0;
+}
+
+.topBanner.movein .text h1 {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.topBanner.movein .text p {
+    animation: fadeInUp 1.5s forwards .6s;
+}
+
+.topBanner.movein .text article {
+    animation: fadeInUpArticle 1.5s forwards 1s;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -454,7 +472,7 @@ footer .down .decorate ul li:not(:last-child) {
         margin: 0 0 15px 55px;
     }
     .main .topBanner .text article {
-        margin-left: 55px;
+        margin: 0 43% 0 55px;
     }
 }
 
@@ -469,7 +487,7 @@ footer .down .decorate ul li:not(:last-child) {
     .main .topBanner .text article {
         font-size: 1.75rem;
         line-height: 2.6rem;
-        margin: 0 45% 0 50px;
+        margin: 0 37% 0 50px;
     }
 }
 
@@ -644,6 +662,10 @@ footer .down .decorate ul li:not(:last-child) {
     .main .topBanner .text h1 {
         font-size: 3.75rem;
     }
+    .main .topBanner .text article {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
     footer .up {
         flex-wrap: wrap-reverse;
         padding: 35px 5%;
@@ -696,14 +718,16 @@ footer .down .decorate ul li:not(:last-child) {
 
 @media screen and (max-width:420px) {
     .main .topBanner .text h1 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
+        margin-bottom: 5px;
     }
     .main .topBanner .text p {
-        margin: 0 0 10px 27px;
-        font-size: 2rem;
+        margin: 0 0 10px 17px;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
     }
     .main .topBanner .text article {
-        margin: 0 10% 0 27px;
+        margin: 0 10% 0 17px;
     }
     .main .topBanner .text {
         left: 14%;
