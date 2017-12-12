@@ -1,5 +1,46 @@
 @charset "utf-8";
 
+/*-- waypoints --*/
+
+.advantage .text p,
+.advantage .text article,
+.innovation .text p,
+.innovation .text article,
+.items .item,
+.integration .text p,
+.integration .text article,
+.future .target {
+    opacity: 0;
+}
+
+.advantage .text.movein p,
+.innovation .text.movein p,
+.integration .text.movein p {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.advantage .text.movein article,
+.innovation .text.movein article,
+.integration .text.movein article {
+    animation: fadeInUpArticle 1.5s forwards .4s;
+}
+
+.items .item.movein:first-child,
+.future .target.movein:first-child {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.items .item.movein:nth-child(2),
+.future .target.movein:nth-child(2) {
+    animation: fadeInUp 1.5s forwards .2s;
+}
+
+.items .item.movein:nth-child(3),
+.future .target.movein:nth-child(3) {
+    animation: fadeInUp 1.5s forwards .4s;
+}
+
+
 /*-- top banner --*/
 
 .main .topBanner {
@@ -227,6 +268,9 @@
     }
     .future .wrapper {
         padding: 0 10%;
+    }
+    .innovation .text {
+        padding: 100px 23% 280px;
     }
 }
 

@@ -24,7 +24,7 @@
 .info .mission.movein article,
 .value .text.movein article,
 .cis .text.movein article {
-    animation: fadeInUpArticle 1.5s forwards .41s;
+    animation: fadeInUpArticle 1.5s forwards .4s;
 }
 
 
