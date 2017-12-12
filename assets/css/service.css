@@ -236,6 +236,9 @@
     .integration .text {
         margin: 80px 6% 0 10%;
     }
+    .integration .text p {
+        font-size: 3.5rem;
+    }
     .future .wrapper {
         padding: 0 15%;
     }

@@ -282,13 +282,13 @@
 .application .text {
     width: 50%;
     text-align: right;
-    padding: 165px 130px 0;
+    padding: 140px 130px 0;
 }
 
 .application .text p {
     font-size: 3.125rem;
     color: #2fb1ad;
-    margin-bottom: 100px;
+    margin-bottom: 85px;
 }
 
 .application .text article {
@@ -298,7 +298,12 @@
 
 .application .img {
     width: 50%;
-    padding: 83px 100px 80px 0;
+    padding-top: 83px;
+}
+
+.application .img img {
+    vertical-align: top;
+    width: 100%;
 }
 
 
@@ -458,6 +463,9 @@
     .future .wrapper {
         padding: 85px 12% 80px;
     }
+    .application .text {
+        padding: 140px 120px 0;
+    }
 }
 
 @media screen and (max-width:1440px) {
@@ -467,14 +475,13 @@
     .global .bg {
         background-position: bottom center;
     }
-    .application .img img {
-        width: 95%;
-    }
     .application .img {
-        padding: 120px 100px 120px 0;
+        padding-top: 120px;
+        width: 60%;
     }
     .application .text {
-        padding: 125px 130px 0;
+        padding: 150px 100px 0;
+        width: 40%;
     }
     .application .text p {
         margin-bottom: 50px;
@@ -598,7 +605,7 @@
         width: 110%;
     }
     .application .text {
-        padding: 125px 100px 0;
+        padding: 140px 70px 0;
     }
     .service .text article {
         margin-bottom: 25px;
@@ -680,11 +687,17 @@
         flex-wrap: wrap;
     }
     .application .text {
+        width: 100%;
         padding: 70px 70px 0;
         text-align: center;
     }
     .application .img {
-        padding: 50px 6% 70px 0;
+        width: 100%;
+        padding-top: 50px;
+        text-align: right;
+    }
+    .application .img img {
+        width: 85%;
     }
     .service .text {
         width: 55%;

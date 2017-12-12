@@ -43,13 +43,42 @@
 /*-- top banner --*/
 
 .main .topBanner {
-    background: url(../../upload/about/topBg.jpg) no-repeat;
+    background: url(../../upload/contact/topBg.jpg) no-repeat;
     background-attachment: fixed;
     min-height: 625px;
 }
 
-.main .topBanner .text p {
-    color: #0adbc6;
+.main .topBanner .text {
+    top: 510px;
+    left: 455px;
+}
+
+.main .topBanner .text h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.main .topBanner .address {
+    position: absolute;
+    top: 345px;
+    left: 1015px;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 40%;
+}
+
+
+/*-- info --*/
+
+.info .wrapper {
+    background-color: #e9f3f8;
+    padding: 90px 0 30px;
+}
+
+.info .content {
+    width: 65%;
+    margin: auto;
 }
 
 
