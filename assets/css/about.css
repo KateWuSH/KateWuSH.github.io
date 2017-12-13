@@ -451,6 +451,9 @@
         letter-spacing: 0px;
         margin-bottom: 10px;
     }
+    .value .text p {
+        margin-bottom: 15px;
+    }
     .info .intro article,
     .info .mission article,
     .concept .content .text article,
@@ -495,7 +498,7 @@
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:330px) {
     .value .text article ul {
         margin-left: 22%;
     }
