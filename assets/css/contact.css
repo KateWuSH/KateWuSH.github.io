@@ -73,7 +73,8 @@
 
 .info .wrapper {
     background-color: #e9f3f8;
-    padding: 90px 0 30px;
+    padding: 80px 0 60px;
+    text-align: center;
 }
 
 .info .content {
@@ -81,16 +82,59 @@
     margin: auto;
 }
 
+.info .content .up {
+    border-bottom: 1px solid #219ec2;
+}
+
+.info .content .up p {
+    font-size: 1.75rem;
+    padding-bottom: 20px;
+}
+
+.info .content .down {
+    display: flex;
+    width: 55%;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.info .down span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.info .down .text:nth-child(1) span {
+    margin-top: 15px;
+}
+
+.info .down .text:nth-child(2) span {
+    margin-top: 24px;
+}
+
+.info .down .text:nth-child(3) span {
+    margin-top: 17px;
+}
+
+.info .down .text {
+    width: calc(100% / 3);
+}
+
+.info .down .text:nth-child(2) {
+    margin: 0 50px;
+}
+
 
 /*-- map --*/
 
-.map .wrapper {
-    width: 70%;
-    margin: 85px auto;
+#map {
+    height: 100%;
 }
 
-.map .wrapper iframe {
-    width: 100%;
+.mapSection .wrapper {
+    width: 70%;
+    height: 520px;
+    margin: 85px auto;
 }
 
 

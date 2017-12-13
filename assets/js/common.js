@@ -39,7 +39,6 @@ $(document).ready(function() {
     window.onscroll = function() {
         var windowHeight = this.scrollY;
         if (windowHeight > 400) {
-            console.log('test');
             var btn = document.getElementsByClassName('fixed-hamburger')[0];
             btn.classList.add('show');
         } else {

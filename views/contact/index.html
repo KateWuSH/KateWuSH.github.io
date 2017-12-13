@@ -127,14 +127,31 @@
                 <div class="up">
                     <p>需了解更多訊息，請聯繫我們：</p>
                 </div>
-                <div class="down"></div>
+                <div class="down">
+                    <div class="text">
+                        <img src="../../assets/img/contact01.png">
+                        <span>台中市西屯區朝富路 213 號 9 樓之 7-B1</span>
+                    </div>
+                    <div class="text">
+                        <a href="mailto:allpowernet@powernet.com">
+                            <img src="../../assets/img/contact02.png">
+                            <span>allpowernet@powernet.com</span>
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="tel:04-36093909">
+                            <img src="../../assets/img/contact03.png">
+                            <span>04-36093909 #10</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="map">
+    <section class="mapSection">
         <div class="wrapper">
-            <iframe height="530" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=%E5%8F%B0%E4%B8%AD%E5%B8%82%E8%A5%BF%E5%B1%AF%E5%8D%80%E6%9C%9D%E5%AF%8C%E8%B7%AF213%E8%99%9F&key=AIzaSyAGr6asxxyEQ3flv_x2ATz0h60KIEpo4UQ" allowfullscreen></iframe>
+            <div id="map"></div>
         </div>
     </section>
     <footer class="footer">
@@ -173,6 +190,76 @@
     <!-- main js -->
     <script type="text/javascript" src="../../assets/js/common.js"></script>
     <script type="text/javascript" src="../../assets/js/about.js"></script>
+    <!-- google map -->
+    <script>
+        function initMap() {
+            var powernet = {
+                lat: 24.162200,
+                lng: 120.635792
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: powernet,
+                zoom: 17,
+                styles: [{
+                    "featureType": "landscape.natural",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "color": "#e0efef"
+                    }]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry.fill",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "hue": "#1900ff"
+                    }, {
+                        "color": "#c0e8e8"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "lightness": 100
+                    }, {
+                        "visibility": "simplified"
+                    }]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [{
+                        "visibility": "off"
+                    }]
+                }, {
+                    "featureType": "transit.line",
+                    "elementType": "geometry",
+                    "stylers": [{
+                        "visibility": "on"
+                    }, {
+                        "lightness": 700
+                    }]
+                }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{
+                        "color": "#7dcdcd"
+                    }]
+                }]
+
+            });
+
+            var marker = new google.maps.Marker({
+                position: powernet,
+                map: map,
+                animation: google.maps.Animation.DROP,
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYEngS-E-qlK8wWABgViTMRghi4MNh7hY&callback=initMap" async defer></script>
+
 </body>
 
 </html>
