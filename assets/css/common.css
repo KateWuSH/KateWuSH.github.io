@@ -428,8 +428,28 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@keyframes rotateYIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .footer {
-    opacity: 1;
+    opacity: 0;
 }
 
 .footer.movein {
@@ -646,6 +666,12 @@ footer .down .decorate ul li:not(:last-child) {
         font-size: 0.75rem;
         letter-spacing: .5px;
         margin-top: 0px;
+    }
+    .fixed-hamburger.show {
+        top: 0;
+    }
+    .fixed-hamburger {
+        right: 0;
     }
 }
 

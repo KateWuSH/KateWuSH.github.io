@@ -46,6 +46,11 @@ $(document).ready(function() {
     $('#home .recruit').waypoint(function() {
         $('.recruit').addClass('movein');
     }, {
+        offset: '50%'
+    });
+    $('#home .recruit .sectionR .img').waypoint(function() {
+        $('.recruit .sectionR .img').addClass('movein');
+    }, {
         offset: '60%'
     });
     $('#home .quality').waypoint(function() {

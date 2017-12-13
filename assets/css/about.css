@@ -2,10 +2,14 @@
 
 /*-- waypoints --*/
 
+.info .imgL img,
 .info .intro p,
 .info .intro article,
 .info .mission p,
 .info .mission article,
+.concept .content .text p,
+.concept .content .text article,
+.concept .img,
 .value .text p,
 .value .text article,
 .cis .text p,
@@ -13,8 +17,14 @@
     opacity: 0;
 }
 
+.info .imgL.movein img,
+.concept.movein .img {
+    animation: fadeIn 1.5s forwards;
+}
+
 .info .intro.movein p,
 .info .mission.movein p,
+.concept.movein .content .text p,
 .value .text.movein p,
 .cis .text.movein p {
     animation: fadeInUp 1.5s forwards;
@@ -22,6 +32,7 @@
 
 .info .intro.movein article,
 .info .mission.movein article,
+.concept.movein .content .text article,
 .value .text.movein article,
 .cis .text.movein article {
     animation: fadeInUpArticle 1.5s forwards .4s;
@@ -48,23 +59,27 @@
 }
 
 .info .wrapper .imgL {
-    width: 45%;
-    background: url(../../upload/about/building.jpg) no-repeat center center;
-    background-size: cover;
+    width: 40%;
+    padding-bottom: 70px;
+    background-color: #333;
+}
+
+.info .wrapper .imgL img {
+    width: 100%;
 }
 
 .info .wrapper .textR {
-    width: 55%;
+    width: 60%;
 }
 
 .info .intro {
     background-color: #0b0827;
     color: white;
-    padding: 60px 200px 80px 100px;
+    padding: 100px 200px 100px 100px;
 }
 
 .info .mission {
-    padding: 75px 200px 80px 100px;
+    padding: 100px 200px 100px 100px;
 }
 
 .info .mission ul li {
@@ -73,6 +88,7 @@
 
 .info .intro p,
 .info .mission p,
+.concept .content .text p,
 .value .text p,
 .cis .down .text p {
     font-size: 3.75rem;
@@ -93,6 +109,7 @@
 
 .info .intro article,
 .info .mission article,
+.concept .content .text article,
 .value .text article ul li,
 .cis .down .text article {
     font-size: 1.5rem;
@@ -104,6 +121,38 @@
     margin-top: 15px;
     list-style: lower-greek;
     padding-left: 30px;
+}
+
+
+/*-- concept --*/
+
+.concept .wrapper {
+    display: flex;
+}
+
+.concept .content,
+.concept .img {
+    width: 50%;
+}
+
+.concept .img {
+    background: url(../../upload/about/sart.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.concept .content .text {
+    padding: 95px 100px 95px 150px;
+}
+
+.concept .content .text:first-child {
+    padding: 20px 100px 95px 150px;
+    background-color: #333;
+    color: white;
+}
+
+.concept .content .text:last-child {
+    background-color: #6c66bd;
+    color: white;
 }
 
 
@@ -119,6 +168,10 @@
     width: calc(50% - 330px);
     background-color: white;
     padding: 120px 100px 120px 200px;
+}
+
+.value .text li b {
+    margin-right: 25px;
 }
 
 
@@ -148,6 +201,26 @@
 /*-- RWD --*/
 
 @media screen and (max-width:1680px) {
+    .info .wrapper .imgL {
+        width: 45%;
+    }
+    .info .wrapper .textR {
+        width: 55%;
+    }
+    .info .intro {
+        padding: 90px 150px 90px 100px;
+    }
+    .info .mission {
+        padding: 90px 150px 90px 100px;
+    }
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
     .value .text {
         width: calc(50% - 250px);
         padding: 120px 130px 120px;
@@ -157,6 +230,7 @@
 @media screen and (max-width:1440px) {
     .info .intro p,
     .info .mission p,
+    .concept .content .text p,
     .value .text p,
     .cis .down .text p {
         font-size: 3.5rem;
@@ -164,23 +238,31 @@
     }
     .info .intro article,
     .info .mission article,
+    .concept .content .text article,
+    .concept .content .text article,
     .value .text article ul li,
     .cis .down .text article {
-        font-size: 1.25rem;
-        line-height: 2.4rem;
+        font-size: 1.35rem;
+        line-height: 2.5rem;
+        letter-spacing: .5px;
     }
     .info .intro {
-        padding: 45px 80px 60px;
+        padding: 60px 120px 60px 100px;
     }
     .info .mission {
-        padding: 65px 80px 60px;
+        padding: 60px 120px 60px 100px;
+    }
+    .concept .content .text {
+        padding: 95px 100px 95px 100px;
+    }
+    .concept .content .text:first-child {
+        padding: 20px 100px 95px 100px;
     }
     .value .text {
-        width: 35%;
-        padding: 120px 100px 120px;
+        width: 38%;
     }
     .cis .down .text {
-        padding: 70px 7% 100px;
+        padding: 80px 21% 120px 10%;
     }
 }
 
@@ -193,21 +275,40 @@
         width: 100%;
     }
     .info .wrapper .imgL {
-        min-height: 1200px;
+        padding-bottom: 0;
     }
-    .info .intro {
-        padding: 45px 10% 60px;
+    .info .intro article,
+    .info .mission article,
+    .concept .content .text article,
+    .value .text article ul li,
+    .cis .down .text article {
+        font-size: 1.25rem;
+        line-height: 2.4rem;
     }
-    .info .mission {
-        padding: 65px 10% 60px;
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 65px 14%;
     }
     .info .intro p,
     .info .mission p,
+    .concept .content .text p,
     .value .text p,
     .cis .down .text p {
         font-size: 3.25rem;
         letter-spacing: 2px;
         margin-bottom: 15px;
+    }
+    .concept .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+    .concept .content,
+    .concept .img {
+        width: 100%;
+    }
+    .concept .img {
+        min-height: 1200px;
     }
     .value .wrapper {
         padding: 260px 0;
@@ -230,12 +331,17 @@
     }
     .cis .down .text {
         transform: translateY(-120px);
+        padding: 80px 14% 120px 12%;
     }
 }
 
 @media screen and (max-width:768px) {
+    .concept .img {
+        min-height: 1000px;
+    }
     .value .text {
         width: 65%;
+        padding: 80px 8%;
     }
     .cis .down {
         padding: 0 0 0 90px;
@@ -249,35 +355,44 @@
 }
 
 @media screen and (max-width:640px) {
-    .info .wrapper .imgL {
-        min-height: 800px;
-    }
-    .value .text {
-        width: 62%;
-        padding: 80px 10%;
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 60px 10%;
     }
     .info .intro p,
     .info .mission p,
+    .concept .content .text p,
     .value .text p,
     .cis .down .text p {
         font-size: 2.75rem;
-        letter-spacing: 1px;
+        letter-spacing: .5px;
     }
     .info .intro article,
     .info .mission article,
+    .concept .content .text article,
     .value .text article ul li,
     .cis .down .text article {
-        font-size: 1rem;
-        line-height: 2rem;
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        letter-spacing: 0px;
+    }
+    .concept .img {
+        min-height: 800px;
     }
     .info .mission ul {
         padding-left: 20px;
+    }
+    .value .text {
+        width: 69%;
+        padding: 80px 10%;
     }
     .value .text article ul li {
         margin-bottom: 3px;
     }
     .cis .down .text {
-        padding: 50px 7% 80px;
+        padding: 50px 10% 80px;
         transform: translateY(-45px);
     }
     .cis .up img {
@@ -289,12 +404,28 @@
 }
 
 @media screen and (max-width:480px) {
-    .info .wrapper .imgL {
-        min-height: 580px;
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 45px 10%;
+    }
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2.25rem;
+    }
+    .concept .img {
+        min-height: 600px;
+    }
+    .value .wrapper {
+        padding: 360px 0 0;
     }
     .value .text {
         width: 100%;
-        padding: 60px 8%;
+        padding: 60px 6%;
     }
     .cis .down {
         padding: 1px 0 0 30px;
@@ -305,16 +436,30 @@
     .cis .down .text {
         padding: 50px 10% 70px;
     }
-    .value .wrapper {
-        padding: 360px 0 0;
-    }
     .cis .up img {
-        margin-top: -75px;
+        margin-top: -55px;
     }
 }
 
 @media screen and (max-width:420px) {
-    .info .wrapper .imgL {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2rem;
+        letter-spacing: 0px;
+        margin-bottom: 10px;
+    }
+    .info .intro article,
+    .info .mission article,
+    .concept .content .text article,
+    .value .text article ul li,
+    .cis .down .text article {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .concept .img {
         min-height: 500px;
     }
     .value .text {
@@ -324,14 +469,37 @@
     .value .text article ul li {
         line-height: 1.5rem;
         margin-bottom: 10px;
+        text-indent: -3.5rem;
+    }
+    .value .text article ul {
+        margin-left: 17%;
     }
 }
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:400px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 1.7rem;
+    }
+    .value .text article ul {
+        margin-left: 19%;
+    }
+}
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:350px) {
+    .value .text article ul {
+        margin-left: 21%;
+    }
+}
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:320px) {
+    .value .text article ul {
+        margin-left: 22%;
+    }
+}
 
 @media screen and (max-width:1250px) {}
 

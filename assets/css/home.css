@@ -10,24 +10,21 @@
 .service .text p,
 .service .text a .btn,
 .future .content,
-.recruit .sectionL p,
-.recruit .sectionL article,
-.recruit .sectionL a .btn,
 .recruit .sectionR .text,
+.recruit .sectionR .img .col,
+.recruit .sectionR .img .colwide,
 .quality p {
     opacity: 0;
 }
 
 .technology.movein p,
 .global.movein .content p,
-.application.movein .text p,
-.recruit.movein .sectionL p {
+.application.movein .text p {
     animation: fadeInUp 1.5s forwards;
 }
 
 .global.movein .content a .btn,
-.service.movein .text a .btn,
-.recruit.movein .sectionL a .btn {
+.service.movein .text a .btn {
     animation: fadeInUp 1.5s forwards .8s;
 }
 
@@ -42,13 +39,17 @@
 .technology.movein article,
 .global.movein .content article,
 .application.movein .text article,
-.future.movein .content:nth-child(2),
-.recruit.movein .sectionL article {
+.future.movein .content:nth-child(2) {
     animation: fadeInUpArticle 1.5s forwards .4s;
 }
 
 .future.movein .content:last-child {
     animation: fadeInUpArticle 1.5s forwards .8s;
+}
+
+.recruit .sectionR .img.movein .col,
+.recruit .sectionR .img.movein .colwide {
+    animation: rotateYIn 1.5s forwards;
 }
 
 

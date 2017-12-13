@@ -29,6 +29,12 @@ $(document).ready(function() {
         offset: '80%'
     });
 
+    $('.footer').waypoint(function() {
+        $('.footer').addClass('movein');
+    }, {
+        offset: '80%'
+    });
+
 
     window.onscroll = function() {
         var windowHeight = this.scrollY;
