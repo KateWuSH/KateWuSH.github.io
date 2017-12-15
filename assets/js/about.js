@@ -16,9 +16,25 @@ $(document).ready(function() {
     }, {
         offset: '50%'
     });
-
     $('#about .concept').waypoint(function() {
         $('.concept').addClass('movein');
+    }, {
+        offset: '50%'
+    });
+    $('#about .concept .content .text.animated01').waypoint(function() {
+        $('.concept .content .text.animated01').addClass('movein');
+    }, {
+        offset: '50%'
+    });
+
+    $('#about .concept .content .text.animated02').waypoint(function() {
+        $('.concept .content .text.animated02').addClass('movein');
+    }, {
+        offset: '50%'
+    });
+
+    $('#about .concept .content .text.animated03').waypoint(function() {
+        $('.concept .content .text.animated03').addClass('movein');
     }, {
         offset: '50%'
     });

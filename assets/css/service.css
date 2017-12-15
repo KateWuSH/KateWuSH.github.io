@@ -2,6 +2,7 @@
 
 /*-- waypoints --*/
 
+.advantage .img,
 .advantage .text p,
 .advantage .text article,
 .innovation .text p,
@@ -9,19 +10,25 @@
 .items .item,
 .integration .text p,
 .integration .text article,
+.integration .img,
 .future .target {
     opacity: 0;
 }
 
+.advantage .img.movein,
+.integration.movein .img {
+    animation: fadeIn 1.5s forwards;
+}
+
 .advantage .text.movein p,
 .innovation .text.movein p,
-.integration .text.movein p {
+.integration.movein .text p {
     animation: fadeInUp 1.5s forwards;
 }
 
 .advantage .text.movein article,
 .innovation .text.movein article,
-.integration .text.movein article {
+.integration.movein .text article {
     animation: fadeInUpArticle 1.5s forwards .4s;
 }
 
@@ -58,6 +65,7 @@
 
 .advantage .wrapper {
     display: flex;
+    background-color: #0b0827;
 }
 
 .advantage .img,

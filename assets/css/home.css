@@ -6,6 +6,8 @@
 .global .content a .btnEffect,
 .application .text p,
 .application .text article,
+.application .img,
+.service .img,
 .service .text article,
 .service .text p,
 .service .text a .btnEffect,
@@ -15,6 +17,11 @@
 .recruit .sectionR .img .colwide,
 .quality p {
     opacity: 0;
+}
+
+.application.movein .img,
+.service.movein .img {
+    animation: fadeIn 1.5s forwards;
 }
 
 .technology.movein p,

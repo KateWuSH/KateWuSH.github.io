@@ -2,41 +2,40 @@
 
 /*-- waypoints --*/
 
-.topBanner .text h1,
-.topBanner .text p,
-.topBanner .text article,
-.info .intro p,
-.info .intro article,
-.info .mission p,
-.info .mission article,
-.value .text p,
-.value .text article,
-.cis .text p,
-.cis .text article {
+.main .topBanner .text,
+.main .topBanner .address,
+.info .up p,
+.info .down .text,
+.mapSection {
     opacity: 0;
 }
 
-.topBanner.movein .text h1,
-.info .intro.movein p,
-.info .mission.movein p,
-.value .text.movein p,
-.cis .text.movein p {
+.main .topBanner.movein .text,
+.info.movein .up p,
+.mapSection.movein {
     animation: fadeInUp 1.5s forwards;
 }
 
-.topBanner.movein .text p {
-    animation: fadeInUp 1.5s forwards .6s;
+.main .topBanner.movein .address {
+    animation: fadeInUpArticle 1.5s forwards .6s;
 }
 
-.topBanner.movein .text article {
-    animation: fadeInUpArticle 1.5s forwards 1s;
+.info.movein .content .up::before,
+.info.movein .content .up::after {
+    width: 50%;
+    transition: 1.5s ease .5s;
 }
 
-.info .intro.movein article,
-.info .mission.movein article,
-.value .text.movein article,
-.cis .text.movein article {
-    animation: fadeInUpArticle 1.5s forwards .41s;
+.info.movein .down .text:nth-child(1) {
+    animation: fadeInUp 1.5s forwards 1s;
+}
+
+.info.movein .down .text:nth-child(2) {
+    animation: fadeInUp 1.5s forwards 1.4s;
+}
+
+.info.movein .down .text:nth-child(3) {
+    animation: fadeInUp 1.5s forwards 1.8s;
 }
 
 
@@ -78,7 +77,28 @@
 }
 
 .info .content .up {
-    border-bottom: 1px solid #219ec2;
+    /* border-bottom: 1px solid #219ec2; */
+    position: relative;
+}
+
+.info .content .up::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #219ec2;
+}
+
+.info .content .up::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #219ec2;
 }
 
 .info .content .up p {

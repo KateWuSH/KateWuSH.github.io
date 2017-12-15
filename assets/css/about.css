@@ -24,7 +24,7 @@
 
 .info .intro.movein p,
 .info .mission.movein p,
-.concept.movein .content .text p,
+.concept .content .text.movein p,
 .value .text.movein p,
 .cis .text.movein p {
     animation: fadeInUp 1.5s forwards;
@@ -32,7 +32,7 @@
 
 .info .intro.movein article,
 .info .mission.movein article,
-.concept.movein .content .text article,
+.concept .content .text.movein article,
 .value .text.movein article,
 .cis .text.movein article {
     animation: fadeInUpArticle 1.5s forwards .4s;

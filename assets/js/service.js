@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    $('#service .advantage .img').waypoint(function() {
+        $('.advantage .img').addClass('movein');
+    }, {
+        offset: '50%'
+    });
+
     $('#service .advantage').waypoint(function() {
         $('.advantage .text').addClass('movein');
     }, {
@@ -17,10 +24,10 @@ $(document).ready(function() {
         offset: '70%'
     });
 
-    $('#service .integration .text').waypoint(function() {
-        $('.integration .text').addClass('movein');
+    $('#service .integration').waypoint(function() {
+        $('.integration').addClass('movein');
     }, {
-        offset: '50%'
+        offset: '60%'
     });
 
     $('#service .future .target').waypoint(function() {
