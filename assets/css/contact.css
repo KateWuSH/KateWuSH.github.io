@@ -129,7 +129,30 @@
 .mapSection .wrapper {
     width: 70%;
     height: 520px;
-    margin: 85px auto;
+    margin: 85px auto 165px;
+}
+
+.mapSection .btnEffect {
+    width: 200px;
+    margin: 40px auto;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.mapSection .btnEffect::after {
+    background-color: rgba(73, 159, 197, 1);
+}
+
+.mapSection .btnEffect::before {
+    border-top-color: rgba(73, 159, 197, 1);
+    border-bottom-color: rgba(73, 159, 197, 1);
+}
+
+.mapSection .btnEffect:hover {
+    color: rgba(0, 0, 0, 1);
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: .5s ease;
 }
 
 
@@ -179,7 +202,10 @@
     }
     .mapSection .wrapper {
         width: 90%;
-        margin: 60px auto;
+        margin: 60px auto 120px;
+    }
+    .mapSection .btnEffect {
+        margin: 30px auto;
     }
 }
 
@@ -191,7 +217,7 @@
         width: 90%;
     }
     .mapSection .wrapper {
-        margin: 40px auto;
+        margin: 40px auto 110px;
     }
 }
 
@@ -255,7 +281,7 @@
     }
     .mapSection .wrapper {
         width: 100%;
-        margin: 0;
+        margin: 0 auto 110px;
     }
 }
 
