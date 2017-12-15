@@ -206,6 +206,11 @@ header {
     margin-bottom: 5px;
 }
 
+.main .topBanner .text h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
 .main .topBanner .text p {
     font-size: 3.125rem;
     margin: 0 0 15px 55px;
@@ -627,7 +632,8 @@ footer .down .decorate ul li:not(:last-child) {
         left: 26%;
         transform: translateX(-4%);
     }
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 4.25rem;
     }
     .main .topBanner .text p {
@@ -685,7 +691,8 @@ footer .down .decorate ul li:not(:last-child) {
         left: 10%;
         transform: translateX(-4%);
     }
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 3.75rem;
     }
     .main .topBanner .text article {
@@ -747,6 +754,9 @@ footer .down .decorate ul li:not(:last-child) {
         font-size: 2.5rem;
         margin-bottom: 5px;
     }
+    .main .topBanner .text h2 {
+        font-size: 3rem;
+    }
     .main .topBanner .text p {
         margin: 0 0 10px 17px;
         font-size: 1.5rem;
@@ -761,6 +771,9 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:380px) {
+    .main .topBanner .text h2 {
+        font-size: 2.5rem;
+    }
     footer .up .info {
         padding: 15px 5% 0 11%;
     }

@@ -53,11 +53,6 @@
     left: 455px;
 }
 
-.main .topBanner .text h2 {
-    font-size: 4.5rem;
-    font-weight: bold;
-}
-
 .main .topBanner .address {
     position: absolute;
     top: 345px;
@@ -93,7 +88,7 @@
 
 .info .content .down {
     display: flex;
-    width: 55%;
+    width: 57%;
     margin: auto;
     padding-top: 70px;
 }
@@ -141,195 +136,154 @@
 /*-- RWD --*/
 
 @media screen and (max-width:1680px) {
-    .value .text {
-        width: calc(50% - 250px);
-        padding: 120px 130px 120px;
+    .main .topBanner .address {
+        font-size: 2.25rem;
+        line-height: 3rem;
+        width: 33%;
+    }
+    .info .content .down {
+        width: 65%;
     }
 }
 
 @media screen and (max-width:1440px) {
-    .info .intro p,
-    .info .mission p,
-    .value .text p,
-    .cis .down .text p {
-        font-size: 3.5rem;
-        margin-bottom: 20px;
+    .main .topBanner .address {
+        font-size: 2rem;
+        width: 30%;
     }
-    .info .intro article,
-    .info .mission article,
-    .value .text article ul li,
-    .cis .down .text article {
-        font-size: 1.25rem;
-        line-height: 2.4rem;
+    .info .content .down {
+        width: 76%;
     }
-    .info .intro {
-        padding: 45px 80px 60px;
+    .mapSection .wrapper {
+        width: 75%;
     }
-    .info .mission {
-        padding: 65px 80px 60px;
-    }
-    .value .text {
-        width: 35%;
-        padding: 120px 100px 120px;
-    }
-    .cis .down .text {
-        padding: 70px 7% 100px;
+}
+
+@media screen and (max-width:1430px) {
+    .main .topBanner .address {
+        display: none;
     }
 }
 
 @media screen and (max-width:1024px) {
-    .info .wrapper {
-        flex-wrap: wrap;
+    .main .topBanner .text {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 295px;
     }
-    .info .wrapper .imgL,
-    .info .wrapper .textR {
-        width: 100%;
+    .info .content {
+        width: 75%;
     }
-    .info .wrapper .imgL {
-        min-height: 1200px;
+    .info .content .down {
+        width: 92%;
     }
-    .info .intro {
-        padding: 45px 10% 60px;
-    }
-    .info .mission {
-        padding: 65px 10% 60px;
-    }
-    .info .intro p,
-    .info .mission p,
-    .value .text p,
-    .cis .down .text p {
-        font-size: 3.25rem;
-        letter-spacing: 2px;
-        margin-bottom: 15px;
-    }
-    .value .wrapper {
-        padding: 260px 0;
-        background: url(../../upload/about/hand.jpg) no-repeat right center;
-        background-attachment: fixed;
-    }
-    .value .text article ul li {
-        line-height: 2rem;
-        margin-bottom: 10px;
-    }
-    .value .text {
-        padding: 80px 5%;
-        width: 50%;
-    }
-    .cis .up img {
-        margin-top: -245px;
-    }
-    .cis .down {
-        padding: 0 0 0 120px;
-    }
-    .cis .down .text {
-        transform: translateY(-120px);
+    .mapSection .wrapper {
+        width: 90%;
+        margin: 60px auto;
     }
 }
 
 @media screen and (max-width:768px) {
-    .value .text {
-        width: 65%;
+    .main .topBanner .text {
+        top: 320px;
     }
-    .cis .down {
-        padding: 0 0 0 90px;
+    .info .content {
+        width: 90%;
     }
-    .cis .down .text {
-        transform: translateY(-90px);
-    }
-    .cis .up img {
-        margin-top: -150px;
+    .mapSection .wrapper {
+        margin: 40px auto;
     }
 }
 
 @media screen and (max-width:640px) {
-    .info .wrapper .imgL {
-        min-height: 800px;
+    .info .down .text:nth-child(1) span {
+        margin-top: 0;
     }
-    .value .text {
-        width: 62%;
-        padding: 80px 10%;
+    .info .down .text:nth-child(2) span {
+        margin-top: 0;
     }
-    .info .intro p,
-    .info .mission p,
-    .value .text p,
-    .cis .down .text p {
-        font-size: 2.75rem;
-        letter-spacing: 1px;
+    .info .down .text:nth-child(3) span {
+        margin-top: 0;
     }
-    .info .intro article,
-    .info .mission article,
-    .value .text article ul li,
-    .cis .down .text article {
-        font-size: 1rem;
-        line-height: 2rem;
+    .info .content .down {
+        flex-wrap: wrap;
+        width: 65%;
+        padding-top: 45px;
     }
-    .info .mission ul {
-        padding-left: 20px;
+    .info .down .text {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
     }
-    .value .text article ul li {
-        margin-bottom: 3px;
+    .info .down .text a {
+        display: flex;
+        align-items: center;
     }
-    .cis .down .text {
-        padding: 50px 7% 80px;
-        transform: translateY(-45px);
+    .info .down .text:nth-child(2) {
+        margin: 20px 0;
     }
-    .cis .up img {
-        margin-top: -130px;
+    .info .down .text .img {
+        text-align: center;
+        width: 55px;
     }
-    .cis .down {
-        padding: 1px 0 0 45px;
+    .info .down .text:nth-child(1) .img img {
+        width: 18px;
+    }
+    .info .down .text:nth-child(2) .img img {
+        width: 25px;
+    }
+    .info .down .text:nth-child(3) .img img {
+        width: 23px;
     }
 }
 
 @media screen and (max-width:480px) {
-    .info .wrapper .imgL {
-        min-height: 580px;
+    .main .topBanner .text {
+        left: 44%;
+        transform: translateX(-40%);
+        top: 305px;
     }
-    .value .text {
+    .info .content .up p {
+        font-size: 1.5rem;
+    }
+    .info .content .down {
+        width: 90%;
+    }
+    .info .down .text:nth-child(2) {
+        margin: 10px 0 15px 0;
+    }
+    .mapSection .wrapper {
         width: 100%;
-        padding: 60px 8%;
-    }
-    .cis .down {
-        padding: 1px 0 0 30px;
-    }
-    .cis .down .text {
-        transform: translateY(-30px);
-    }
-    .cis .down .text {
-        padding: 50px 10% 70px;
-    }
-    .value .wrapper {
-        padding: 360px 0 0;
-    }
-    .cis .up img {
-        margin-top: -75px;
+        margin: 0;
     }
 }
 
 @media screen and (max-width:420px) {
-    .info .wrapper .imgL {
-        min-height: 500px;
+    .info .content .up p {
+        font-size: 1.25rem;
     }
-    .value .text {
-        width: 80%;
-        padding: 60px 10%;
+    .info .wrapper {
+        padding: 65px 0 60px;
     }
-    .value .text article ul li {
-        line-height: 1.5rem;
-        margin-bottom: 10px;
+    .info .down span {
+        font-size: 0.875rem;
+    }
+    .info .content .down {
+        padding-top: 35px;
     }
 }
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:380px) {
+    .info .content .down {
+        width: 95%;
+    }
+}
 
-@media screen and (max-width:1250px) {}
-
-@media screen and (max-width:1250px) {}
-
-@media screen and (max-width:1250px) {}
-
-@media screen and (max-width:1250px) {}
-
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:360px) {
+    .info .down .text .img {
+        width: 45px;
+    }
+}
 
 @media screen and (max-width:1250px) {}
