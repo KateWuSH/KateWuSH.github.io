@@ -236,6 +236,7 @@
 .service .wrapper {
     background-color: #040a23;
     display: flex;
+    overflow: hidden;
 }
 
 .service .img {
