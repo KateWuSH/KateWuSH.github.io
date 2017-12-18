@@ -155,6 +155,11 @@
     color: white;
 }
 
+.concept .content .text.textAlign {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
 
 /*-- value --*/
 
@@ -200,6 +205,21 @@
 
 /*-- RWD --*/
 
+@media screen and (max-width:1840px) {
+    .value .text {
+        width: calc(50% - 250px);
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .info .wrapper .imgL {
+        width: 44%;
+    }
+    .info .wrapper .textR {
+        width: 56%;
+    }
+}
+
 @media screen and (max-width:1680px) {
     .info .wrapper .imgL {
         width: 45%;
@@ -207,9 +227,7 @@
     .info .wrapper .textR {
         width: 55%;
     }
-    .info .intro {
-        padding: 90px 150px 90px 100px;
-    }
+    .info .intro,
     .info .mission {
         padding: 90px 150px 90px 100px;
     }
@@ -222,8 +240,40 @@
         letter-spacing: 2px;
     }
     .value .text {
-        width: calc(50% - 250px);
+        width: calc(50% - 230px);
         padding: 120px 130px 120px;
+    }
+}
+
+@media screen and (max-width:1640px) {
+    .value .text {
+        width: calc(50% - 200px);
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .info .intro,
+    .info .mission {
+        padding: 80px 150px 80px 100px;
+    }
+}
+
+@media screen and (max-width:1580px) {
+    .value .text {
+        width: calc(50% - 170px);
+    }
+}
+
+@media screen and (max-width:1550px) {
+    .info .intro,
+    .info .mission {
+        padding: 60px 150px 60px 100px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .value .text {
+        width: calc(50% - 140px);
     }
 }
 
@@ -246,9 +296,7 @@
         line-height: 2.5rem;
         letter-spacing: .5px;
     }
-    .info .intro {
-        padding: 60px 120px 60px 100px;
-    }
+    .info .intro,
     .info .mission {
         padding: 60px 120px 60px 100px;
     }
@@ -263,6 +311,106 @@
     }
     .cis .down .text {
         padding: 80px 15% 120px 10%;
+    }
+}
+
+@media screen and (max-width:1410px) {
+    .value .text {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 3.2rem;
+        margin-bottom: 15px;
+    }
+    .info .intro,
+    .info .mission {
+        padding: 60px 100px 60px 80px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    .info .intro,
+    .info .mission {
+        padding: 60px 75px 60px 75px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .info .wrapper .imgL img {
+        height: 94%;
+    }
+    .value .text {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 3rem;
+        letter-spacing: 1.5px;
+    }
+    .concept .content .text:first-child {
+        padding: 20px 65px 65px;
+    }
+    .concept .content .text {
+        padding: 65px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .value .text {
+        width: 49%;
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .info .wrapper .imgL img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .value .text {
+        width: 51%;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    .info .intro article,
+    .info .mission article,
+    .concept .content .text article,
+    .concept .content .text article,
+    .value .text article ul li,
+    .cis .down .text article {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        letter-spacing: .5px;
+    }
+    .concept .content .text:first-child {
+        padding: 20px 50px 50px;
+    }
+    .concept .content .text {
+        padding: 50px;
     }
 }
 
@@ -335,12 +483,24 @@
     }
 }
 
+@media screen and (max-width:1000px) {
+    .value .text {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .value .text {
+        width: 65%;
+    }
+}
+
 @media screen and (max-width:768px) {
     .concept .img {
         min-height: 1000px;
     }
     .value .text {
-        width: 65%;
+        width: 75%;
         padding: 80px 8%;
     }
     .cis .down {
@@ -351,6 +511,13 @@
     }
     .cis .up img {
         margin-top: -150px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .value .text {
+        width: 80%;
+        padding: 60px 5%;
     }
 }
 
@@ -385,7 +552,7 @@
         padding-left: 20px;
     }
     .value .text {
-        width: 69%;
+        width: 80%;
         padding: 80px 10%;
     }
     .value .text article ul li {
@@ -400,6 +567,13 @@
     }
     .cis .down {
         padding: 1px 0 0 45px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .value .text {
+        width: 90%;
+        padding: 80px 5%;
     }
 }
 

@@ -210,8 +210,9 @@
 
 @media screen and (max-width:1024px) {
     .main .topBanner .text {
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        width: 100%;
+        text-align: center;
         top: 295px;
     }
     .info .content {
@@ -286,8 +287,6 @@
 
 @media screen and (max-width:480px) {
     .main .topBanner .text {
-        left: 44%;
-        transform: translateX(-40%);
         top: 305px;
     }
     .info .content .up p {

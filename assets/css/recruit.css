@@ -1,0 +1,292 @@
+@charset "utf-8";
+
+/*-- waypoints --*/
+
+
+/*-- top banner --*/
+
+.main .topBanner {
+    background: url(../../upload/recruit/topBg.jpg) no-repeat;
+    background-attachment: fixed;
+    min-height: 625px;
+}
+
+.main .topBanner .text p {
+    color: #69c64b;
+}
+
+
+/*-- info --*/
+
+.info .wrapper {
+    display: flex;
+}
+
+.info .imgL {
+    width: calc(100% / 3);
+}
+
+.info .imgL img,
+.info .environment .img img {
+    width: 100%;
+}
+
+.info .contentR {
+    width: calc(100% * 2/ 3);
+}
+
+.info .environment {
+    display: flex;
+    background-color: #0b0827;
+}
+
+.info .environment .text,
+.info .environment .img {
+    width: 50%;
+}
+
+.info .environment .text {
+    color: white;
+}
+
+.info .environment .text .content {
+    margin: 100px 18% 0;
+}
+
+.info .environment .text p,
+.info .benefit .title p,
+.titbits .title p {
+    font-size: 4.05rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #69c64b;
+}
+
+.info .environment .text article {
+    display: block;
+}
+
+.info .environment .text span,
+.titbits .title span {
+    display: block;
+    font-size: 1.875rem;
+    line-height: 3rem;
+}
+
+.info .environment .text span:first-child {
+    margin-bottom: 50px;
+}
+
+.info .benefit {
+    padding: 115px 9% 0;
+}
+
+.info .benefit .list {
+    display: flex;
+}
+
+.info .benefit .list .listL {
+    margin-right: 110px;
+}
+
+.info .benefit .list p {
+    font-size: 2rem;
+    color: #6c66bd;
+    margin-bottom: 20px;
+}
+
+.info .benefit .list .frame {
+    margin-bottom: 40px;
+}
+
+.info .benefit .list ul {
+    margin-bottom: 40px;
+}
+
+.info .benefit .list .bottom {
+    margin-bottom: 60px;
+}
+
+.info .benefit .list ul li {
+    font-size: 1.5rem;
+}
+
+.info .benefit .list ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+/*-- titbits --*/
+
+.titbits .title {
+    background-color: #0b0827;
+    color: white;
+    padding: 125px 15% 65px
+}
+
+.titbits .title p {
+    margin-bottom: 20px;
+}
+
+.titbits .title span {
+    line-height: 2rem;
+}
+
+.titbits .wrapper {
+    display: flex;
+    background-color: #0b0827;
+    padding: 0 10px 255px;
+    flex-wrap: wrap;
+}
+
+.titbits .photoSec,
+.titbits .photoSec .column2 {
+    display: flex;
+}
+
+.titbits .photoSec .marginRight {
+    margin-right: 16px;
+}
+
+.titbits .marginBottom {
+    margin-bottom: 16px;
+}
+
+.titbits .photoSec {
+    width: 50%;
+}
+
+.titbits .photoSec.quarter {
+    width: 25%;
+}
+
+.titbits .photoSec .row3 {
+    width: 75%;
+}
+
+.titbits .photoSec .row2 {
+    width: calc(50% - 17px);
+}
+
+.titbits .photoSec .row1 {
+    width: calc(25% - 12px);
+}
+
+.titbits .photoSec .row1.adjust {
+    width: calc(25% - 17px);
+}
+
+.titbits .photoSec.quarter .row1 {
+    width: 50%;
+}
+
+.titbits .photoSec img {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*-- vacancy list --*/
+
+.vacancyList {
+    margin-top: -28px;
+}
+
+.vacancyList .wrapper {
+    background-color: #6c66bd;
+}
+
+.vacancyList .content {
+    background-color: white;
+    width: 54%;
+    transform: translateY(-120px);
+    padding: 95px 18% 110px;
+}
+
+.vacancyList .content h6 {
+    font-size: 3.645rem;
+    color: #6c66bd;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.vacancyList .content p {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.vacancyList .content article {
+    font-size: 1.6875rem;
+    margin-bottom: 40px;
+}
+
+.vacancyList .link .btnEffect {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 170px;
+}
+
+.vacancyList .link a {
+    display: inline-block;
+}
+
+.vacancyList .link a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.vacancyList .link .btnEffect:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.vacancyList .content .link a .btnEffect::after {
+    background-color: #6eb141;
+}
+
+.vacancyList .content .link a .btnEffect::before {
+    border-top-color: rgba(110, 177, 65, 1);
+    border-bottom-color: rgba(110, 177, 65, 1);
+}
+
+
+/*-- RWD --*/
+
+@media screen and (max-width:1680px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p {
+        font-size: 3.5rem;
+        margin-bottom: 25px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 40px;
+    }
+    .info .environment .text span,
+    .titbits .title span {
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+    }
+    .info .benefit .list p {
+        font-size: 1.8rem;
+    }
+    .info .benefit .list ul li {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}
+
+@media screen and (max-width:1250px) {}

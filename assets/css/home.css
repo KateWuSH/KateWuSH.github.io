@@ -307,6 +307,7 @@
 
 .recruit .wrapper {
     display: flex;
+    overflow: hidden;
 }
 
 .recruit .sectionL,
