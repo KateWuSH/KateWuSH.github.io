@@ -68,9 +68,12 @@
     background-color: #0b0827;
 }
 
-.advantage .img,
+.advantage .img {
+    width: 65%;
+}
+
 .advantage .text {
-    width: 50%;
+    width: 35%;
 }
 
 .advantage .img {
@@ -84,7 +87,7 @@
 .advantage .text {
     background-color: #0b0827;
     color: #fff;
-    padding: 250px 6% 310px;
+    padding: 100px 6%;
 }
 
 .advantage .text p {

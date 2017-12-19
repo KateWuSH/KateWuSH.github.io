@@ -204,7 +204,9 @@
 
 @media screen and (max-width:1430px) {
     .main .topBanner .address {
-        display: none;
+        top: 285px;
+        left: 970px;
+        width: 460px;
     }
 }
 

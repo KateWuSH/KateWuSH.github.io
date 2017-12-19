@@ -55,7 +55,8 @@
 
 .info .environment .text p,
 .info .benefit .title p,
-.titbits .title p {
+.titbits .title p,
+.vacancyList .content h6 {
     font-size: 4.05rem;
     font-weight: bold;
     margin-bottom: 60px;
@@ -67,7 +68,8 @@
 }
 
 .info .environment .text span,
-.titbits .title span {
+.titbits .title span,
+.vacancyList .content article {
     display: block;
     font-size: 1.875rem;
     line-height: 3rem;
@@ -145,11 +147,11 @@
 }
 
 .titbits .photoSec .marginRight {
-    margin-right: 16px;
+    padding-right: 16px;
 }
 
 .titbits .marginBottom {
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .titbits .photoSec {
@@ -165,15 +167,27 @@
 }
 
 .titbits .photoSec .row2 {
-    width: calc(50% - 17px);
+    width: 50%;
 }
 
 .titbits .photoSec .row1 {
-    width: calc(25% - 12px);
+    width: 25%;
 }
 
 .titbits .photoSec .row1.adjust {
-    width: calc(25% - 17px);
+    width: 23.8%;
+}
+
+.titbits .photoSec .row1.adjust2 {
+    width: 23.25%;
+}
+
+.titbits .photoSec .row1.adjust3 {
+    width: 24.15%;
+}
+
+.titbits .photoSec .row2.adjust {
+    width: 48.2%;
 }
 
 .titbits .photoSec.quarter .row1 {
@@ -183,6 +197,10 @@
 .titbits .photoSec img {
     width: 100%;
     overflow: hidden;
+}
+
+.titbits .column2 div {
+    width: 50%;
 }
 
 
@@ -204,9 +222,9 @@
 }
 
 .vacancyList .content h6 {
-    font-size: 3.645rem;
+    /* font-size: 3.645rem; */
     color: #6c66bd;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 30px;
 }
 
@@ -217,7 +235,7 @@
 }
 
 .vacancyList .content article {
-    font-size: 1.6875rem;
+    /* font-size: 1.6875rem; */
     margin-bottom: 40px;
 }
 
@@ -252,10 +270,23 @@
 
 /*-- RWD --*/
 
+@media screen and (max-width:1780px) {
+    .info .environment .text .content {
+        margin: 80px 14% 0;
+    }
+    .info .benefit {
+        padding: 70px 7% 0;
+    }
+    .info .benefit .title p {
+        margin-bottom: 35px;
+    }
+}
+
 @media screen and (max-width:1680px) {
     .info .environment .text p,
     .info .benefit .title p,
-    .titbits .title p {
+    .titbits .title p,
+    .vacancyList .content h6 {
         font-size: 3.5rem;
         margin-bottom: 25px;
     }
@@ -263,25 +294,414 @@
         margin-bottom: 40px;
     }
     .info .environment .text span,
-    .titbits .title span {
+    .titbits .title span,
+    .vacancyList .content article {
         font-size: 1.5rem;
         line-height: 2.8rem;
     }
-    .info .benefit .list p {
+    .info .benefit .list p,
+    .vacancyList .content p {
         font-size: 1.8rem;
     }
     .info .benefit .list ul li {
         font-size: 1.3rem;
     }
+    .titbits .photoSec.quarter {
+        width: 24.6%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 22.9%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 48%;
+    }
+    .vacancyList .content {
+        width: 60%;
+        padding: 95px 15% 110px;
+    }
 }
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:1530px) {
+    .info .benefit .list .bottom {
+        margin-bottom: 45px;
+    }
+    .info .benefit .list p {
+        margin-bottom: 10px;
+    }
+    .info .benefit .list ul {
+        margin-bottom: 35px;
+    }
+}
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:1460px) {
+    .info .environment .text .content {
+        margin: 50px 10% 0;
+    }
+    .info .benefit {
+        padding: 55px 5% 0;
+    }
+}
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:1440px) {
+    .info .benefit {
+        padding: 45px 5% 0;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 30px;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 23.4%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 47.6%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 22.7%;
+    }
+    .vacancyList .content {
+        width: 65%;
+        padding: 95px 10% 110px;
+    }
+}
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:1340px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 25px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.5rem;
+    }
+    .info .benefit .list p {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .vacancyList .content {
+        width: 70%;
+    }
+    .titbits .title {
+        padding: 65px 15% 45px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .info .environment .text span:first-child {
+        margin-bottom: 20px;
+    }
+    .info .environment .text .content {
+        margin: 50px 10% 0;
+    }
+    .info .benefit .list .listL {
+        margin-right: 95px;
+    }
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 15px;
+    }
+    .info .benefit .list ul li,
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .info .benefit {
+        padding: 50px 5% 0;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.5rem;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 20px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.5rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .vacancyList .content p {
+        margin-bottom: 15px;
+    }
+    .vacancyList .content article {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .vacancyList .content {
+        width: 75%;
+        transform: translateY(-70px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .info .benefit {
+        padding: 35px 5% 0;
+    }
+    .titbits .wrapper {
+        padding: 0 10px 200px;
+    }
+    .titbits .marginBottom {
+        padding-bottom: 10px;
+    }
+    .titbits .photoSec .marginRight {
+        padding-right: 10px;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 47.9%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 23%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 22.7%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 47.3%;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .vacancyList .content {
+        width: 80%;
+        padding: 80px 5% 90px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .vacancyList .link a:not(:last-child) {
+        margin-right: 15px;
+    }
+    .vacancyList .link .btnEffect {
+        margin-bottom: 25px;
+    }
+    .vacancyList .content {
+        padding: 80px 5% 65px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .info .imgL {
+        display: none;
+    }
+    .info .contentR {
+        width: 100%;
+    }
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+    }
+    .info .environment .text .content {
+        margin: 45px 10% 0;
+    }
+    .info .benefit {
+        padding: 50px 5%;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 30px;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .titbits .title {
+        padding: 60px 5% 35px;
+    }
+    .titbits .wrapper {
+        padding: 0 0 180px 10px;
+    }
+    .vacancyList .content {
+        width: 85%;
+        transform: translateY(-45px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .titbits .wrapper {
+        padding: 0 0 255px 10px;
+    }
+    .titbits .photoSec:nth-child(2),
+    .titbits .photoSec:nth-child(3),
+    .titbits .photoSec:nth-child(5),
+    .titbits .photoSec:nth-child(7) {
+        display: none;
+    }
+    .titbits .photoSec {
+        width: 100%;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 24%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 48.6%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 48.5%;
+    }
+    .vacancyList .content p {
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.25rem;
+        margin-bottom: 10px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+    .vacancyList .content article,
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list .listL {
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .info .environment {
+        flex-wrap: wrap;
+    }
+    .info .environment .text,
+    .info .environment .img {
+        width: 100%;
+    }
+    .info .environment .text .content {
+        margin: 35px 8%;
+    }
+    .info .benefit {
+        padding: 50px 8%;
+    }
+    .info .benefit .list .listL {
+        margin-right: 53px;
+    }
+    .titbits .title {
+        padding: 60px 8% 35px;
+    }
+    .titbits .wrapper {
+        padding: 0 0 180px 10px;
+    }
+    .vacancyList .content {
+        padding: 75px 8% 55px;
+    }
+    .vacancyList .link .btnEffect {
+        font-size: 1rem;
+        width: 160px;
+    }
+    .vacancyList .link .btnEffect {
+        margin-bottom: 15px;
+    }
+    .vacancyList .link a:not(:last-child) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .info .benefit .list {
+        flex-wrap: wrap;
+    }
+    .info .benefit .list p {
+        margin-bottom: 5px;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.25rem;
+    }
+    .vacancyList .content p {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:480px) {}
 
 @media screen and (max-width:1250px) {}
 
