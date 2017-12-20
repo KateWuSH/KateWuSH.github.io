@@ -223,6 +223,7 @@
 .application .img {
     width: 50%;
     padding-top: 83px;
+    overflow: hidden;
 }
 
 .application .img img {
@@ -415,7 +416,7 @@
         margin-bottom: 50px;
     }
     .service .img img {
-        width: 95%;
+        width: 180%;
     }
     .service .text {
         padding: 110px 0 0 45px;
@@ -490,19 +491,26 @@
     }
 }
 
-@media screen and (max-width:1024px) {
-    .top-banner-pc-slick .slick-dots {
-        bottom: 15px;
+@media screen and (max-width:1250px) {
+    .application .text {
+        padding: 150px 90px 0;
     }
-    .technology {
-        padding: 120px 21%;
-    }
+}
+
+@media screen and (max-width:1200px) {
     .technology p,
     .application .text p,
     .service .text p {
         font-size: 2.5rem;
         letter-spacing: 1px;
         margin-bottom: 35px;
+    }
+    .service .text p {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .service .text article {
+        margin-bottom: 25px;
     }
     .technology article,
     .global .content article,
@@ -514,6 +522,15 @@
     }
     .future .content article {
         line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .top-banner-pc-slick .slick-dots {
+        bottom: 15px;
+    }
+    .technology {
+        padding: 120px 21%;
     }
     .global .content p {
         font-size: 3.5rem;
@@ -542,7 +559,7 @@
         padding: 110px 0 100px 45px;
     }
     .service .img img {
-        width: 106%;
+        width: 190%;
     }
     .recruit .wrapper {
         flex-wrap: wrap;
@@ -635,7 +652,7 @@
         width: 45%;
     }
     .service .img img {
-        width: 120%;
+        width: 225%;
     }
     .future .wrapper {
         padding: 75px 8%;
@@ -695,11 +712,11 @@
     .application .text {
         width: 80%;
     }
-    .service .img img {
-        width: 125%;
-    }
     .service .img {
         width: 50%;
+    }
+    .service .img img {
+        width: 225%;
     }
     .service .text {
         width: 50%;
@@ -767,6 +784,9 @@
     .application .text {
         padding: 50px 0 0;
     }
+    .service .img img {
+        width: 260%;
+    }
     .service .text p {
         font-size: 1.5rem;
         line-height: 2.5rem;
@@ -795,6 +815,42 @@
         font-size: 2rem;
         line-height: 3rem;
         letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .service .img {
+        display: none;
+    }
+    .service .text {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        padding: 55px 5% 55px 50%;
+    }
+    .service .text::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: url(../../upload/home/service.png) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        opacity: .5;
+    }
+    .service .text article {
+        margin-bottom: 10px;
+    }
+    .service .text p {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .service .text {
+        padding: 55px 5% 55px 45%;
     }
 }
 
@@ -828,13 +884,6 @@
         width: 100px;
         line-height: 40px;
         height: 40px;
-    }
-    .service .img {
-        width: 42%;
-    }
-    .service .text {
-        width: 47%;
-        padding: 50px 5%;
     }
     .service .text p {
         font-size: 1.25rem;
@@ -882,15 +931,11 @@
     .top-banner-mobile-slick .slick-dots {
         bottom: 20px;
     }
-    .service .img {
-        width: 38%;
-    }
-    .service .text {
-        width: 55%;
-        padding: 40px 5% 40px 0;
-    }
     .service .text article {
         margin-bottom: 15px;
+    }
+    .service .text {
+        padding: 75px 5% 55px 40%;
     }
     .future .content p {
         font-size: 1rem;
@@ -946,16 +991,6 @@
     .recruit .sectionR .img .colwide.close {
         display: none;
     }
-    .service .img img {
-        width: 165%;
-    }
-    .service .img {
-        width: 35%;
-    }
-    .service .text {
-        width: 65%;
-        padding: 40px 5%;
-    }
 }
 
 @media screen and (max-width:380px) {
@@ -970,6 +1005,12 @@
     .global .content {
         padding: 60px 8% 0;
     }
+    .service .text {
+        padding: 75px 20% 55px;
+    }
+    .service .text::after {
+        opacity: .4;
+    }
     .recruit .sectionL {
         padding: 120px 8% 65px;
     }
@@ -979,6 +1020,12 @@
     }
     .top-banner-mobile-slick .slick-dots {
         bottom: 13px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .service .text {
+        padding: 75px 15% 55px 20%;
     }
 }
 
@@ -995,8 +1042,6 @@
         padding: 60px 5%;
     }
 }
-
-@media screen and (max-width:1440px) {}
 
 @media screen and (max-width:1440px) {}
 

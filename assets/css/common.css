@@ -801,6 +801,14 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:580px) {
+    .btnEffect {
+        line-height: 45px;
+        height: 45px;
+        width: 120px;
+    }
+}
+
 @media screen and (max-width:480px) {
     .top-menu-R {
         padding: 40px 25px 5px 0;
