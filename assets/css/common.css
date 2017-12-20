@@ -39,7 +39,7 @@ header {
 
 .top-menu-R .main-menu {
     position: relative;
-    padding-right: 30px;
+    padding: 0 30px 20px 0;
 }
 
 .top-menu-R .main-menu::after,
@@ -453,6 +453,23 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translate(-2000px, -120px);
+    }
+    60% {
+        transform: translate(30px, -120px);
+    }
+    80% {
+        transform: translate(-10px, -120px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, -120px);
+    }
+}
+
 .footer {
     opacity: 0;
 }
@@ -573,7 +590,16 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:1600px) {
+    .top-menu-R {
+        width: 75%;
+    }
+}
+
 @media screen and (max-width:1440px) {
+    .top-menu-R {
+        width: 73%;
+    }
     .main .topBanner .text h1 {
         font-size: 6rem;
     }
@@ -588,7 +614,22 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:1350px) {
+    .top-menu-R {
+        width: 71%;
+    }
+}
+
 @media screen and (max-width:1250px) {
+    .top-menu-L img {
+        width: 95%;
+    }
+    .top-menu-L {
+        padding: 20px 0 0 29px;
+    }
+    .top-menu-R .main-menu {
+        padding: 0 30px 15px 0;
+    }
     footer .up {
         padding: 60px 5%;
     }
@@ -607,15 +648,9 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:1024px) {
-    .top-menu-L img {
-        width: 90%;
-    }
     .top-menu-R {
-        padding: 30px 35px 5px 0;
-        margin-bottom: 15px;
-    }
-    .top-menu-R .main-menu {
-        padding-right: 30px;
+        padding: 35px 35px 0 0;
+        width: 69%;
     }
     .top-menu-R .hamburger {
         padding-left: 65px;
@@ -666,20 +701,30 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
     .top-menu-R .main-menu {
         display: none;
     }
     .top-menu-R {
         border: none;
-        padding: 70px 40px 5px 0;
+        padding: 58px 40px 5px 0;
+    }
+    .top-menu-R .hamburger {
+        padding-left: 50px;
     }
     .top-menu-L {
-        width: 65%;
+        width: 45%;
+        padding: 20px 0 0 23px;
     }
     .top-menu-L img {
         width: 100%;
     }
+    .top-menu-R .language {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
     .main .topBanner .text {
         top: 240px;
         left: 38%;
@@ -700,6 +745,9 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:640px) {
+    .top-menu-R {
+        padding: 50px 40px 5px 0;
+    }
     .main .topBanner .text {
         left: 26%;
         transform: translateX(-4%);
@@ -755,8 +803,10 @@ footer .down .decorate ul li:not(:last-child) {
 
 @media screen and (max-width:480px) {
     .top-menu-R {
-        border: none;
-        padding: 38px 25px 5px 0;
+        padding: 40px 25px 5px 0;
+    }
+    .top-menu-L {
+        width: 50%;
     }
     .main .topBanner .text {
         top: 245px;
@@ -843,6 +893,12 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:380px) {
+    .top-menu-R .language {
+        display: none;
+    }
+    .top-menu-L {
+        width: 75%;
+    }
     .main .topBanner .text h2 {
         font-size: 2.5rem;
     }

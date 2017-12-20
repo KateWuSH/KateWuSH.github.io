@@ -2,6 +2,76 @@
 
 /*-- waypoints --*/
 
+.info .imgL img,
+.info .environment p,
+.info .environment article,
+.info .environment img,
+.info .benefit .title p,
+.info .benefit .list p,
+.info .benefit .list ul,
+.titbits .title p,
+.titbits .title span,
+.titbits .photoSec img,
+.vacancyList .content {
+    opacity: 0;
+}
+
+.info.movein .environment p,
+.info .benefit.movein .title p,
+.titbits .title.movein p {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.info .benefit.movein .list p {
+    animation: fadeInUp 1.5s forwards .2s;
+}
+
+.info.movein .environment article,
+.info .benefit.movein .list ul,
+.titbits .title.movein span {
+    animation: fadeInUpArticle 1.5s forwards .4s;
+}
+
+.info.movein .imgL img,
+.info.movein .environment img,
+.titbits .block01.movein .fadeIn01 img,
+.titbits .block02.movein .fadeIn01 img,
+.titbits .block03.movein .fadeIn01 img {
+    animation: fadeIn 1.5s forwards;
+}
+
+.info.movein .environment img {
+    animation: fadeIn 1.5s forwards .2s;
+}
+
+.titbits .block01.movein .fadeIn02 img,
+.titbits .block02.movein .fadeIn02 img,
+.titbits .block03.movein .fadeIn02 img {
+    animation: fadeIn 1.5s forwards .3s;
+}
+
+.titbits .block01.movein .fadeIn03 img,
+.titbits .block02.movein .fadeIn03 img,
+.titbits .block03.movein .fadeIn03 img {
+    animation: fadeIn 1.5s forwards .5s;
+}
+
+.titbits .block01.movein .fadeIn04 img,
+.titbits .block02.movein .fadeIn04 img,
+.titbits .block03.movein .fadeIn04 img {
+    animation: fadeIn 1.5s forwards .8s;
+}
+
+.titbits .block01.movein .fadeIn05 img,
+.titbits .block02.movein .fadeIn05 img,
+.titbits .block03.movein .fadeIn05 img {
+    animation: fadeIn 1.5s forwards 1.2s;
+}
+
+.vacancyList .content.movein {
+    animation: bounceInLeft 1.5s forwards;
+}
+
 
 /*-- top banner --*/
 
@@ -24,6 +94,7 @@
 
 .info .imgL {
     width: calc(100% / 3);
+    background-color: #0b0827;
 }
 
 .info .imgL img,
@@ -701,7 +772,14 @@
     }
 }
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .titbits .wrapper {
+        padding: 0 0 140px 10px;
+    }
+    .vacancyList .content {
+        padding: 40px 8%;
+    }
+}
 
 @media screen and (max-width:1250px) {}
 

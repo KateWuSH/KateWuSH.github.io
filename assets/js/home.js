@@ -1,8 +1,10 @@
 $(document).ready(function() {
+
     /*----- slick -----*/
     // home topBanner
     $('.top-banner-pc-slick').slick({
-        autoplay: false,
+        autoplay: true,
+        speed: 300,
         dots: true,
         infinite: true,
         fade: true,
@@ -10,7 +12,8 @@ $(document).ready(function() {
     });
     // home mobile topBanner
     $('.top-banner-mobile-slick').slick({
-        autoplay: false,
+        autoplay: true,
+        speed: 300,
         dots: true,
         infinite: true,
         fade: true,
