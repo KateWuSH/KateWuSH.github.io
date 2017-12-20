@@ -1009,7 +1009,7 @@
         padding: 75px 20% 55px;
     }
     .service .text::after {
-        opacity: .4;
+        opacity: .2;
     }
     .recruit .sectionL {
         padding: 120px 8% 65px;
@@ -1023,7 +1023,7 @@
     }
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:350px) {
     .service .text {
         padding: 75px 15% 55px 20%;
     }
