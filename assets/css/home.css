@@ -334,6 +334,7 @@
     font-size: 1.875rem;
     line-height: 3rem;
     margin: 0 8% 90px;
+    text-align: justify;
 }
 
 .recruit .sectionL a {
@@ -385,24 +386,48 @@
 
 /*-- RWD --*/
 
+@media screen and (max-width:1800px) {
+    .technology {
+        padding: 128px 29% 120px;
+    }
+    .future .wrapper {
+        padding: 85px 12% 80px;
+    }
+}
+
 @media screen and (max-width:1680px) {
     .technology {
         padding: 128px 28% 120px;
     }
     .future .wrapper {
-        padding: 85px 12% 80px;
+        padding: 85px 10% 80px;
     }
     .application .text {
         padding: 140px 120px 0;
     }
 }
 
-@media screen and (max-width:1440px) {
+@media screen and (max-width:1560px) {
     .technology {
-        padding: 120px 24%;
+        padding: 128px 24% 120px;
     }
     .global .bg {
         background-position: bottom center;
+    }
+    .global .content {
+        padding: 242px 10% 0 50%;
+    }
+    .future .content.middle {
+        padding: 0 5%;
+    }
+    .recruit .sectionL article {
+        margin: 0 10% 90px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .technology {
+        padding: 120px 24%;
     }
     .application .img {
         padding-top: 120px;
@@ -432,9 +457,6 @@
     }
     .future .wrapper {
         padding: 85px 8% 80px;
-    }
-    .future .content.middle {
-        padding: 0 8%;
     }
     .future .content p {
         margin: 50px 0 15px;
@@ -483,17 +505,60 @@
     }
     .recruit .sectionL article {
         font-size: 1.5rem;
-        margin: 0 3% 90px;
+        line-height: 2.5rem;
+        margin: 0 3% 70px;
     }
     .recruit .sectionL p {
         font-size: 2.8rem;
         margin-bottom: 50px;
     }
+    .quality p {
+        padding: 185px 5% 160px;
+    }
+}
+
+@media screen and (max-width:1360px) {
+    .technology {
+        padding: 120px 20%;
+    }
+    .recruit .sectionL article {
+        margin: 0 3% 55px;
+    }
+    .recruit .sectionL {
+        padding: 960px 5% 0;
+    }
+    .quality p {
+        padding: 155px 5% 130px;
+    }
 }
 
 @media screen and (max-width:1250px) {
+    .service .text {
+        padding: 110px 5% 0 15px;
+    }
+    .service .text article {
+        margin-bottom: 40px;
+    }
+    .service .text p {
+        margin-bottom: 60px;
+    }
     .application .text {
         padding: 150px 90px 0;
+    }
+    .recruit .sectionR .text {
+        padding: 185px 9%;
+    }
+    .recruit .sectionR .img img {
+        vertical-align: top;
+    }
+    .recruit .sectionL {
+        padding: 900px 5% 0;
+    }
+    .recruit .sectionL p {
+        margin-bottom: 25px;
+    }
+    .recruit .sectionL article {
+        margin: 0 3% 50px;
     }
 }
 
@@ -525,12 +590,24 @@
     }
 }
 
+@media screen and (max-width:1150px) {
+    .future .wrapper {
+        padding: 85px 4% 80px;
+    }
+    .recruit .sectionR .img .col img {
+        width: 101%;
+    }
+    .recruit .sectionL {
+        padding: 830px 5% 0;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .top-banner-pc-slick .slick-dots {
         bottom: 15px;
     }
     .technology {
-        padding: 120px 21%;
+        padding: 120px 17%;
     }
     .global .content p {
         font-size: 3.5rem;
@@ -571,13 +648,16 @@
     .recruit .sectionL {
         background-position: center;
         background-size: cover;
-        padding: 850px 0 120px 0;
+        padding: 730px 0 120px 0;
+    }
+    .recruit .sectionL p {
+        margin-bottom: 35px;
     }
     .recruit .sectionR .text {
-        padding: 150px 0;
+        padding: 120px 0;
     }
     .recruit .sectionL article {
-        margin: 0 18% 90px;
+        margin: 0 18% 75px;
     }
     .quality p {
         font-size: 2.3rem;
@@ -624,7 +704,29 @@
     }
 }
 
+@media screen and (max-width:970px) {
+    .application .text {
+        padding: 140px 50px 0;
+    }
+    .service .text {
+        padding: 110px 0 100px;
+    }
+    .recruit .sectionL {
+        padding: 640px 0 90px 0;
+    }
+}
+
 @media screen and (max-width:900px) {
+    .top-banner-pc-slick .slick-dots li button:before,
+    .top-banner-mobile-slick .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
+    }
+    .top-banner-pc-slick .slick-dots li.slick-active button:before,
+    .top-banner-mobile-slick .slick-dots li.slick-active button:before {
+        width: 10px;
+        height: 10px;
+    }
     .technology {
         padding: 100px 17%;
     }
@@ -670,6 +772,12 @@
     }
     .recruit .sectionR .text {
         padding: 120px 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .service .img img {
+        width: 305%;
     }
 }
 
@@ -741,9 +849,16 @@
     }
 }
 
-@media screen and (max-width:640px) {
-    .global .bg {
-        background-size: 1024px 505px;
+@media screen and (max-width:700px) {
+    .technology {
+        padding: 100px 10%;
+    }
+    .service .img img {
+        width: 255%;
+    }
+    .recruit .sectionR .text,
+    .quality p {
+        padding: 100px 5%;
     }
     .technology article,
     .global .content article,
@@ -764,6 +879,12 @@
     .global .content p {
         font-size: 3rem;
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .global .bg {
+        background-size: 1024px 505px;
     }
     .global .content a,
     .service .text a,
@@ -802,16 +923,19 @@
         letter-spacing: 1px;
         margin: 20px 0 8px;
     }
-    .recruit .sectionR .text {
-        font-size: 3rem;
-        letter-spacing: 2px;
-        padding: 100px 5%;
-    }
     .future .content article {
         line-height: 1.3rem;
     }
+    .recruit .sectionR .text {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        padding: 85px 5%;
+    }
+    .recruit .sectionR .img img {
+        vertical-align: initial;
+    }
     .quality p {
-        padding: 100px 5%;
+        padding: 85px 5%;
         font-size: 2rem;
         line-height: 3rem;
         letter-spacing: 1px;
@@ -845,6 +969,10 @@
     }
     .service .text p {
         margin-bottom: 5px;
+    }
+    .recruit .sectionR .text,
+    .quality p {
+        padding: 75px 5%;
     }
 }
 
@@ -935,7 +1063,10 @@
         margin-bottom: 15px;
     }
     .service .text {
-        padding: 75px 5% 55px 40%;
+        padding: 75px 20% 55px;
+    }
+    .service .text::after {
+        opacity: .2;
     }
     .future .content p {
         font-size: 1rem;
@@ -1005,12 +1136,6 @@
     .global .content {
         padding: 60px 8% 0;
     }
-    .service .text {
-        padding: 75px 20% 55px;
-    }
-    .service .text::after {
-        opacity: .2;
-    }
     .recruit .sectionL {
         padding: 120px 8% 65px;
     }
@@ -1023,7 +1148,7 @@
     }
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:360px) {
     .service .text {
         padding: 75px 15% 55px 20%;
     }
