@@ -2,51 +2,6 @@
 
 /*-- waypoints --*/
 
-.advantage .img,
-.advantage .text p,
-.advantage .text article,
-.innovation .text p,
-.innovation .text article,
-.items .item,
-.integration .text p,
-.integration .text article,
-.integration .img,
-.future .target {
-    opacity: 0;
-}
-
-.advantage .img.movein,
-.integration.movein .img {
-    animation: fadeIn 1.5s forwards;
-}
-
-.advantage .text.movein p,
-.innovation .text.movein p,
-.integration.movein .text p {
-    animation: fadeInUp 1.5s forwards;
-}
-
-.advantage .text.movein article,
-.innovation .text.movein article,
-.integration.movein .text article {
-    animation: fadeInUpArticle 1.5s forwards .4s;
-}
-
-.items .item.movein:first-child,
-.future .target.movein:first-child {
-    animation: fadeInUp 1.5s forwards;
-}
-
-.items .item.movein:nth-child(2),
-.future .target.movein:nth-child(2) {
-    animation: fadeInUp 1.5s forwards .2s;
-}
-
-.items .item.movein:nth-child(3),
-.future .target.movein:nth-child(3) {
-    animation: fadeInUp 1.5s forwards .4s;
-}
-
 
 /*-- top banner --*/
 
@@ -65,475 +20,798 @@
 
 .advantage .wrapper {
     display: flex;
-    background-color: #0b0827;
 }
 
 .advantage .img {
-    width: 65%;
+    width: 45%;
 }
 
 .advantage .text {
-    width: 35%;
+    width: 55%;
+    padding: 140px 16% 0 45px;
 }
 
-.advantage .img {
-    overflow: hidden;
-}
-
-.advantage .img img {
-    height: 100%;
-}
-
-.advantage .text {
-    background-color: #0b0827;
-    color: #fff;
-    padding: 100px 6%;
-}
-
-.advantage .text p {
-    font-size: 7.0625rem;
+.advantage .text p,
+.application .integration .text p {
+    font-size: 3.7rem;
     font-weight: bold;
-    margin-bottom: 75px;
+    margin-bottom: 45px;
     color: #c765e3;
 }
 
 .advantage .text article,
-.innovation .text article,
-.integration .text article {
-    font-size: 1.875rem;
-    line-height: 3.5rem;
-    letter-spacing: 2px;
+.application .integration .text article,
+.application .item .text article {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+/*-- application --*/
+
+.application .bg {
+    background-color: #0b0827;
+    color: white;
+}
+
+.application .integration {
+    display: flex;
+}
+
+.application .integration .text {
+    width: 40%;
+    text-align: right;
+    padding: 100px 5% 0 10%;
+}
+
+.application .integration .text p {
+    font-weight: normal;
+}
+
+.application .integration .text article {
+    text-align: right;
+}
+
+.application .integration .img {
+    width: 60%;
+    margin-top: -60px;
+    overflow: hidden;
+}
+
+.application .integration .img img {
+    width: 100%;
+}
+
+.application .wrapper {
+    margin: 0 8.5%;
+}
+
+.application .item01,
+.application .item02,
+.application .item03 {
+    display: flex;
+}
+
+.application .item01 {
+    background-color: #333333;
+}
+
+.application .item02 {
+    background-color: white;
+}
+
+.application .item03 {
+    margin-top: -190px;
+    transform: translateY(190px);
+    background-color: #0b0827;
+}
+
+.application .item .text {
+    width: calc(100% * 2/3);
+}
+
+.application .item01 .text .frame {
+    padding: 65px 10% 105px;
+}
+
+.application .item02 .text .frame {
+    padding: 90px 10% 110px;
+}
+
+.application .item03 .text .frame {
+    padding: 110px 10% 135px;
+}
+
+.application .item .text p {
+    font-size: 3.3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #c765e3;
+}
+
+.application .item02 .text article {
+    color: black;
+}
+
+.application .item .img {
+    width: calc(100% / 3);
+}
+
+.application .item01 .img {
+    background: url(../../upload/service/item01.jpg) no-repeat;
+    background-size: cover;
+}
+
+.application .item02 .img {
+    background: url(../../upload/service/item02.jpg) no-repeat;
+    background-size: cover;
+}
+
+.application .item03 .img {
+    background: url(../../upload/service/item03.jpg) no-repeat;
+    background-size: cover;
+}
+
+.application .item hr {
+    width: 70px;
 }
 
 
 /*-- innovation --*/
 
-.innovation .wrapper {
-    background: url(../../upload/service/skyBg.jpg) no-repeat center;
+.innovation .bg {
+    background: url(../../upload/service/creativeBg.jpg) no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
-.innovation .text {
-    text-align: center;
-    padding: 100px 30% 280px;
+.innovation .content {
+    padding: 360px 0 215px;
+}
+
+.innovation .wrapper {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.innovation .title {
+    font-size: 7.375rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-right: 45px;
 }
 
 .innovation .text p {
-    font-size: 3.125rem;
-    margin-bottom: 25px;
-    color: #ff9c00;
-}
-
-.innovation .text article {
-    color: white;
-}
-
-
-/*-- items --*/
-
-.items .wrapper {
-    display: flex;
-    background-color: #0b0827;
-    padding: 0 6%;
-}
-
-.items .item {
-    width: calc(100% / 3);
-    margin-top: -220px;
-}
-
-.items .middle {
-    margin: -220px 45px 0;
-}
-
-.items .item .img img {
-    width: 100%;
-}
-
-.items .item .text {
-    color: white;
-    padding: 0 35px 140px;
-}
-
-.items .item .text p {
-    color: #268bc3;
-    font-size: 3.645rem;
+    font-size: 3.55rem;
     font-weight: bold;
-    margin: 45px 0 25px;
+    font-style: italic;
+    margin: 0 0 20px 110px;
 }
 
-.items .item .text article {
-    font-size: 1.6875rem;
-    line-height: 2.5rem;
-    letter-spacing: 1px;
-}
-
-
-/*-- integration --*/
-
-.integration .wrapper {
-    display: flex;
-}
-
-.integration .text {
-    width: 40%;
-    margin: 120px 6% 0 10%;
-    text-align: right;
-}
-
-.integration .text p {
-    color: #2fb1ad;
-    font-size: 4.5rem;
-    margin-bottom: 50px;
-}
-
-.integration .img {
-    width: 60%;
-    margin-top: -90px;
-}
-
-.integration .img img {
-    width: 100%;
+.innovation .text span {
+    font-size: 2.45rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
 /*-- future --*/
 
 .future .wrapper {
-    background: url(../../upload/service/skyBg.jpg) no-repeat center;
-    background-attachment: fixed;
     display: flex;
-    padding: 0 18%;
-    margin-top: -1px;
-}
-
-.future .target {
-    width: calc(100% / 3);
+    justify-content: space-between;
+    margin: 85px 20%;
     text-align: center;
-    padding: 85px 0 80px;
-    color: white;
 }
 
-.future .middle {
-    margin: 0 5%;
+.future .dearm {
+    width: calc(100% / 3);
 }
 
-.future .target img {
-    margin-bottom: 45px;
+.future .dearm img {
+    margin-bottom: 40px;
 }
 
-.future .target p {
+.future .dearm p {
     font-size: 2.5rem;
-    letter-spacing: 1px;
+    color: #5091d9;
     margin-bottom: 20px;
 }
 
-.future .target article {
-    font-size: 1.625rem;
-    letter-spacing: .5px;
+.future .dearm article {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 
-/*-- future --*/
+/*-- RWD --*/
+
+@media screen and (max-width:1800px) {
+    .application .integration .text {
+        padding: 80px 5% 0 10%;
+    }
+}
 
 @media screen and (max-width:1680px) {
-    .advantage .text p {
-        font-size: 6.5rem;
-        margin-bottom: 65px;
+    .advantage .text {
+        padding: 105px 12% 0 9%;
     }
-    .innovation .text {
-        padding: 100px 26% 280px;
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 3.2rem;
+        margin-bottom: 35px;
     }
-    .integration .text {
-        margin: 80px 6% 0 10%;
+    .application .item .text p {
+        font-size: 3rem;
+        margin-bottom: 25px;
     }
-    .integration .text p {
-        font-size: 3.5rem;
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+    }
+    .application .item01 .text .frame {
+        padding: 65px 10% 80px;
+    }
+    .application .item02 .text .frame {
+        padding: 70px 10% 90px;
+    }
+    .application .item03 .text .frame {
+        padding: 90px 10% 100px;
+    }
+    .innovation .title {
+        font-size: 7rem;
+    }
+    .innovation .text p {
+        font-size: 3.3rem;
+    }
+    .innovation .text span {
+        font-size: 2.2rem;
     }
     .future .wrapper {
-        padding: 0 15%;
+        margin: 85px 15%;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .advantage .text {
+        padding: 105px 8% 0 13%;
     }
 }
 
 @media screen and (max-width:1440px) {
-    .advantage .text p {
-        font-size: 6rem;
-        margin-bottom: 55px;
-    }
-    .advantage .text article,
-    .innovation .text article,
-    .integration .text article {
-        font-size: 1.75rem;
-        line-height: 3.3rem;
-        letter-spacing: 1px;
-    }
-    .items .item .text p {
-        font-size: 3.3rem;
-    }
-    .items .item .text article {
-        font-size: 1.5rem;
-    }
-    .integration .text {
-        margin: 50px 6% 0 10%;
-    }
-    .integration .text p {
-        font-size: 3.5rem;
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 2.8rem;
         margin-bottom: 30px;
     }
-    .future .wrapper {
-        padding: 0 10%;
+    .application .item .text p {
+        font-size: 2.6rem;
     }
-    .innovation .text {
-        padding: 100px 23% 280px;
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1.25rem;
+        line-height: 2.4rem;
+    }
+    .advantage .img img {
+        width: 140%;
+    }
+    .advantage .text {
+        padding: 105px 13% 0 16%;
+    }
+    .innovation .title {
+        font-size: 6.6rem;
+    }
+    .innovation .text p {
+        font-size: 3rem;
+        margin: 10px 0 15px 110px;
+    }
+    .innovation .text span {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .future .wrapper {
+        margin: 85px 10%;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .innovation .title {
+        font-size: 5.5rem;
+    }
+    .innovation .text p {
+        font-size: 2.5rem;
+    }
+    .innovation .text span {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    .advantage .text {
+        padding: 65px 8% 0 16%;
+    }
+    .application .integration .text {
+        padding: 60px 5% 0;
+    }
+    .future .dearm {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .application .integration .img {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width:1120px) {
+    .advantage .text p,
+    .application .integration .text p {
+        margin-bottom: 15px;
+    }
+    .advantage .text {
+        padding: 45px 8% 0 16%;
+    }
+    .application .integration .img img {
+        width: 110%;
+    }
+    .future .dearm .img img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .innovation .title {
+        font-size: 5rem;
+        margin-right: 25px;
+    }
+    .innovation .text p {
+        font-size: 2.4rem;
+        margin: 10px 0 10px 90px;
+    }
+    .innovation .text span {
+        font-size: 1.6rem;
     }
 }
 
 @media screen and (max-width:1024px) {
-    .advantage .text {
-        padding: 200px 6% 250px;
-    }
-    .advantage .text p {
-        font-size: 5.5rem;
-        margin-bottom: 45px;
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
     }
     .advantage .text article,
-    .innovation .text article,
-    .integration .text article {
-        font-size: 1.5rem;
-        line-height: 3rem;
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1.05rem;
+        line-height: 2rem;
     }
-    .innovation .text article,
-    .integration .text article {
-        line-height: 2.5rem;
-    }
-    .innovation .text {
-        padding: 100px 18% 280px;
-    }
-    .items .item .text p {
-        font-size: 2.75rem;
-    }
-    .items .item .text {
-        padding: 0 10px 140px;
-    }
-    .items .item .text article {
-        font-size: 1.25rem;
-        line-height: 2.3rem;
-    }
-    .integration .text {
-        margin: 50px 5%;
-    }
-    .integration .img {
-        margin-top: -49px;
-    }
-    .future .wrapper {
-        padding: 0 5%;
-    }
-    .future .target img {
-        margin-bottom: 35px;
-        width: 70%;
-    }
-    .future .target p {
+    .application .item .text p {
         font-size: 2rem;
         margin-bottom: 15px;
     }
-    .future .target article {
-        font-size: 1.5rem;
-        line-height: 2rem;
+    .application .integration .text {
+        padding: 52px 5% 0;
     }
-}
-
-@media screen and (max-width:768px) {
-    .advantage .wrapper {
-        flex-wrap: wrap;
+    .application .integration .img img {
+        width: 105%;
     }
-    .advantage .img,
-    .advantage .text {
-        width: 100%;
+    .application .wrapper {
+        margin: 0 5%;
     }
-    .advantage .text {
-        padding: 80px 10%;
+    .application .item01 .text .frame,
+    .application .item02 .text .frame,
+    .application .item03 .text .frame {
+        padding: 45px 10% 60px;
     }
-    .advantage .text p {
-        font-size: 4.5rem;
-        margin-bottom: 30px;
+    .future .dearm p {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
     }
-    .innovation .text {
-        padding: 100px 10% 280px;
-    }
-    .innovation .text p {
-        font-size: 2.75rem;
-    }
-    .items .wrapper {
-        flex-wrap: wrap;
-        padding: 0 10%;
-    }
-    .items .item {
-        width: 100%;
-        margin-top: 0;
-    }
-    .items .item:first-child {
-        margin-top: -220px;
-    }
-    .items .item .text {
-        padding: 0 20px 80px;
-    }
-    .items .middle {
-        margin: 0;
-    }
-    .items .item .text p {
-        margin: 25px 0 15px;
-    }
-    .integration .wrapper {
-        flex-wrap: wrap;
-    }
-    .integration .text {
-        width: 100%;
-        text-align: center;
-        margin: 60px 10%;
-    }
-    .integration .img {
-        width: 100%;
-        margin-top: 0;
-    }
-    .integration .text p {
-        font-size: 2.7rem;
-        margin-bottom: 25px;
-    }
-    .integration .img {
-        text-align: right;
-    }
-    .integration .img img {
-        width: 80%;
-    }
-    .future .target img {
-        width: 60%;
-        margin-bottom: 20px;
-    }
-    .future .target p {
-        font-size: 1.75rem;
-        margin-bottom: 8px;
-    }
-    .future .target article {
+    .future .dearm article {
         font-size: 1.25rem;
         line-height: 1.6rem;
     }
 }
 
-@media screen and (max-width:640px) {
-    .advantage .text p {
-        font-size: 4.25rem;
-        margin-bottom: 20px;
+@media screen and (max-width:980px) {
+    .innovation .wrapper {
+        flex-wrap: wrap;
+        padding: 0 10%;
     }
-    .advantage .text article,
-    .innovation .text article,
-    .integration .text article {
-        font-size: 1.25rem;
-        line-height: 2.5rem;
-    }
-    .innovation .text article,
-    .integration .text article {
-        line-height: 2rem;
-    }
-    .innovation .text {
-        padding: 80px 10% 260px;
+    .innovation .title {
+        margin: 0 0 25px 0;
+        font-style: normal;
     }
     .innovation .text p {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
+        font-size: 2.4rem;
+        margin: 10px 0;
+        font-style: normal;
+        opacity: .7;
+    }
+    .innovation .text span {
+        font-style: normal;
+        opacity: .7;
+    }
+    .innovation .content {
+        padding: 320px 0 180px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .advantage .text p,
+    .application .integration .text p {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .application .integration .img {
+        margin-top: -40px;
+    }
+    .application .integration .text {
+        padding: 40px 7% 0;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .advantage .img img {
+        width: 150%;
+    }
+    .advantage .text {
+        padding: 30px 5% 0 19%;
+    }
+    .future .dearm img {
+        width: 90%;
+    }
+    .future .wrapper {
+        margin: 85px 5%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .application .integration .text {
+        padding: 20px 7% 0;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 2.2rem;
+    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1.03rem;
+        line-height: 1.8rem;
+    }
+    .application .item .text p {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .future .dearm p {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .application .wrapper {
+        margin: 0;
+    }
+    .application .integration .img img {
+        width: 110%;
+    }
+    .application .item01 .text .frame {
+        padding: 30px 8% 40px;
+    }
+    .application .item02 .text .frame {
+        padding: 40px 8% 50px;
+    }
+    .application .item03 .text .frame {
+        padding: 50px 8% 60px;
+    }
+    .application .item hr {
+        display: none;
+    }
+    .application .item .img {
+        width: 40%;
+    }
+    .application .item .text {
+        width: 60%;
+    }
+    .application .item03 {
+        margin-top: 0;
+        transform: translateY(0);
+    }
+    .innovation .content {
+        padding: 150px 0;
+    }
+    .innovation .title {
+        font-size: 4rem;
+        margin: 0 0 15px 0;
+    }
+    .innovation .text {
+        text-align: center;
+    }
+    .innovation .text p {
+        font-size: 1.8rem;
+    }
+    .innovation .text span {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .application .integration {
+        flex-wrap: wrap;
+    }
+    .application .integration .text,
+    .application .integration .img {
+        width: 100%;
+    }
+    .application .integration .img {
+        margin: 0 0 0 20%;
+    }
+    .application .integration .text,
+    .application .integration .text article {
+        text-align: center;
+    }
+    .application .integration .text {
+        padding: 30px 15%;
+    }
+    .application .item .img {
+        width: 30%;
+    }
+    .application .item .text {
+        width: 70%;
+    }
+    .future .dearm {
+        width: 28%;
+    }
+    .future .dearm img {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:690px) {
+    .advantage .text {
+        padding: 20px 5% 0 19%;
+    }
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .application .item .text p {
+        font-size: 1.8rem;
+        margin-bottom: 5px;
+    }
+    .innovation .title {
+        font-size: 3.5rem;
+    }
+    .innovation .content {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .future .dearm p {
+        font-size: 1.8rem;
+        margin-bottom: 6px;
+    }
+    .future .dearm article {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .advantage .img img {
+        height: 34%;
+        width: auto;
+        transform: translateX(-50px);
+    }
+    .advantage .text {
+        padding: 32px 5% 0 19%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .advantage .img img {
+        transform: translateX(-90px);
+    }
+    .advantage .text {
+        padding: 32px 5% 0 15%;
+    }
+    .application .item .img {
+        width: 40%;
+    }
+    .application .item .text {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .advantage .img img {
+        transform: translateX(-130px);
+        height: 38%;
+    }
+    .application .item01,
+    .application .item03 {
+        flex-wrap: wrap;
+    }
+    .application .item02 {
+        flex-wrap: wrap-reverse;
+    }
+    .application .item .img {
+        width: 80%;
+        margin: 30px auto;
+        height: 34%;
+    }
+    .application .item .text {
+        width: 100%;
+    }
+    .application .item01 .text .frame,
+    .application .item02 .text .frame,
+    .application .item03 .text .frame {
+        padding: 0px 12% 40px;
+    }
+    .innovation .title {
+        font-size: 3rem;
+        margin: 0 0 15px 0;
+    }
+    .innovation .text p {
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .future .dearm {
+        width: 25%;
+    }
+    .future .dearm p {
+        font-size: 1.5rem;
+    }
+    .future .dearm article {
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .future .dearm {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .advantage .img img {
+        transform: translateX(-180px);
+        height: 41%;
+    }
+    .application .integration .text {
+        padding: 30px 10%;
+    }
+    .application .item .img {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .application .item01 .text .frame,
+    .application .item02 .text .frame,
+    .application .item03 .text .frame {
+        padding: 0px 8% 40px;
+    }
+    .future .dearm {
+        width: 30%;
     }
 }
 
 @media screen and (max-width:480px) {
-    .advantage .text p {
-        font-size: 3.75rem;
-        margin-bottom: 15px;
+    .advantage .img img {
+        transform: translateX(-195px);
+        height: 35%;
     }
-    .innovation .text p {
-        font-size: 2.25rem;
-        margin-bottom: 15px;
+    .advantage .text {
+        padding: 32px 5% 0 11%;
     }
-    .items .item .text p {
-        font-size: 2.5rem;
+    .advantage .text p,
+    .application .integration .text p {
+        font-size: 1.7rem;
     }
-    .integration .text {
-        margin: 60px 10% 40px;
+    .application .item .text p {
+        font-size: 1.5rem;
     }
-    .future .target p {
+    .innovation .wrapper {
+        padding: 0 5%;
+    }
+    .future .dearm img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .future .dearm p {
         font-size: 1.25rem;
-        letter-spacing: .5px;
     }
-    .future .target article {
-        font-size: 0.875rem;
-        line-height: 1.1rem;
+    .future .wrapper {
+        margin: 60px 5%;
     }
 }
 
 @media screen and (max-width:420px) {
-    .advantage .text p {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
+    .advantage .img {
+        display: none;
     }
     .advantage .text {
-        padding: 60px 5%;
+        width: 100%;
+        padding: 32px 10%;
     }
-    .advantage .text article,
-    .innovation .text article,
-    .integration .text article,
-    .items .item .text article {
-        font-size: 1rem;
-        line-height: 1.8rem;
+    .application .integration .img {
+        margin: 0 0 0 10%;
     }
-    .innovation .text {
-        padding: 60px 4% 260px;
+    .application .integration .text {
+        padding: 30px 8%;
+    }
+    .application .item .img {
+        width: 100%;
+        margin: 0;
+    }
+    .application .item01 .text .frame,
+    .application .item02 .text .frame,
+    .application .item03 .text .frame {
+        padding: 30px 8% 40px;
+    }
+    .innovation .content {
+        padding: 100px 0;
+    }
+    .innovation .title {
+        font-size: 2.5rem;
     }
     .innovation .text p {
-        font-size: 2rem;
-        margin-bottom: 10px;
+        font-size: 1.2rem;
+        margin: 3px 0;
     }
-    .items .wrapper {
-        padding: 0 7%;
+    .innovation .text span {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
-    .items .item .text {
-        padding: 0 15px 40px;
-    }
-    .items .item .text p {
-        font-size: 2rem;
-        margin: 20px 0 10px;
-    }
-    .integration .text p {
-        font-size: 2.25rem;
+    .future .dearm img {
+        width: 75%;
         margin-bottom: 20px;
     }
-    .integration .img img {
-        width: 88%;
+    .future .dearm p {
+        font-size: 1.1rem;
     }
-    .integration .text {
-        margin: 50px 5% 30px;
-    }
-    .future .target {
-        padding: 60px 0;
+    .future .dearm article {
+        font-size: 0.75rem;
+        line-height: 1rem;
     }
 }
 
-@media screen and (max-width:380px) {
-    .future .target p {
+@media screen and (max-width:330px) {
+    .future .dearm p {
         font-size: 1rem;
-        letter-spacing: 0px;
-        margin-bottom: 10px;
-    }
-    .future .middle {
-        margin: 0 4%;
     }
 }
 
-@media screen and (max-width:1680px) {}
-
-@media screen and (max-width:1680px) {}
-
-@media screen and (max-width:1680px) {}
-
-@media screen and (max-width:1680px) {}
-
-@media screen and (max-width:1680px) {}
+@media screen and (max-width:360px) {}
 
 @media screen and (max-width:1680px) {}

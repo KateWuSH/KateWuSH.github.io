@@ -201,7 +201,7 @@ header {
 }
 
 .main .topBanner .text h1 {
-    font-size: 7.0625rem;
+    font-size: 7rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -212,7 +212,7 @@ header {
 }
 
 .main .topBanner .text p {
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     margin: 0 0 15px 55px;
 }
 
@@ -578,15 +578,17 @@ footer .down .decorate ul li:not(:last-child) {
 
 @media screen and (max-width:1680px) {
     .main .topBanner .text h1 {
-        font-size: 6.5rem;
+        font-size: 5.5rem;
         margin-bottom: 10px;
     }
     .main .topBanner .text p {
-        font-size: 3rem;
-        margin: 0 0 15px 55px;
+        font-size: 2.4rem;
+        margin: 0 0 15px 40px;
     }
     .main .topBanner .text article {
-        margin: 0 43% 0 55px;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        margin: 0 43% 0 40px;
     }
 }
 
@@ -601,16 +603,16 @@ footer .down .decorate ul li:not(:last-child) {
         width: 73%;
     }
     .main .topBanner .text h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .main .topBanner .text p {
-        font-size: 2.75rem;
-        margin: 0 0 15px 50px;
+        font-size: 2.2rem;
+        margin: 0 0 15px 35px;
     }
     .main .topBanner .text article {
-        font-size: 1.75rem;
-        line-height: 2.6rem;
-        margin: 0 37% 0 50px;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 0 37% 0 35px;
     }
 }
 
@@ -659,20 +661,21 @@ footer .down .decorate ul li:not(:last-child) {
         font-size: 1.125rem;
     }
     .main .topBanner .text {
-        left: 45%;
-        transform: translateX(-28%);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 55%;
     }
     .main .topBanner .text h1 {
-        font-size: 5.5rem;
+        font-size: 4.3rem;
     }
     .main .topBanner .text p {
-        font-size: 2.5rem;
-        margin: 0 0 15px 45px;
+        font-size: 2rem;
+        margin: 0 0 15px 30px;
     }
     .main .topBanner .text article {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         line-height: 2.2rem;
-        margin: 0 2% 0 45px;
+        margin: 0 2% 0 30px;
     }
 }
 
@@ -727,20 +730,19 @@ footer .down .decorate ul li:not(:last-child) {
 @media screen and (max-width:768px) {
     .main .topBanner .text {
         top: 240px;
-        left: 38%;
-        transform: translateX(-30%);
+        width: 70%;
     }
     .main .topBanner .text h1 {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .main .topBanner .text p {
-        font-size: 2.25rem;
-        margin: 0 0 15px 38px;
+        font-size: 1.8rem;
+        margin: 0 0 15px 32px;
     }
     .main .topBanner .text article {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         line-height: 1.8rem;
-        margin: 0 4% 0 38px;
+        margin: 0 4% 0 32px;
     }
 }
 
@@ -748,19 +750,18 @@ footer .down .decorate ul li:not(:last-child) {
     .top-menu-R {
         padding: 50px 40px 5px 0;
     }
-    .main .topBanner .text {
-        left: 26%;
-        transform: translateX(-4%);
-    }
     .main .topBanner .text h1,
     .main .topBanner .text h2 {
-        font-size: 4.25rem;
+        font-size: 3.5rem;
     }
     .main .topBanner .text p {
-        margin: 0 0 10px 35px;
+        font-size: 1.6rem;
+        margin: 0 0 10px 29px;
     }
     .main .topBanner .text article {
-        margin-left: 35px;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-left: 29px;
     }
     footer .up h2 {
         letter-spacing: 2px;
@@ -818,16 +819,18 @@ footer .down .decorate ul li:not(:last-child) {
     }
     .main .topBanner .text {
         top: 245px;
-        left: 10%;
-        transform: translateX(-4%);
+        width: 75%;
     }
     .main .topBanner .text h1,
     .main .topBanner .text h2 {
-        font-size: 3.75rem;
+        font-size: 3.3rem;
+    }
+    .main .topBanner .text p {
+        font-size: 1.45rem;
     }
     .main .topBanner .text article {
         font-size: 1rem;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
     }
     footer .up {
         flex-wrap: wrap-reverse;
@@ -881,22 +884,21 @@ footer .down .decorate ul li:not(:last-child) {
 
 @media screen and (max-width:420px) {
     .main .topBanner .text h1 {
-        font-size: 2.5rem;
-        margin-bottom: 5px;
+        font-size: 3rem;
+        margin-bottom: 10px;
     }
     .main .topBanner .text h2 {
         font-size: 3rem;
     }
     .main .topBanner .text p {
-        margin: 0 0 10px 17px;
-        font-size: 1.5rem;
-        margin-bottom: 5px;
+        margin: 0 0 10px 25px;
+        font-size: 1.45rem;
     }
     .main .topBanner .text article {
-        margin: 0 10% 0 17px;
+        margin: 0 10% 0 25px;
     }
     .main .topBanner .text {
-        left: 14%;
+        width: 80%;
     }
 }
 

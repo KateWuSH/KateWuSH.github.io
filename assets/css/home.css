@@ -278,7 +278,7 @@
     background: -o-linear-gradient(right, #43b8b5, #654f82);
     background: -moz-linear-gradient(right, #43b8b5, #654f82);
     background: linear-gradient(to right, #43b8b5, #654f82); */
-    background: url(../../upload/service/skyBg.jpg) no-repeat center;
+    background: url(../../upload/home/skyBg.jpg) no-repeat center;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
@@ -1151,6 +1151,9 @@
 @media screen and (max-width:360px) {
     .service .text {
         padding: 75px 15% 55px 20%;
+    }
+    .recruit .sectionR .img img {
+        vertical-align: top;
     }
 }
 
