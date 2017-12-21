@@ -650,6 +650,19 @@
     }
 }
 
+@media screen and (max-width:580px) {
+    .future .dearm {
+        width: 25%;
+    }
+    .future .dearm p {
+        font-size: 1.5rem;
+    }
+    .future .dearm article {
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+    }
+}
+
 @media screen and (max-width:550px) {
     .advantage .img img {
         transform: translateX(-130px);
@@ -665,7 +678,7 @@
     .application .item .img {
         width: 80%;
         margin: 30px auto;
-        height: 34%;
+        min-height: 275px;
     }
     .application .item .text {
         width: 100%;
@@ -682,19 +695,6 @@
     .innovation .text p {
         font-size: 1.5rem;
         margin: 5px 0;
-    }
-}
-
-@media screen and (max-width:580px) {
-    .future .dearm {
-        width: 25%;
-    }
-    .future .dearm p {
-        font-size: 1.5rem;
-    }
-    .future .dearm article {
-        font-size: 0.875rem;
-        line-height: 1.2rem;
     }
 }
 
