@@ -913,6 +913,9 @@ footer .down .decorate ul li:not(:last-child) {
     .fixed-hamburger {
         right: 0;
     }
+    .fixed-menu .menu-top .logo {
+        width: 65%;
+    }
 }
 
 @media screen and (max-width:479px) {
@@ -950,6 +953,9 @@ footer .down .decorate ul li:not(:last-child) {
     .main .topBanner .text {
         width: 80%;
     }
+    .fixed-menu .menu-top .logo {
+        width: 60%;
+    }
 }
 
 @media screen and (max-width:380px) {
@@ -968,6 +974,16 @@ footer .down .decorate ul li:not(:last-child) {
     }
     footer .up .logo img {
         width: 85%;
+    }
+    .fixed-menu .menu-top .cross {
+        margin: 40px 40px 0 0;
+    }
+    .fixed-menu .content ul li p,
+    .fixed-menu .content .lang {
+        padding: 10px 75px;
+    }
+    .fixed-menu .content ul li ul li {
+        padding: 7px 75px;
     }
 }
 
