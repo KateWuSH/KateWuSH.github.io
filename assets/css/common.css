@@ -665,7 +665,8 @@ footer .down .decorate ul li:not(:last-child) {
         transform: translateX(-50%);
         width: 55%;
     }
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 4.3rem;
     }
     .main .topBanner .text p {
@@ -732,7 +733,8 @@ footer .down .decorate ul li:not(:last-child) {
         top: 240px;
         width: 70%;
     }
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 4rem;
     }
     .main .topBanner .text p {
@@ -909,9 +911,6 @@ footer .down .decorate ul li:not(:last-child) {
     .top-menu-L {
         width: 75%;
     }
-    .main .topBanner .text h2 {
-        font-size: 2.5rem;
-    }
     footer .up .info {
         padding: 15px 5% 0 11%;
     }
@@ -925,7 +924,8 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:360px) {
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 2.8rem;
     }
     .main .topBanner .text p {
@@ -940,8 +940,12 @@ footer .down .decorate ul li:not(:last-child) {
 }
 
 @media screen and (max-width:320px) {
-    .main .topBanner .text h1 {
+    .main .topBanner .text h1,
+    .main .topBanner .text h2 {
         font-size: 2.5rem;
+    }
+    .main .topBanner .text h1,
+    {
         margin-bottom: 10px;
     }
     .main .topBanner .text p {
