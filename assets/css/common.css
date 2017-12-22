@@ -230,9 +230,10 @@ body {
 }
 
 body.menuOn {
-    margin-left: -385px;
-    padding-right: 385px;
+    margin-left: -300px;
+    padding-right: 300px;
     transition: .5s ease;
+    overflow-y: hidden;
 }
 
 body.menuOn .fixed-menu {
@@ -241,7 +242,7 @@ body.menuOn .fixed-menu {
 }
 
 body.menuOn .fixed-hamburger {
-    right: 385px;
+    right: 300px;
 }
 
 body.menuOn .global .bg {
@@ -258,19 +259,19 @@ body.menuOn .global .bg {
     right: -385px;
     top: 0;
     z-index: 2;
-    width: 385px;
+    width: 300px;
     height: 100%;
-    background-color: #222;
     transition: .5s ease;
 }
 
 .fixed-menu .menu {
-    background-color: #222;
+    padding-bottom: 60px;
 }
 
 .fixed-menu .menu-top {
     padding: 20px;
     display: flex;
+    justify-content: center;
 }
 
 .fixed-menu .menu-top .logo img {
@@ -288,7 +289,7 @@ body.menuOn .global .bg {
 
 .fixed-menu .menu-top .close span {
     position: absolute;
-    background-color: white;
+    background-color: #269ac1;
 }
 
 .fixed-menu .menu-top .close span:first-child {
@@ -304,32 +305,59 @@ body.menuOn .global .bg {
     top: 0;
 }
 
-.fixed-menu .content {
-    color: white
+.fixed-menu .content ul li p,
+.fixed-menu .content .lang p {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .fixed-menu .content ul li p {
-    font-size: 1.75rem;
-    padding: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+    padding: 15px 80px 5px;
 }
 
 .fixed-menu .content ul li ul li {
     font-size: 1.2rem;
-    padding: 15px 40px;
-    background-color: #0c0c0c;
+    padding: 7px 80px;
     transition: .5s ease;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fixed-menu .content ul li p a,
+.fixed-menu .content ul li ul li a {
+    display: block;
+    transition: .5s ease;
 }
 
 .fixed-menu .content ul li ul li:last-child {
-    padding: 15px 40px 25px;
+    padding: 7px 80px 25px;
+}
+
+.fixed-menu .content ul li p a:hover {
+    color: #269ac1;
+    transition: .5s ease;
 }
 
 .fixed-menu .content ul li ul li:hover {
     opacity: .5;
     transition: .5s ease;
+}
+
+.fixed-menu .content .lang {
+    margin: 15px 12px 5px 80px;
+}
+
+.fixed-menu .content .lang img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: inherit;
+}
+
+.fixed-menu .content .lang p {
+    display: inline-block;
+}
+
+.fixed-menu .content .lang span {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 
