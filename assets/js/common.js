@@ -2,19 +2,14 @@ $(document).ready(function() {
     // menu
     $('header .hamburger').click(function() {
         $('body').toggleClass('menuOn');
-        $(this).toggleClass('close');
-        $('.fixed-hamburger').toggleClass('close');
     });
 
     $('.fixed-hamburger').click(function() {
         $('body').toggleClass('menuOn');
-        $(this).toggleClass('close');
-        $('header .hamburger').toggleClass('close');
     });
 
     $('.fixed-menu .close').click(function() {
         $('body').removeClass('menuOn');
-        $('.fixed-hamburger').removeClass('close');
     });
 
     // menu scrollbar
