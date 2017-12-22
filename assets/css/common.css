@@ -924,7 +924,35 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:360px) {
+    .main .topBanner .text h1 {
+        font-size: 2.8rem;
+    }
+    .main .topBanner .text p {
+        margin: 0 0 10px 23px;
+        font-size: 1.3rem;
+    }
+    .main .topBanner .text article {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+        margin: 0 10% 0 23px;
+    }
+}
+
 @media screen and (max-width:320px) {
+    .main .topBanner .text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .main .topBanner .text p {
+        margin: 0 0 10px 23px;
+        font-size: 1.2rem;
+    }
+    .main .topBanner .text article {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin: 0 10% 0 23px;
+    }
     footer .up .info {
         padding: 15px 5% 0;
     }
