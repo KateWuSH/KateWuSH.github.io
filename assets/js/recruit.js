@@ -37,7 +37,7 @@ $(document).ready(function() {
     });
 
     $('#recruit .vacancyList').waypoint(function() {
-        $('.vacancyList .content').addClass('movein');
+        $('.vacancyList .contentFrame').addClass('movein');
     }, {
         offset: '80%'
     });

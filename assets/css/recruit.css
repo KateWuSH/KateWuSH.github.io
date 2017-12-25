@@ -12,7 +12,7 @@
 .titbits .title p,
 .titbits .title span,
 .titbits .photoSec img,
-.vacancyList .content {
+.vacancyList .contentFrame {
     opacity: 0;
 }
 
@@ -68,7 +68,7 @@
     animation: fadeIn 1.5s forwards 1.2s;
 }
 
-.vacancyList .content.movein {
+.vacancyList .contentFrame.movein {
     animation: bounceInLeft 1.5s forwards;
 }
 
