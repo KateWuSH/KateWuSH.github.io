@@ -2,6 +2,64 @@
 
 /*-- waypoints --*/
 
+.advantage .img,
+.advantage .text p,
+.advantage .text article,
+.application .integration .img,
+.application .integration .text p,
+.application .integration .text article,
+.application .item .img,
+.application .item .text p,
+.application .item .text article,
+.innovation .wrapper .title,
+.innovation .wrapper .text p,
+.innovation .wrapper .text span,
+.future .dearm {
+    opacity: 0;
+}
+
+.advantage.movein .img,
+.application .integration.movein .img,
+.application .item01.movein .img,
+.application .item02.movein .img,
+.application .item03.movein .img {
+    animation: fadeIn 1.5s forwards;
+}
+
+.advantage.movein .text p,
+.application .integration.movein .text p,
+.application .item01.movein .text p,
+.application .item02.movein .text p,
+.application .item03.movein .text p,
+.future.movein .dearm01 {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.future.movein .dearm02 {
+    animation: fadeInUp 1.5s forwards .3s;
+}
+
+.future.movein .dearm03 {
+    animation: fadeInUp 1.5s forwards .6s;
+}
+
+.advantage.movein .text article,
+.application .integration.movein .text article,
+.application .item01.movein .text article,
+.application .item02.movein .text article,
+.application .item03.movein .text article {
+    animation: fadeInUpArticle 1.5s forwards .4s;
+}
+
+.innovation .wrapper.movein .title {
+    animation: fadeInLeft 1.5s forwards;
+}
+
+.innovation .wrapper.movein .text p,
+.innovation .wrapper.movein .text span {
+    animation: fadeInRight 1.5s forwards;
+}
+
 
 /*-- top banner --*/
 
@@ -135,8 +193,18 @@
     color: black;
 }
 
-.application .item .img {
+.application .item .imgFrame {
+    overflow: hidden;
     width: calc(100% / 3);
+}
+
+.application .item .img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.application .item .img img {
+    opacity: 0;
 }
 
 .application .item01 .img {
@@ -156,6 +224,12 @@
 
 .application .item hr {
     width: 70px;
+}
+
+.application .item:hover .img {
+    transform: scale(1.1);
+    overflow: hidden;
+    transition: .5s ease;
 }
 
 
@@ -195,6 +269,7 @@
     font-size: 2.45rem;
     font-weight: bold;
     font-style: italic;
+    display: block;
 }
 
 
