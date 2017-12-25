@@ -12,6 +12,18 @@ $(document).ready(function() {
         $('body').removeClass('menuOn');
     });
 
+    $('.fixed-menu .content ul li ul li a').on('click', function(event) {
+        if (this.hash !== "") {
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+
+
     // menu scrollbar
     $("nav .fixed-menu").mCustomScrollbar({
         axis: "y",

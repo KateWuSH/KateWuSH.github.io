@@ -8,7 +8,7 @@
 .application .integration .img,
 .application .integration .text p,
 .application .integration .text article,
-.application .item .img,
+.application .item .imgFrame,
 .application .item .text p,
 .application .item .text article,
 .innovation .wrapper .title,
@@ -20,9 +20,9 @@
 
 .advantage.movein .img,
 .application .integration.movein .img,
-.application .item01.movein .img,
-.application .item02.movein .img,
-.application .item03.movein .img {
+.application .item01.movein .imgFrame,
+.application .item02.movein .imgFrame,
+.application .item03.movein .imgFrame {
     animation: fadeIn 1.5s forwards;
 }
 
