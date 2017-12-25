@@ -215,11 +215,11 @@
 }
 
 .titbits .photoSec .marginRight {
-    padding-right: 16px;
+    margin-right: 16px;
 }
 
 .titbits .marginBottom {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .titbits .photoSec {
@@ -265,6 +265,16 @@
 .titbits .photoSec img {
     width: 100%;
     overflow: hidden;
+    transition: .5s ease;
+}
+
+.titbits .photoSec div {
+    overflow: hidden;
+}
+
+.titbits .photoSec img:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
 }
 
 .titbits .column2 div {
@@ -600,10 +610,10 @@
         padding: 0 10px 200px;
     }
     .titbits .marginBottom {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
     .titbits .photoSec .marginRight {
-        padding-right: 10px;
+        margin-right: 10px;
     }
     .titbits .photoSec .row1.adjust {
         width: 23.6%;
