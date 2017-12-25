@@ -15,6 +15,7 @@ $(document).ready(function() {
     $('.fixed-menu .content ul li ul li a').on('click', function(event) {
         if (this.hash !== "") {
             var hash = this.hash;
+            $('body').removeClass('menuOn');
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function() {
