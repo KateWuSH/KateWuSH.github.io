@@ -168,18 +168,12 @@
 
 .application .item .text {
     width: calc(100% * 2/3);
+    display: flex;
+    align-items: center;
 }
 
-.application .item01 .text .frame {
-    padding: 65px 10% 105px;
-}
-
-.application .item02 .text .frame {
-    padding: 90px 10% 110px;
-}
-
-.application .item03 .text .frame {
-    padding: 110px 10% 135px;
+.application .item .text .frame {
+    padding: 0 12%;
 }
 
 .application .item .text p {
@@ -205,31 +199,26 @@
 
 .application .item .img img {
     opacity: 0;
+    width: 100%;
 }
 
-.application .item01 .img {
+.application .item01 .imgFrame {
     background: url(../../upload/service/item01.jpg) no-repeat;
     background-size: cover;
 }
 
-.application .item02 .img {
+.application .item02 .imgFrame {
     background: url(../../upload/service/item02.jpg) no-repeat;
     background-size: cover;
 }
 
-.application .item03 .img {
+.application .item03 .imgFrame {
     background: url(../../upload/service/item03.jpg) no-repeat;
     background-size: cover;
 }
 
 .application .item hr {
     width: 70px;
-}
-
-.application .item:hover .img {
-    transform: scale(1.1);
-    overflow: hidden;
-    transition: .5s ease;
 }
 
 
@@ -329,15 +318,6 @@
         font-size: 1.3rem;
         line-height: 2.6rem;
     }
-    .application .item01 .text .frame {
-        padding: 65px 10% 80px;
-    }
-    .application .item02 .text .frame {
-        padding: 70px 10% 90px;
-    }
-    .application .item03 .text .frame {
-        padding: 90px 10% 100px;
-    }
     .innovation .title {
         font-size: 7rem;
     }
@@ -397,7 +377,7 @@
     }
 }
 
-@media screen and (max-width:1240px) {
+@media screen and (max-width:1280px) {
     .innovation .title {
         font-size: 5.5rem;
     }
@@ -421,9 +401,30 @@
     }
 }
 
+@media screen and (max-width:1200px) {
+    .application .item .text p {
+        margin-bottom: 10px;
+    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article {
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+    .application .item .text .frame {
+        padding: 0 10%;
+    }
+}
+
 @media screen and (max-width:1180px) {
     .application .integration .img {
         text-align: right;
+    }
+    .application .item .imgFrame {
+        width: 35%;
+    }
+    .application .item .text {
+        width: 65%;
     }
 }
 
@@ -457,7 +458,7 @@
     }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1040px) {
     .advantage .text p,
     .application .integration .text p {
         font-size: 2.3rem;
@@ -481,11 +482,6 @@
     }
     .application .wrapper {
         margin: 0 5%;
-    }
-    .application .item01 .text .frame,
-    .application .item02 .text .frame,
-    .application .item03 .text .frame {
-        padding: 45px 10% 60px;
     }
     .future .dearm p {
         font-size: 2.2rem;
@@ -567,11 +563,17 @@
     .application .integration .text article,
     .application .item .text article {
         font-size: 1.03rem;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
     }
     .application .item .text p {
         font-size: 2rem;
         margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .application .item .text .frame {
+        padding: 0 8%;
     }
 }
 
@@ -600,12 +602,6 @@
     }
     .application .item hr {
         display: none;
-    }
-    .application .item .img {
-        width: 40%;
-    }
-    .application .item .text {
-        width: 60%;
     }
     .application .item03 {
         margin-top: 0;
@@ -717,7 +713,7 @@
     .advantage .text {
         padding: 32px 5% 0 15%;
     }
-    .application .item .img {
+    .application .item .imgFrame {
         width: 40%;
     }
     .application .item .text {
@@ -750,18 +746,16 @@
     .application .item02 {
         flex-wrap: wrap-reverse;
     }
-    .application .item .img {
-        width: 80%;
-        margin: 30px auto;
-        min-height: 275px;
+    .application .item .imgFrame {
+        width: 90%;
+        margin: 25px auto;
+        min-height: 300px;
     }
     .application .item .text {
         width: 100%;
     }
-    .application .item01 .text .frame,
-    .application .item02 .text .frame,
-    .application .item03 .text .frame {
-        padding: 0px 12% 40px;
+    .application .item .text .frame {
+        padding: 0px 8% 40px;
     }
     .innovation .title {
         font-size: 3rem;
@@ -787,15 +781,6 @@
     .application .integration .text {
         padding: 30px 10%;
     }
-    .application .item .img {
-        width: 90%;
-        margin: 20px auto;
-    }
-    .application .item01 .text .frame,
-    .application .item02 .text .frame,
-    .application .item03 .text .frame {
-        padding: 0px 8% 40px;
-    }
     .future .dearm {
         width: 30%;
     }
@@ -815,6 +800,9 @@
     }
     .application .item .text p {
         font-size: 1.5rem;
+    }
+    .application .item .imgFrame {
+        margin: 20px auto;
     }
     .innovation .wrapper {
         padding: 0 5%;
@@ -845,14 +833,13 @@
     .application .integration .text {
         padding: 30px 8%;
     }
-    .application .item .img {
+    .application .item .imgFrame {
         width: 100%;
-        margin: 0;
+        margin: 0 auto 20px;
+        min-height: 280px;
     }
-    .application .item01 .text .frame,
-    .application .item02 .text .frame,
-    .application .item03 .text .frame {
-        padding: 30px 8% 40px;
+    .application .item .text .frame {
+        padding: 0px 6% 35px;
     }
     .innovation .content {
         padding: 100px 0;
