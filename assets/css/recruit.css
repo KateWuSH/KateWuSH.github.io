@@ -276,12 +276,30 @@
 
 .vacancyList .wrapper {
     background-color: #6c66bd;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 0;
+}
+
+.vacancyList .wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120px;
+    background-color: #0b0827;
+}
+
+.vacancyList .contentFrame {
+    margin-top: -120px;
+    background-color: white;
+    width: 83%;
+    z-index: 2;
 }
 
 .vacancyList .content {
-    background-color: white;
-    width: 54%;
-    transform: translateY(-120px);
     padding: 95px 18% 110px;
 }
 
@@ -379,8 +397,10 @@
     .titbits .photoSec .row2.adjust2 {
         width: 48%;
     }
+    .vacancyList .contentFrame {
+        width: 93%;
+    }
     .vacancyList .content {
-        width: 60%;
         padding: 95px 15% 110px;
     }
 }
@@ -441,8 +461,16 @@
     .titbits .photoSec .row1.adjust2 {
         width: 22.7%;
     }
+    .titbits .wrapper {
+        padding: 0 10px 215px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 90px;
+    }
+    .vacancyList .wrapper::before {
+        height: 90px;
+    }
     .vacancyList .content {
-        width: 70%;
         padding: 95px 10% 110px;
     }
 }
@@ -483,11 +511,11 @@
 }
 
 @media screen and (max-width:1200px) {
-    .vacancyList .content {
-        width: 70%;
-    }
     .titbits .title {
         padding: 65px 15% 45px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 90px;
     }
 }
 
@@ -541,13 +569,6 @@
     }
     .vacancyList .content article {
         margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width:1100px) {
-    .vacancyList .content {
-        width: 75%;
-        margin: -20px 0 -50px;
     }
 }
 
@@ -606,7 +627,6 @@
 
 @media screen and (max-width:1020px) {
     .vacancyList .content {
-        width: 80%;
         padding: 80px 5% 90px;
     }
 }
@@ -617,6 +637,12 @@
     }
     .vacancyList .link .btnEffect {
         margin-bottom: 25px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 75px;
+    }
+    .vacancyList .wrapper::before {
+        height: 75px;
     }
     .vacancyList .content {
         padding: 80px 5% 65px;
@@ -670,18 +696,14 @@
     .titbits .wrapper {
         padding: 0 0 180px 10px;
     }
-    .vacancyList .content {
-        width: 85%;
-        margin: 0px 0 -50px;
-    }
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:880px) {
     .vacancyList .link a:not(:last-child) {
         display: none;
     }
     .vacancyList .content {
-        width: 82%;
+        padding: 80px 10% 65px;
     }
 }
 
@@ -704,7 +726,7 @@
         line-height: 1.8rem;
     }
     .titbits .wrapper {
-        padding: 0 0 255px 10px;
+        padding: 0 0 175px 10px;
     }
     .titbits .photoSec:nth-child(2),
     .titbits .photoSec:nth-child(3),
@@ -733,8 +755,8 @@
     .vacancyList .content p {
         line-height: 2rem;
     }
-    .vacancyList .content {
-        margin: -60px 0 -50px;
+    .vacancyList .wrapper {
+        padding-bottom: 55px;
     }
 }
 
@@ -764,8 +786,7 @@
         margin-right: 75px;
     }
     .vacancyList .content {
-        padding: 75px 10% 55px;
-        width: 70%;
+        padding: 75px 8% 55px;
     }
 }
 
@@ -807,8 +828,6 @@
     }
     .vacancyList .content {
         padding: 75px 7% 55px;
-        margin: -15px 0 -65px;
-        width: 79%;
     }
     .vacancyList .link .btnEffect {
         font-size: 1rem;
@@ -856,11 +875,6 @@
 @media screen and (max-width:540px) {
     .vacancyList .content {
         padding: 75px 8% 55px;
-        width: 84%;
-        margin: 0 0 -120px 0;
-    }
-    .vacancyList .wrapper {
-        background-color: white;
     }
 }
 
@@ -878,11 +892,16 @@
         line-height: 1.8rem;
     }
     .titbits .wrapper {
-        padding: 0 0 140px 10px;
+        padding: 0 0 165px 10px;
     }
     .vacancyList .content {
         padding: 40px 8%;
-        margin: 30px 0 -120px 0;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 40px;
+    }
+    .vacancyList .wrapper::before {
+        height: 40px;
     }
 }
 
@@ -909,6 +928,9 @@
     }
     .titbits .title {
         padding: 30px 8% 20px;
+    }
+    .vacancyList .contentFrame {
+        width: 90%;
     }
 }
 
