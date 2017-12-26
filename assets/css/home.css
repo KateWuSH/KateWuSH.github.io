@@ -1345,9 +1345,6 @@
     .quality p {
         font-size: 1.5rem;
     }
-    .recruit .sectionR .text {
-        font-size: 1.75rem;
-    }
     .quality p {
         font-size: 1.25rem;
         line-height: 1.8rem;
@@ -1380,6 +1377,9 @@
     .global .content p,
     .recruit .sectionR .text {
         font-size: 1.5rem;
+    }
+    .recruit .sectionR .text {
+        font-size: 1.75rem;
     }
     .service .text {
         padding: 75px 15% 55px 20%;
