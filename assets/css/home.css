@@ -1345,6 +1345,10 @@
     .quality p {
         font-size: 1.5rem;
     }
+    .quality p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
     .service .text p {
         line-height: 2.3rem;
     }
