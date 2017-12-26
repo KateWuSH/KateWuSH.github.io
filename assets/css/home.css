@@ -1318,6 +1318,10 @@
     .application .text p {
         margin-bottom: 18px;
     }
+    .quality p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
     .global .content {
         padding: 60px 8% 0;
     }
@@ -1355,10 +1359,6 @@
     }
     .future .content p {
         font-size: 1.1rem;
-    }
-    .quality p {
-        font-size: 1.25rem;
-        line-height: 1.8rem;
     }
     .future .content article {
         font-size: 0.75rem;
