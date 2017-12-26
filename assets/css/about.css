@@ -165,7 +165,7 @@
 
 .value .wrapper {
     padding: 275px 0 260px;
-    background: url(../../upload/about/hand.jpg) no-repeat center center;
+    background: url(../../upload/about/hand.jpg) no-repeat center right;
     background-attachment: fixed;
 }
 
@@ -551,6 +551,10 @@
     .info .mission ul {
         padding-left: 20px;
     }
+    .value .wrapper {
+        background: url(../../upload/about/handMobile.jpg) no-repeat center right;
+        padding: 200px 0;
+    }
     .value .text {
         width: 80%;
         padding: 80px 10%;
@@ -612,6 +616,12 @@
     }
     .cis .up img {
         margin-top: -55px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .main .topBanner {
+        background: url(../../upload/about/topBgMobile.jpg) no-repeat;
     }
 }
 

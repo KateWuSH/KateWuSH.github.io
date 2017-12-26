@@ -819,6 +819,12 @@
     }
 }
 
+@media screen and (max-width:440px) {
+    .main .topBanner {
+        background: url(../../upload/service/topBgMobile.jpg) no-repeat;
+    }
+}
+
 @media screen and (max-width:420px) {
     .advantage .img {
         display: none;

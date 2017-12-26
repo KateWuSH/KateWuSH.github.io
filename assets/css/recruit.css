@@ -915,6 +915,12 @@
     }
 }
 
+@media screen and (max-width:440px) {
+    .main .topBanner {
+        background: url(../../upload/recruit/topBgMobile.jpg) no-repeat;
+    }
+}
+
 @media screen and (max-width:420px) {
     .info .environment .text p,
     .info .benefit .title p,
