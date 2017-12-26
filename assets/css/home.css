@@ -1141,10 +1141,7 @@
     .future .content p,
     .recruit .sectionL p,
     .quality p {
-        font-size: 1.8rem;
-    }
-    .recruit .sectionL p {
-        text-shadow: 2px 2px 3px #434a54;
+        font-size: 1.5rem;
     }
     .service .text p {
         line-height: 2.3rem;
@@ -1155,6 +1152,19 @@
     .global .content p,
     .recruit .sectionR .text {
         font-size: 1.7rem;
+    }
+    .future .content article {
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+    }
+    .recruit .sectionL p {
+        text-shadow: 2px 2px 3px #434a54;
+    }
+    .service .text p {
+        line-height: 2.3rem;
+    }
+    .service .text p {
+        margin-bottom: 20px;
     }
     .technology {
         padding: 80px 10%;
@@ -1188,12 +1198,10 @@
         font-size: 0.875rem;
     }
     .future .content p {
-        font-size: 1.25rem;
         letter-spacing: .5px;
     }
     .future .content article {
         line-height: 1.1rem;
-        font-size: 0.875rem;
         letter-spacing: .5px;
     }
     .future .content.middle {
@@ -1308,7 +1316,6 @@
     }
     .technology p,
     .application .text p {
-        font-size: 1.8rem;
         margin-bottom: 18px;
     }
     .global .content {
@@ -1319,7 +1326,6 @@
     }
     .recruit .sectionR .text {
         padding: 80px 5%;
-        font-size: 2rem;
     }
     .top-banner-mobile-slick .slick-dots {
         bottom: 8px;
@@ -1327,6 +1333,47 @@
 }
 
 @media screen and (max-width:360px) {
+    .technology p,
+    .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 1.5rem;
+    }
+    .service .text p {
+        line-height: 2.3rem;
+    }
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 0.95rem;
+        line-height: 1.7rem;
+    }
+    .future .content p {
+        font-size: 1.1rem;
+    }
+    .quality p {
+        font-size: 1.25rem;
+        line-height: 1.8rem;
+    }
+    .future .content article {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    .service .text article {
+        line-height: 1.4rem;
+    }
+    .service .text p {
+        margin-bottom: 20px;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 1.5rem;
+    }
     .service .text {
         padding: 75px 15% 55px 20%;
     }
