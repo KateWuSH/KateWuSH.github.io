@@ -126,18 +126,34 @@
 .technology {
     text-align: center;
     background-color: #080925;
-    padding: 128px 31% 120px;
+    padding: 128px 28% 120px;
+}
+
+.technology p,
+.application .text p,
+.service .text p,
+.future .content p,
+.recruit .sectionL p,
+.quality p {
+    font-size: 3rem;
 }
 
 .technology p {
-    font-size: 3.125rem;
     color: #ff9c00;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+}
+
+.technology article,
+.global .content article,
+.application .text article,
+.service .text article,
+.future .content article,
+.recruit .sectionL article {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
 }
 
 .technology article {
-    font-size: 1.875rem;
-    line-height: 3rem;
     color: white;
 }
 
@@ -171,24 +187,26 @@
 }
 
 .global .content {
-    padding: 242px 12% 0 54%;
+    padding: 295px 12% 0 54%;
     position: absolute;
     z-index: 0;
     top: 0;
 }
 
-.global .content p {
-    font-size: 4.5rem;
+.global .content p,
+.recruit .sectionR .text {
+    font-size: 3.7rem;
     font-weight: bold;
+}
+
+.global .content p {
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 35px;
 }
 
 .global .content article {
-    font-size: 1.875rem;
-    line-height: 3rem;
-    color: white;
     margin-bottom: 3rem;
+    color: white;
 }
 
 .recruit .sectionL a .btnEffect {
@@ -210,14 +228,8 @@
 }
 
 .application .text p {
-    font-size: 3.125rem;
     color: #2fb1ad;
-    margin-bottom: 85px;
-}
-
-.application .text article {
-    font-size: 1.875rem;
-    line-height: 3rem;
+    margin-bottom: 75px;
 }
 
 .application .img {
@@ -247,20 +259,17 @@
 .service .text {
     width: 45%;
     color: white;
-    padding: 213px 0 0 45px;
+    padding: 240px 0 0 45px;
 }
 
 .service .text article {
-    font-size: 1.875rem;
-    line-height: 3rem;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     letter-spacing: .3rem;
 }
 
 .service .text p {
-    font-size: 3.125rem;
     line-height: 4.5rem;
-    margin-bottom: 83px;
+    margin-bottom: 60px;
     letter-spacing: .3rem;
 }
 
@@ -296,12 +305,7 @@
 }
 
 .future .content p {
-    margin: 50px 0 25px;
-    font-size: 2.53rem;
-}
-
-.future .content article {
-    font-size: 1.625rem;
+    margin: 50px 0 10px;
 }
 
 
@@ -318,22 +322,20 @@
 }
 
 .recruit .sectionL {
-    background: url(../../upload/home/recruitBg.jpg) no-repeat;
-    padding: 1200px 0 170px;
+    background: url(../../upload/home/recruitBg.jpg) no-repeat center;
+    padding-top: 1130px;
     color: white;
     text-align: center;
+    margin-bottom: 1px;
 }
 
 .recruit .sectionL p {
-    font-size: 3.125rem;
     letter-spacing: .2rem;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 .recruit .sectionL article {
-    font-size: 1.875rem;
-    line-height: 3rem;
-    margin: 0 8% 90px;
+    margin: 0 15% 90px;
     text-align: justify;
 }
 
@@ -343,8 +345,7 @@
 
 .recruit .sectionR .text {
     font-family: "cwtexqyuan";
-    font-size: 4.5rem;
-    font-weight: bold;
+    letter-spacing: 2px;
     text-align: center;
     padding: 329px 0;
     color: #2a9ba7;
@@ -359,8 +360,8 @@
 }
 
 .recruit .sectionR .img img {
-    /* vertical-align: top; */
-    height: 100%;
+    vertical-align: top;
+    width: 100%;
 }
 
 .recruit .sectionR .img .col {
@@ -376,7 +377,6 @@
 
 .quality p {
     text-align: center;
-    font-size: 2.5rem;
     letter-spacing: .2rem;
     font-weight: bold;
     color: #4c519b;
@@ -393,17 +393,56 @@
     .future .wrapper {
         padding: 85px 12% 80px;
     }
+    .recruit .sectionL {
+        padding-top: 1080px;
+    }
 }
 
 @media screen and (max-width:1680px) {
+    .technology p,
+    .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 2.6rem;
+    }
+    .service .text p {
+        line-height: 3.6rem;
+    }
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+    }
+    .service .text article {
+        line-height: 2.2rem;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 3.2rem;
+    }
     .technology {
         padding: 128px 28% 120px;
+    }
+    .service .text {
+        padding: 305px 0 0 45px;
     }
     .future .wrapper {
         padding: 85px 10% 80px;
     }
     .application .text {
         padding: 140px 120px 0;
+    }
+    .recruit .sectionL {
+        padding-top: 940px;
+    }
+    .recruit .sectionR .text {
+        padding: 280px 0;
     }
 }
 
@@ -426,6 +465,30 @@
 }
 
 @media screen and (max-width:1440px) {
+    .technology p,
+    .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 2.2rem;
+    }
+    .service .text p {
+        line-height: 3.2rem;
+    }
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 1.25rem;
+        line-height: 2.4rem;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 2.8rem;
+    }
     .technology {
         padding: 120px 24%;
     }
@@ -434,7 +497,7 @@
         width: 60%;
     }
     .application .text {
-        padding: 150px 100px 0;
+        padding: 185px 100px 0;
         width: 40%;
     }
     .application .text p {
@@ -444,23 +507,23 @@
         width: 180%;
     }
     .service .text {
-        padding: 110px 0 0 45px;
+        padding: 170px 0 0 45px;
     }
     .service .text article {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        line-height: 2rem;
     }
     .service .text p {
         margin-bottom: 70px;
     }
     .future .content img {
-        width: 60%;
+        width: 55%;
     }
     .future .wrapper {
         padding: 85px 8% 80px;
     }
     .future .content p {
-        margin: 50px 0 15px;
-        font-size: 2rem;
+        margin: 35px 0 3px;
         letter-spacing: 2px;
     }
     .recruit .sectionR .img .col {
@@ -474,7 +537,6 @@
         width: 100%;
     }
     .recruit .sectionR .text {
-        font-size: 3.5rem;
         letter-spacing: 3px;
         padding: 200px 0;
     }
@@ -501,15 +563,13 @@
         display: none;
     }
     .recruit .sectionL {
-        padding: 1045px 5% 0;
+        padding: 940px 5% 0;
+        margin-bottom: 0px;
     }
     .recruit .sectionL article {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
         margin: 0 3% 70px;
     }
     .recruit .sectionL p {
-        font-size: 2.8rem;
         margin-bottom: 50px;
     }
     .quality p {
@@ -546,10 +606,7 @@
         padding: 150px 90px 0;
     }
     .recruit .sectionR .text {
-        padding: 185px 9%;
-    }
-    .recruit .sectionR .img img {
-        vertical-align: top;
+        padding: 150px 9%;
     }
     .recruit .sectionL {
         padding: 900px 5% 0;
@@ -565,25 +622,54 @@
 @media screen and (max-width:1200px) {
     .technology p,
     .application .text p,
-    .service .text p {
-        font-size: 2.5rem;
-        letter-spacing: 1px;
-        margin-bottom: 35px;
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 2rem;
     }
     .service .text p {
-        font-size: 2.5rem;
-        line-height: 3.5rem;
-    }
-    .service .text article {
-        margin-bottom: 25px;
+        line-height: 2.6rem;
     }
     .technology article,
     .global .content article,
     .application .text article,
     .service .text article,
-    .future .content article {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
+    .future .content article,
+    .recruit .sectionL article {
+        font-size: 1.05rem;
+        line-height: 2rem;
+    }
+    .service .text article {
+        line-height: 1.6rem;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 2.3rem;
+    }
+    .technology p {
+        margin-bottom: 20px;
+    }
+    .global .content {
+        padding: 320px 10% 0 50%;
+    }
+    .global .content p {
+        margin-bottom: 25px;
+    }
+    .global .content article {
+        margin-bottom: 35px;
+    }
+    .service .text {
+        padding: 140px 5% 0 15px;
+    }
+    .service .text article {
+        margin-bottom: 25px;
+    }
+    .service .text p {
+        margin-bottom: 40px;
+    }
+    .future .content p {
+        margin: 40px 0 5px;
     }
     .future .content article {
         line-height: 2rem;
@@ -605,6 +691,16 @@
 @media screen and (max-width:1024px) {
     .top-banner-pc-slick .slick-dots {
         bottom: 15px;
+    }
+    .top-banner-pc-slick .slick-dots li.slick-active button:before,
+    .top-banner-mobile-slick .slick-dots li.slick-active button:before {
+        width: 8px;
+        height: 8px;
+    }
+    .top-banner-pc-slick .slick-dots li button:before,
+    .top-banner-mobile-slick .slick-dots li button:before {
+        width: 10px;
+        height: 10px;
     }
     .technology {
         padding: 120px 17%;
@@ -648,7 +744,7 @@
     .recruit .sectionL {
         background-position: center;
         background-size: cover;
-        padding: 730px 0 120px 0;
+        padding: 565px 0 120px 0;
     }
     .recruit .sectionL p {
         margin-bottom: 35px;
@@ -657,7 +753,7 @@
         padding: 120px 0;
     }
     .recruit .sectionL article {
-        margin: 0 18% 75px;
+        margin: 0 27% 45px;
     }
     .quality p {
         font-size: 2.3rem;
@@ -667,7 +763,7 @@
     }
     .recruit .sectionR .img .col.close,
     .recruit .sectionR .img .colwide.close {
-        display: inline-flex;
+        display: initial;
     }
     .recruit .sectionR .img .col {
         width: calc(100% / 3);
@@ -701,6 +797,9 @@
     }
     .recruit .sectionR .img .col.order4 {
         order: 9;
+    }
+    .recruit .sectionR .img .col img {
+        width: 100%;
     }
 }
 
@@ -790,10 +889,14 @@
     }
     .technology p,
     .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 1.8rem;
+    }
     .service .text p {
-        font-size: 2.25rem;
-        letter-spacing: .5px;
-        margin-bottom: 30px;
+        line-height: 2.6rem;
     }
     .technology article,
     .global .content article,
@@ -801,9 +904,18 @@
     .service .text article,
     .future .content article,
     .recruit .sectionL article {
-        font-size: 1.25rem;
-        line-height: 2.3rem;
-        letter-spacing: 2px;
+        font-size: 1.03rem;
+        line-height: 1.8rem;
+    }
+    .service .text article {
+        line-height: 1.4rem;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 2.2rem;
+    }
+    .technology p {
+        margin-bottom: 15px;
     }
     .technology {
         padding: 100px 14%;
@@ -815,10 +927,13 @@
         height: 635px;
     }
     .global .content {
-        padding: 100px 6% 0 35%;
+        padding: 155px 10% 0 44%;
     }
     .application .text {
         width: 80%;
+    }
+    .application .text p {
+        margin-bottom: 25px;
     }
     .service .img {
         width: 50%;
@@ -831,8 +946,7 @@
         padding: 80px 5%;
     }
     .service .text p {
-        font-size: 2rem;
-        line-height: 3rem;
+        line-height: 2.4rem;
     }
     .future .content article {
         line-height: 1.6rem;
@@ -845,13 +959,17 @@
         padding: 250px 0 80px 0;
     }
     .recruit .sectionL article {
-        margin: 0 11% 90px;
+        margin: 0 18% 40px;
     }
 }
 
 @media screen and (max-width:700px) {
     .technology {
-        padding: 100px 10%;
+        padding: 100px 8%;
+    }
+    .service .text p,
+    .service .text article {
+        letter-spacing: .5px;
     }
     .service .img img {
         width: 255%;
@@ -860,6 +978,17 @@
     .quality p {
         padding: 100px 5%;
     }
+    .technology p,
+    .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 1.6rem;
+    }
+    .service .text p {
+        line-height: 2.3rem;
+    }
     .technology article,
     .global .content article,
     .application .text article,
@@ -867,24 +996,37 @@
     .future .content article,
     .recruit .sectionL article {
         font-size: 1rem;
-        line-height: 1.8rem;
-        letter-spacing: 1px;
+        line-height: 1.6rem;
     }
-    .technology p,
-    .application .text p,
+    .service .text article {
+        line-height: 1.4rem;
+    }
     .service .text p {
-        font-size: 2rem;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
-    .global .content p {
-        font-size: 3rem;
-        margin-bottom: 30px;
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width:640px) {
+    .top-banner-pc-slick .slick-dots,
+    .top-banner-mobile-slick .slick-dots {
+        bottom: 20px;
+    }
     .global .bg {
         background-size: 1024px 505px;
+    }
+    .global.movein .content a .btnEffect {
+        float: right;
+    }
+    .btnEffect {
+        line-height: 40px;
+        height: 40px;
+        width: 130px;
+        font-size: 0.875rem;
+        letter-spacing: .5px;
     }
     .global .content a,
     .service .text a,
@@ -897,19 +1039,24 @@
         height: 520px;
     }
     .global .content {
-        padding: 80px 6% 0 26%;
+        padding: 130px 6% 0 35%;
+    }
+    .global .content p {
+        margin-bottom: 20px;
     }
     .global .content article {
         margin-bottom: 25px;
+    }
+    .application .text p {
+        margin-bottom: 20px;
     }
     .application .text {
         padding: 50px 0 0;
     }
     .service .img img {
-        width: 260%;
+        width: 230%;
     }
     .service .text p {
-        font-size: 1.5rem;
         line-height: 2.5rem;
     }
     .service .text {
@@ -919,7 +1066,6 @@
         padding: 65px 5%;
     }
     .future .content p {
-        font-size: 1.5rem;
         letter-spacing: 1px;
         margin: 20px 0 8px;
     }
@@ -927,16 +1073,11 @@
         line-height: 1.3rem;
     }
     .recruit .sectionR .text {
-        font-size: 3rem;
         letter-spacing: 2px;
         padding: 85px 5%;
     }
-    .recruit .sectionR .img img {
-        vertical-align: initial;
-    }
     .quality p {
         padding: 85px 5%;
-        font-size: 2rem;
         line-height: 3rem;
         letter-spacing: 1px;
     }
@@ -994,6 +1135,24 @@
         width: 9px;
         height: 9px;
     }
+    .technology p,
+    .application .text p,
+    .service .text p,
+    .future .content p,
+    .recruit .sectionL p,
+    .quality p {
+        font-size: 1.3rem;
+    }
+    .service .text p {
+        line-height: 2.3rem;
+    }
+    .service .text p {
+        margin-bottom: 20px;
+    }
+    .global .content p,
+    .recruit .sectionR .text {
+        font-size: 1.7rem;
+    }
     .technology {
         padding: 80px 10%;
     }
@@ -1041,7 +1200,6 @@
         padding: 150px 12% 80px;
     }
     .recruit .sectionR .text {
-        font-size: 2.5rem;
         letter-spacing: 1.5px;
     }
     .recruit .sectionL article {
@@ -1049,7 +1207,6 @@
     }
     .quality p {
         padding: 80px 5%;
-        font-size: 1.5rem;
         line-height: 2.1rem;
         letter-spacing: .5px;
     }
@@ -1057,7 +1214,23 @@
 
 @media screen and (max-width:420px) {
     .top-banner-mobile-slick .slick-dots {
-        bottom: 20px;
+        bottom: 10px;
+    }
+    .technology {
+        padding: 80px 12%;
+    }
+    .global .content {
+        padding: 80px 12% 0;
+    }
+    .global .content article {
+        margin-bottom: 20px;
+    }
+    .btnEffect {
+        line-height: 35px;
+        height: 35px;
+        width: 110px;
+        font-size: 0.75rem;
+        letter-spacing: .5px;
     }
     .service .text article {
         margin-bottom: 15px;
@@ -1087,7 +1260,6 @@
         margin: 0 0 40px;
     }
     .recruit .sectionR .text {
-        font-size: 2.25rem;
         letter-spacing: 1px;
     }
     .recruit .sectionR .img .col {
@@ -1122,6 +1294,9 @@
     .recruit .sectionR .img .colwide.close {
         display: none;
     }
+    .quality p {
+        line-height: 1.8rem;
+    }
 }
 
 @media screen and (max-width:380px) {
@@ -1144,7 +1319,7 @@
         font-size: 2rem;
     }
     .top-banner-mobile-slick .slick-dots {
-        bottom: 13px;
+        bottom: 8px;
     }
 }
 
