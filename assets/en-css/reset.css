@@ -7,6 +7,22 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LevenimMT';
+    src: url('LevenimMT.eot') format('embedded-opentype');
+    src: url('../font/LevenimMT/LevenimMT.ttf') format('truetype') url('../font/LevenimMT/LevenimMT.svg#LevenimMT') format('svg'), url('../font/LevenimMT/LevenimMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LevenimMT-Bold';
+    src: url('LevenimMT-Bold.eot') format('embedded-opentype');
+    src: url('../font/LevenimMT-Bold/LevenimMT-Bold.ttf') format('truetype'), url('../font/LevenimMT-Bold/LevenimMT-Bold.svg#LevenimMT-Bold') format('svg'), url('../font/LevenimMT-Bold/LevenimMT-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
