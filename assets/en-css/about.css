@@ -91,6 +91,8 @@
 .concept .content .text p,
 .value .text p,
 .cis .down .text p {
+    font-family: 'Century Gothic';
+    font-family: 'Questrial', sans-serif;
     font-size: 3.75rem;
     letter-spacing: 3px;
     font-weight: bold;
