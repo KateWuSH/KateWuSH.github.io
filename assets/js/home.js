@@ -3,7 +3,7 @@ $(document).ready(function() {
     /*----- slick -----*/
     // home topBanner
     $('.top-banner-pc-slick').slick({
-        autoplay: false,
+        autoplay: true,
         speed: 300,
         dots: true,
         infinite: true,

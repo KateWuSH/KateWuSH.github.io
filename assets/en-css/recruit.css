@@ -1,0 +1,994 @@
+@charset "utf-8";
+
+/*-- waypoints --*/
+
+.info .imgL img,
+.info .environment p,
+.info .environment article,
+.info .environment img,
+.info .benefit .title p,
+.info .benefit .list p,
+.info .benefit .list ul,
+.titbits .title p,
+.titbits .title span,
+.titbits .photoSec img,
+.vacancyList .contentFrame {
+    opacity: 0;
+}
+
+.info.movein .environment p,
+.info .benefit.movein .title p,
+.titbits .title.movein p {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.info .benefit.movein .list p {
+    animation: fadeInUp 1.5s forwards .2s;
+}
+
+.info.movein .environment article,
+.info .benefit.movein .list ul,
+.titbits .title.movein span {
+    animation: fadeInUpArticle 1.5s forwards .4s;
+}
+
+.info.movein .imgL img,
+.info.movein .environment img,
+.titbits .block01.movein .fadeIn01 img,
+.titbits .block02.movein .fadeIn01 img,
+.titbits .block03.movein .fadeIn01 img {
+    animation: fadeIn 1.5s forwards;
+}
+
+.info.movein .environment img {
+    animation: fadeIn 1.5s forwards .2s;
+}
+
+.titbits .block01.movein .fadeIn02 img,
+.titbits .block02.movein .fadeIn02 img,
+.titbits .block03.movein .fadeIn02 img {
+    animation: fadeIn 1.5s forwards .3s;
+}
+
+.titbits .block01.movein .fadeIn03 img,
+.titbits .block02.movein .fadeIn03 img,
+.titbits .block03.movein .fadeIn03 img {
+    animation: fadeIn 1.5s forwards .5s;
+}
+
+.titbits .block01.movein .fadeIn04 img,
+.titbits .block02.movein .fadeIn04 img,
+.titbits .block03.movein .fadeIn04 img {
+    animation: fadeIn 1.5s forwards .8s;
+}
+
+.titbits .block01.movein .fadeIn05 img,
+.titbits .block02.movein .fadeIn05 img,
+.titbits .block03.movein .fadeIn05 img {
+    animation: fadeIn 1.5s forwards 1.2s;
+}
+
+.vacancyList .contentFrame.movein {
+    animation: bounceInLeft 1.5s forwards;
+}
+
+
+/*-- top banner --*/
+
+.main .topBanner {
+    background: url(../../upload/recruit/topBg.jpg) no-repeat;
+    background-attachment: fixed;
+    min-height: 625px;
+}
+
+.main .topBanner .text p {
+    color: #69c64b;
+}
+
+
+/*-- info --*/
+
+.info .wrapper {
+    display: flex;
+}
+
+.info .imgL {
+    width: calc(100% / 3);
+    background-color: #0b0827;
+}
+
+.info .imgL img,
+.info .environment .img img {
+    width: 100%;
+}
+
+.info .contentR {
+    width: calc(100% * 2/ 3);
+}
+
+.info .environment {
+    display: flex;
+    background-color: #0b0827;
+}
+
+.info .environment .text,
+.info .environment .img {
+    width: 50%;
+}
+
+.info .environment .text {
+    color: white;
+}
+
+.info .environment .text .content {
+    margin: 135px 18% 0;
+}
+
+.info .environment .text p,
+.info .benefit .title p,
+.titbits .title p,
+.vacancyList .content h6 {
+    font-size: 3.7rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #69c64b;
+}
+
+.info .environment .text article {
+    display: block;
+}
+
+.info .environment .text span,
+.titbits .title span,
+.vacancyList .content article,
+.info .benefit .list ul li {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+}
+
+.info .environment .text span:first-child {
+    margin-bottom: 50px;
+}
+
+.info .benefit {
+    padding: 115px 9% 0;
+}
+
+.info .benefit .list {
+    display: flex;
+}
+
+.info .benefit .list .listL {
+    margin-right: 110px;
+}
+
+.info .benefit .list p {
+    font-size: 1.8rem;
+    color: #6c66bd;
+    margin-bottom: 5px;
+}
+
+.info .benefit .list .frame {
+    margin-bottom: 40px;
+}
+
+.info .benefit .list ul {
+    margin-bottom: 40px;
+}
+
+.info .benefit .list .bottom {
+    margin-bottom: 60px;
+}
+
+.info .benefit .list ul li {
+    line-height: 2.3rem;
+}
+
+
+/*-- titbits --*/
+
+.titbits .title {
+    background-color: #0b0827;
+    color: white;
+    padding: 125px 15% 65px
+}
+
+.titbits .title p {
+    margin-bottom: 20px;
+}
+
+.titbits .title span {
+    line-height: 2rem;
+}
+
+.titbits .wrapper {
+    display: flex;
+    background-color: #0b0827;
+    padding: 0 10px 255px;
+    flex-wrap: wrap;
+}
+
+.titbits .photoSec,
+.titbits .photoSec .column2 {
+    display: flex;
+}
+
+.titbits .photoSec .marginRight {
+    margin-right: 16px;
+}
+
+.titbits .marginBottom {
+    margin-bottom: 16px;
+}
+
+.titbits .photoSec {
+    width: 50%;
+}
+
+.titbits .photoSec.quarter {
+    width: 25%;
+}
+
+.titbits .photoSec .row3 {
+    width: 75%;
+}
+
+.titbits .photoSec .row2 {
+    width: 50%;
+}
+
+.titbits .photoSec .row1 {
+    width: 25%;
+}
+
+.titbits .photoSec .row1.adjust {
+    width: 23.8%;
+}
+
+.titbits .photoSec .row1.adjust2 {
+    width: 23.25%;
+}
+
+.titbits .photoSec .row1.adjust3 {
+    width: 24.15%;
+}
+
+.titbits .photoSec .row2.adjust {
+    width: 48.2%;
+}
+
+.titbits .photoSec.quarter .row1 {
+    width: 50%;
+}
+
+.titbits .photoSec img {
+    width: 100%;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.titbits .photoSec div {
+    overflow: hidden;
+}
+
+.titbits .photoSec img:hover {
+    transform: scale(1.1);
+    transition: .5s ease;
+}
+
+.titbits .column2 div {
+    width: 50%;
+}
+
+
+/*-- vacancy list --*/
+
+.vacancyList .wrapper {
+    background-color: #6c66bd;
+    padding-bottom: 120px;
+    position: relative;
+    z-index: 0;
+}
+
+.vacancyList .wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 120px;
+    background-color: #0b0827;
+}
+
+.vacancyList .contentFrame {
+    margin-top: -120px;
+    background-color: white;
+    width: 83%;
+    z-index: 2;
+}
+
+.vacancyList .content {
+    padding: 95px 18% 110px;
+}
+
+.vacancyList .content h6 {
+    color: #6c66bd;
+    margin-bottom: 30px;
+}
+
+.vacancyList .content p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.vacancyList .content article {
+    margin-bottom: 30px;
+}
+
+.vacancyList .link .btnEffect {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 170px;
+}
+
+.vacancyList .link a {
+    display: inline-block;
+}
+
+.vacancyList .link a:not(:last-child) {
+    margin-right: 25px;
+}
+
+.vacancyList .link .btnEffect:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.vacancyList .content .link a .btnEffect::after {
+    background-color: #6eb141;
+}
+
+.vacancyList .content .link a .btnEffect::before {
+    border-top-color: rgba(110, 177, 65, 1);
+    border-bottom-color: rgba(110, 177, 65, 1);
+}
+
+
+/*-- RWD --*/
+
+@media screen and (max-width:1780px) {
+    .info .environment .text .content {
+        margin: 115px 14% 0;
+    }
+    .info .environment .text span:first-child {
+        margin-bottom: 35px;
+    }
+    .info .benefit {
+        padding: 70px 7% 0;
+    }
+    .info .benefit .title p {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:1680px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 3.2rem;
+        margin-bottom: 25px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 40px;
+    }
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.8rem;
+    }
+    .info .benefit .list ul li {
+        font-size: 1.3rem;
+    }
+    .titbits .photoSec.quarter {
+        width: 24.6%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 22.9%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 48%;
+    }
+    .vacancyList .contentFrame {
+        width: 93%;
+    }
+    .vacancyList .content {
+        padding: 95px 15% 110px;
+    }
+}
+
+@media screen and (max-width:1530px) {
+    .info .benefit .list .bottom {
+        margin-bottom: 45px;
+    }
+    .info .benefit .list ul {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:1460px) {
+    .info .environment .text .content {
+        margin: 110px 12% 0;
+    }
+    .info .benefit {
+        padding: 55px 6% 0;
+    }
+    .titbits .title {
+        padding: 70px 15% 65px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.25rem;
+        line-height: 2.4rem;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.6rem;
+    }
+    .info .benefit {
+        padding: 45px 5% 0;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 30px;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 23.4%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 47.6%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 22.7%;
+    }
+    .titbits .wrapper {
+        padding: 0 10px 215px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 90px;
+    }
+    .vacancyList .wrapper::before {
+        height: 90px;
+    }
+    .vacancyList .content {
+        padding: 95px 10% 110px;
+    }
+}
+
+@media screen and (max-width:1340px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 25px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.5rem;
+    }
+    .info .benefit .list p {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .titbits .title {
+        padding: 65px 15% 45px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .info .environment .text span:first-child {
+        margin-bottom: 20px;
+    }
+    .info .environment .text .content {
+        margin: 50px 10% 0;
+    }
+    .info .benefit .list .listL {
+        margin-right: 95px;
+    }
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 15px;
+    }
+    .info .benefit .list ul li,
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.05rem;
+        line-height: 2rem;
+    }
+    .info .benefit {
+        padding: 50px 5% 0;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.5rem;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 20px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.5rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0;
+    }
+    .vacancyList .content p {
+        margin-bottom: 15px;
+    }
+    .vacancyList .content article {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.3rem;
+        margin-bottom: 10px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 15px;
+    }
+    .vacancyList .content h6 {
+        margin-bottom: 20px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.3rem;
+    }
+    .vacancyList .content p {
+        margin-bottom: 5px;
+    }
+    .info .benefit {
+        padding: 35px 5% 0;
+    }
+    .titbits .wrapper {
+        padding: 0 10px 200px;
+    }
+    .titbits .marginBottom {
+        margin-bottom: 10px;
+    }
+    .titbits .photoSec .marginRight {
+        margin-right: 10px;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 47.9%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 23%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 22.7%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 47.3%;
+    }
+    .vacancyList .content {
+        padding: 85px 9% 100px;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    .vacancyList .content {
+        padding: 80px 5% 90px;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .vacancyList .link a:not(:last-child) {
+        margin-right: 15px;
+    }
+    .vacancyList .link .btnEffect {
+        margin-bottom: 25px;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 75px;
+    }
+    .vacancyList .wrapper::before {
+        height: 75px;
+    }
+    .vacancyList .content {
+        padding: 80px 5% 65px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .info .imgL {
+        display: none;
+    }
+    .info .contentR {
+        width: 100%;
+    }
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+    }
+    .info .environment .text .content {
+        margin: 90px 10% 0;
+    }
+    .info .benefit {
+        padding: 50px 5%;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 30px;
+    }
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .titbits .title {
+        padding: 45px 5% 35px;
+    }
+    .titbits .wrapper {
+        padding: 0 0 180px 10px;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .vacancyList .link a:not(:last-child) {
+        display: none;
+    }
+    .vacancyList .content {
+        padding: 80px 10% 65px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.03rem;
+        line-height: 1.8rem;
+    }
+    .titbits .wrapper {
+        padding: 0 0 175px 10px;
+    }
+    .titbits .photoSec:nth-child(2),
+    .titbits .photoSec:nth-child(3),
+    .titbits .photoSec:nth-child(5),
+    .titbits .photoSec:nth-child(7) {
+        display: none;
+    }
+    .titbits .photoSec {
+        width: 100%;
+    }
+    .titbits .photoSec .row1.adjust {
+        width: 24%;
+    }
+    .titbits .photoSec .row1.adjust2 {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust {
+        width: 48.6%;
+    }
+    .titbits .photoSec .row1.adjust3 {
+        width: 23.6%;
+    }
+    .titbits .photoSec .row2.adjust2 {
+        width: 48.5%;
+    }
+    .vacancyList .content p {
+        line-height: 2rem;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 55px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2.25rem;
+        margin-bottom: 10px;
+    }
+    .info .benefit .title p {
+        margin-bottom: 25px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+    }
+    .vacancyList .content article,
+    .info .benefit .list ul li {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list .listL {
+        margin-right: 75px;
+    }
+    .vacancyList .content {
+        padding: 75px 8% 55px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2rem;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .info .environment {
+        flex-wrap: wrap;
+    }
+    .info .environment .text,
+    .info .environment .img {
+        width: 100%;
+    }
+    .info .environment .text .content {
+        margin: 35px 8%;
+    }
+    .info .benefit {
+        padding: 50px 8%;
+    }
+    .info .benefit .list .listL {
+        margin-right: 53px;
+    }
+    .titbits .title {
+        padding: 40px 8% 35px;
+    }
+    .titbits .wrapper {
+        padding: 0 0 180px 10px;
+    }
+    .vacancyList .content {
+        padding: 75px 7% 55px;
+    }
+    .vacancyList .link .btnEffect {
+        font-size: 1rem;
+        width: 160px;
+    }
+    .vacancyList .link .btnEffect {
+        margin-bottom: 15px;
+    }
+    .vacancyList .content article {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .info .benefit .list {
+        flex-wrap: wrap;
+    }
+    .info .benefit .list p {
+        margin-bottom: 5px;
+    }
+    .info .benefit .list ul li:not(:last-child) {
+        margin-bottom: 0px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.25rem;
+    }
+    .vacancyList .content p {
+        line-height: 1.8rem;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list .bottom,
+    .info .benefit .list ul {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .vacancyList .content {
+        padding: 75px 8% 55px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 2rem;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        line-height: 1.8rem;
+    }
+    .titbits .wrapper {
+        padding: 0 0 165px 10px;
+    }
+    .vacancyList .content {
+        padding: 40px 8%;
+    }
+    .vacancyList .wrapper {
+        padding-bottom: 40px;
+    }
+    .vacancyList .wrapper::before {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .main .topBanner {
+        background: url(../../upload/recruit/topBgMobile.jpg) no-repeat;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 1.7rem;
+    }
+    .info .benefit .title p {
+        margin-bottom: 20px;
+    }
+    .info .benefit .list .frame,
+    .info .benefit .list ul {
+        margin-bottom: 15px;
+    }
+    .info .benefit .list p,
+    .vacancyList .content p {
+        font-size: 1.2rem;
+    }
+    .info .benefit {
+        padding: 40px 8% 25px;
+    }
+    .titbits .title {
+        padding: 30px 8% 20px;
+    }
+    .vacancyList .contentFrame {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+    .info .benefit .title p,
+    .vacancyList .content h6 {
+        margin-bottom: 15px;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span {
+        font-size: 0.95rem;
+    }
+    .vacancyList .content article {
+        font-size: 0.875rem;
+        line-height: 1.2rem;
+    }
+    .vacancyList .content p {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .info .environment .text p,
+    .info .benefit .title p,
+    .titbits .title p,
+    .vacancyList .content h6 {
+        font-size: 1.3rem;
+    }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}

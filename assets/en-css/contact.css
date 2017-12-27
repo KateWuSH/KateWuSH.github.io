@@ -1,0 +1,386 @@
+@charset "utf-8";
+
+/*-- waypoints --*/
+
+.main .topBanner .text,
+.main .topBanner .address,
+.info .up p,
+.info .down .text,
+.mapSection {
+    opacity: 0;
+}
+
+.main .topBanner.movein .text,
+.info.movein .up p,
+.mapSection.movein {
+    animation: fadeInUp 1.5s forwards;
+}
+
+.main .topBanner.movein .address {
+    animation: fadeInUpArticle 1.5s forwards .6s;
+}
+
+.info.movein .content .up::before,
+.info.movein .content .up::after {
+    width: 50%;
+    transition: 1.5s ease .5s;
+}
+
+.info.movein .down .text:nth-child(1) {
+    animation: fadeInUp 1.5s forwards 1s;
+}
+
+.info.movein .down .text:nth-child(2) {
+    animation: fadeInUp 1.5s forwards 1.4s;
+}
+
+.info.movein .down .text:nth-child(3) {
+    animation: fadeInUp 1.5s forwards 1.8s;
+}
+
+
+/*-- top banner --*/
+
+.main .topBanner {
+    background: url(../../upload/contact/topBg.jpg) no-repeat;
+    background-attachment: fixed;
+    min-height: 625px;
+}
+
+.main .topBanner .text {
+    top: 510px;
+    left: 455px;
+}
+
+.main .topBanner .address {
+    position: absolute;
+    top: 345px;
+    left: 1015px;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 40%;
+    overflow: hidden;
+}
+
+
+/*-- info --*/
+
+.info .wrapper {
+    background-color: #e9f3f8;
+    padding: 80px 0 60px;
+    text-align: center;
+}
+
+.info .content {
+    width: 65%;
+    margin: auto;
+}
+
+.info .content .up {
+    /* border-bottom: 1px solid #219ec2; */
+    position: relative;
+}
+
+.info .content .up::before {
+    content: '';
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #219ec2;
+}
+
+.info .content .up::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #219ec2;
+}
+
+.info .content .up p {
+    font-size: 1.75rem;
+    padding-bottom: 20px;
+}
+
+.info .content .down {
+    display: flex;
+    width: 57%;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.info .down span {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.info .down .text:nth-child(1) span {
+    margin-top: 15px;
+}
+
+.info .down .text:nth-child(2) span {
+    margin-top: 24px;
+}
+
+.info .down .text:nth-child(3) span {
+    margin-top: 17px;
+}
+
+.info .down .text {
+    width: calc(100% / 3);
+}
+
+.info .down .text:nth-child(2) {
+    margin: 0 50px;
+}
+
+
+/*-- map --*/
+
+#map {
+    height: 100%;
+}
+
+.mapSection .wrapper {
+    width: 70%;
+    height: 520px;
+    margin: 85px auto 165px;
+}
+
+.mapSection .btnEffect {
+    width: 200px;
+    margin: 40px auto;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.mapSection .btnEffect::after {
+    background-color: rgba(73, 159, 197, 1);
+}
+
+.mapSection .btnEffect::before {
+    border-top-color: rgba(73, 159, 197, 1);
+    border-bottom-color: rgba(73, 159, 197, 1);
+}
+
+.mapSection .btnEffect:hover {
+    color: rgba(0, 0, 0, 1);
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: .5s ease;
+}
+
+
+/*-- RWD --*/
+
+@media screen and (max-width:1680px) {
+    .main .topBanner .address {
+        font-size: 2.25rem;
+        line-height: 3rem;
+        width: 33%;
+    }
+    .info .content .down {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:1520px) {
+    .main .topBanner .address {
+        top: 315px;
+        left: 940px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .main .topBanner .address {
+        font-size: 2rem;
+        width: 30%;
+    }
+    .info .content .down {
+        width: 76%;
+    }
+    .mapSection .wrapper {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:1430px) {
+    .main .topBanner .address {
+        top: 280px;
+        left: 905px;
+        width: 460px;
+    }
+}
+
+@media screen and (max-width:1380px) {
+    .main .topBanner .address {
+        display: none;
+    }
+    .main .topBanner .text {
+        top: 37%;
+        left: 39%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .main .topBanner .text {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        top: 295px;
+    }
+    .info .content {
+        width: 75%;
+    }
+    .info .content .down {
+        width: 92%;
+    }
+    .mapSection .wrapper {
+        width: 90%;
+        margin: 60px auto 120px;
+    }
+    .mapSection .btnEffect {
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main .topBanner .text {
+        top: 320px;
+    }
+    .info .content {
+        width: 90%;
+    }
+    .mapSection .wrapper {
+        margin: 40px auto 110px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .info .down .text:nth-child(1) span {
+        margin-top: 0;
+    }
+    .info .down .text:nth-child(2) span {
+        margin-top: 0;
+    }
+    .info .down .text:nth-child(3) span {
+        margin-top: 0;
+    }
+    .info .content .down {
+        flex-wrap: wrap;
+        width: 65%;
+        padding-top: 45px;
+    }
+    .info .down .text {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+    }
+    .info .down .text a {
+        display: flex;
+        align-items: center;
+    }
+    .info .down .text:nth-child(2) {
+        margin: 20px 0;
+    }
+    .info .down .text .img {
+        text-align: center;
+        width: 55px;
+    }
+    .info .down .text:nth-child(1) .img img {
+        width: 18px;
+    }
+    .info .down .text:nth-child(2) .img img {
+        width: 25px;
+    }
+    .info .down .text:nth-child(3) .img img {
+        width: 23px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main .topBanner .text {
+        top: 305px;
+    }
+    .info .content .up p {
+        font-size: 1.5rem;
+    }
+    .info .content .down {
+        width: 90%;
+    }
+    .info .down .text:nth-child(2) {
+        margin: 10px 0 15px 0;
+    }
+    .mapSection .wrapper {
+        width: 100%;
+        margin: 0 auto 110px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .main .topBanner {
+        background: url(../../upload/contact/topBgMobile.jpg) no-repeat;
+    }
+    .main .topBanner .text {
+        top: 490px;
+    }
+    .main .topBanner .address {
+        top: 240px;
+        left: 95px;
+        width: 300px;
+        display: block;
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .info .content .up p {
+        font-size: 1.25rem;
+    }
+    .info .wrapper {
+        padding: 65px 0 60px;
+    }
+    .info .down span {
+        font-size: 0.875rem;
+    }
+    .info .content .down {
+        padding-top: 35px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main .topBanner .address {
+        top: 230px;
+        left: 65px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .info .content .down {
+        width: 95%;
+    }
+    .main .topBanner .address {
+        top: 230px;
+        left: 70px;
+        width: 250px;
+        display: block;
+        font-size: 1.25rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .info .down .text .img {
+        width: 45px;
+    }
+}
+
+@media screen and (max-width:1250px) {}
