@@ -53,6 +53,7 @@
 }
 
 .main .topBanner .address {
+    font-family: 'LevenimMT';
     position: absolute;
     top: 345px;
     left: 1015px;
@@ -78,7 +79,6 @@
 }
 
 .info .content .up {
-    /* border-bottom: 1px solid #219ec2; */
     position: relative;
 }
 

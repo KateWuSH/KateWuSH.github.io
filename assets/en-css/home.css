@@ -144,6 +144,7 @@
 .recruit .sectionL p,
 .quality p {
     font-size: 3rem;
+    font-family: 'LevenimMT';
 }
 
 .technology p {
@@ -205,6 +206,7 @@
 .recruit .sectionR .text {
     font-size: 3.7rem;
     font-weight: bold;
+    font-family: 'LevenimMT';
 }
 
 .global .content p {
@@ -352,7 +354,7 @@
 }
 
 .recruit .sectionR .text {
-    font-family: "cwtexqyuan";
+    font-family: 'AlpacaScarlettDemo';
     letter-spacing: 2px;
     text-align: center;
     padding: 329px 0;

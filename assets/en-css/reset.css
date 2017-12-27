@@ -23,6 +23,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MyriadPro-Regular';
+    src: url('MyriadPro-Regular.eot') format('embedded-opentype');
+    src: url('../font/MyriadPro-Regular/MyriadPro-Regular.ttf') format('truetype'), url('../font/MyriadPro-Regular/MyriadPro-Regular.otf') format('opentype'), url('../font/MyriadPro-Regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg'), url('../font/MyriadPro-Regular/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -37,7 +45,7 @@ body {
     position: relative;
     font-size: 100%;
     font-weight: normal;
-    font-family: 'Myriad Pro', 'Century Gothic', 'TimesNewRoman', 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
+    font-family: 'MyriadPro-Regular', 'LevenimMT', 'Century Gothic', 'TimesNewRoman', 'Microsoft JhengHei', '微軟正黑體', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: 'liga', 'kern';
