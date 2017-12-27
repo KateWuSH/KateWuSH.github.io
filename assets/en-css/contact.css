@@ -109,7 +109,7 @@
 
 .info .content .down {
     display: flex;
-    width: 57%;
+    width: 67%;
     margin: auto;
     padding-top: 70px;
 }
@@ -137,7 +137,7 @@
 }
 
 .info .down .text:nth-child(2) {
-    margin: 0 50px;
+    margin: 0 10px;
 }
 
 
@@ -186,7 +186,7 @@
         width: 33%;
     }
     .info .content .down {
-        width: 65%;
+        width: 71%;
     }
 }
 
@@ -203,7 +203,7 @@
         width: 30%;
     }
     .info .content .down {
-        width: 76%;
+        width: 83%;
     }
     .mapSection .wrapper {
         width: 75%;
@@ -239,7 +239,7 @@
         width: 75%;
     }
     .info .content .down {
-        width: 92%;
+        width: 100%;
     }
     .mapSection .wrapper {
         width: 90%;
@@ -274,8 +274,11 @@
     }
     .info .content .down {
         flex-wrap: wrap;
-        width: 65%;
+        width: 75%;
         padding-top: 45px;
+    }
+    .info .down .text:nth-child(1) .img {
+        margin: 0 5px 0 8px;
     }
     .info .down .text {
         width: 100%;
