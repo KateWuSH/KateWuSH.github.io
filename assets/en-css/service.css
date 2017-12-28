@@ -103,7 +103,6 @@
     font-size: 1.5rem;
     line-height: 2.8rem;
     letter-spacing: 1px;
-    text-align: justify;
 }
 
 
@@ -121,7 +120,7 @@
 .application .integration .text {
     width: 40%;
     text-align: right;
-    padding: 100px 5% 0 10%;
+    padding: 100px 4% 0 10%;
 }
 
 .application .integration .text p {
@@ -130,6 +129,7 @@
 
 .application .integration .text article {
     text-align: right;
+    padding-left: 20px;
 }
 
 .application .integration .img {
@@ -235,27 +235,27 @@
 }
 
 .innovation .wrapper {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: white;
 }
 
 .innovation .title {
-    font-size: 7.375rem;
+    font-family: 'AlpacaScarlettDemo';
+    font-size: 5.5rem;
     font-weight: bold;
     font-style: italic;
     margin-right: 45px;
 }
 
 .innovation .text p {
-    font-size: 3.55rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
-    margin: 0 0 20px 110px;
+    margin: 35px 0 20px;
 }
 
 .innovation .text span {
-    font-size: 2.45rem;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
     display: block;
@@ -273,6 +273,10 @@
 
 .future .dearm {
     width: calc(100% / 3);
+}
+
+.future .dearm02 {
+    margin: 0 30px;
 }
 
 .future .dearm img {

@@ -121,14 +121,15 @@
 }
 
 .info .environment .text .content {
-    margin: 135px 18% 0;
+    margin: 110px 18% 0;
 }
 
 .info .environment .text p,
 .info .benefit .title p,
 .titbits .title p,
 .vacancyList .content h6 {
-    font-size: 3.7rem;
+    font-size: 3.2rem;
+    letter-spacing: .5px;
     font-weight: bold;
     margin-bottom: 40px;
     color: #69c64b;
@@ -144,7 +145,7 @@
 .info .benefit .list ul li {
     display: block;
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
 }
 
 .info .environment .text span:first-child {
@@ -152,7 +153,7 @@
 }
 
 .info .benefit {
-    padding: 115px 9% 0;
+    padding: 135px 9% 0;
 }
 
 .info .benefit .list {
@@ -178,7 +179,7 @@
 }
 
 .info .benefit .list .bottom {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .info .benefit .list ul li {
@@ -321,6 +322,7 @@
 .vacancyList .content p {
     font-size: 2rem;
     font-weight: bold;
+    letter-spacing: .5px;
     margin-bottom: 15px;
 }
 
@@ -332,6 +334,22 @@
     color: rgba(255, 255, 255, 1);
     font-weight: bold;
     font-size: 1.2rem;
+    line-height: 55px;
+}
+
+.vacancyList .link a:nth-child(1) .btnEffect {
+    width: 200px;
+}
+
+.vacancyList .link a:nth-child(2) .btnEffect {
+    width: 280px;
+}
+
+.vacancyList .link a:nth-child(3) .btnEffect {
+    width: 170px;
+}
+
+.vacancyList .link a:nth-child(4) .btnEffect {
     width: 200px;
 }
 

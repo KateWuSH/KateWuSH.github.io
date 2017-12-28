@@ -134,22 +134,25 @@
 .technology {
     text-align: center;
     background-color: #080925;
-    padding: 128px 28% 120px;
+    padding: 128px 25% 120px;
 }
 
 .technology p,
 .application .text p,
-.service .text p,
 .future .content p,
 .recruit .sectionL p,
 .quality p {
-    font-size: 2.7rem;
+    font-size: 3.2rem;
     font-family: 'LevenimMT';
 }
 
 .technology p {
     color: #ff9c00;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+.future .content p {
+    font-size: 2.4rem;
 }
 
 .technology article,
@@ -159,7 +162,11 @@
 .future .content article,
 .recruit .sectionL article {
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
+}
+
+.future .content article {
+    line-height: 1.8rem;
 }
 
 .technology article {
@@ -234,12 +241,12 @@
 .application .text {
     width: 50%;
     text-align: right;
-    padding: 140px 130px 0;
+    padding: 150px 130px 0;
 }
 
 .application .text p {
     color: #2fb1ad;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
 }
 
 .application .img {
@@ -269,16 +276,18 @@
 .service .text {
     width: 45%;
     color: white;
-    padding: 240px 0 0 45px;
+    padding: 260px 0 0 45px;
 }
 
 .service .text article {
+    line-height: 2.2rem;
     margin-bottom: 40px;
-    letter-spacing: .3rem;
+    letter-spacing: .5px;
 }
 
 .service .text p {
-    line-height: 3.8rem;
+    font-size: 2.7rem;
+    line-height: 3.6rem;
     margin-bottom: 60px;
     letter-spacing: .5px;
 }
@@ -303,7 +312,7 @@
     justify-content: center;
     text-align: center;
     color: white;
-    padding: 85px 15% 80px;
+    padding: 85px 17% 80px;
 }
 
 .future .content {
@@ -311,11 +320,11 @@
 }
 
 .future .content.middle {
-    padding: 0 10%;
+    padding: 0 6%;
 }
 
 .future .content p {
-    margin: 50px 0 10px;
+    margin: 50px 0 5px;
 }
 
 
@@ -354,8 +363,7 @@
 }
 
 .recruit .sectionR .text {
-    font-family: 'AlpacaScarlettDemo';
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     padding: 329px 0;
     color: #2a9ba7;
@@ -387,21 +395,25 @@
 
 .quality p {
     text-align: center;
-    letter-spacing: .2rem;
+    line-height: 4rem;
+    letter-spacing: .5px;
     font-weight: bold;
     color: #4c519b;
-    padding: 225px 5% 200px;
+    padding: 225px 18% 200px;
 }
 
 
 /*-- RWD --*/
 
-@media screen and (max-width:1800px) {
-    .technology {
-        padding: 128px 29% 120px;
-    }
+@media screen and (max-width:1880px) {
     .future .wrapper {
-        padding: 85px 12% 80px;
+        padding: 85px 15% 80px;
+    }
+}
+
+@media screen and (max-width:1800px) {
+    .future .wrapper {
+        padding: 85px 13% 80px;
     }
     .recruit .sectionL {
         padding-top: 1080px;
@@ -437,13 +449,16 @@
         font-size: 3.2rem;
     }
     .technology {
-        padding: 128px 28% 120px;
+        padding: 128px 26% 120px;
     }
     .service .text {
         padding: 305px 0 0 45px;
     }
     .future .wrapper {
         padding: 85px 10% 80px;
+    }
+    .future .content.middle {
+        padding: 0 5%;
     }
     .application .text {
         padding: 140px 120px 0;
@@ -453,6 +468,12 @@
     }
     .recruit .sectionR .text {
         padding: 280px 0;
+    }
+}
+
+@media screen and (max-width:1640px) {
+    .future .wrapper {
+        padding: 85px 8% 80px;
     }
 }
 
@@ -493,7 +514,10 @@
     .future .content article,
     .recruit .sectionL article {
         font-size: 1.25rem;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
+    }
+    .future .content article {
+        line-height: 1.8rem;
     }
     .global .content p,
     .recruit .sectionR .text {
@@ -521,20 +545,19 @@
     }
     .service .text article {
         margin-bottom: 30px;
-        line-height: 2rem;
+        line-height: 1.8rem;
     }
     .service .text p {
         margin-bottom: 70px;
     }
     .future .content img {
-        width: 55%;
+        width: 52%;
     }
     .future .wrapper {
         padding: 85px 8% 80px;
     }
     .future .content p {
         margin: 35px 0 3px;
-        letter-spacing: 2px;
     }
     .recruit .sectionR .img .col {
         width: 50%;
@@ -547,8 +570,7 @@
         width: 100%;
     }
     .recruit .sectionR .text {
-        letter-spacing: 3px;
-        padding: 200px 0;
+        padding: 200px 5%;
     }
     .recruit .sectionR .img .col.order1 {
         order: 1;
@@ -650,6 +672,9 @@
         font-size: 1.05rem;
         line-height: 2rem;
     }
+    .future .content article {
+        line-height: 1.5rem;
+    }
     .service .text article {
         line-height: 1.6rem;
     }
@@ -679,10 +704,8 @@
         margin-bottom: 40px;
     }
     .future .content p {
+        font-size: 1.5rem;
         margin: 40px 0 5px;
-    }
-    .future .content article {
-        line-height: 2rem;
     }
 }
 
@@ -768,7 +791,6 @@
     .quality p {
         font-size: 2.3rem;
         line-height: 3rem;
-        letter-spacing: 2px;
         padding: 120px 5%;
     }
     .recruit .sectionR .img .col.close,
@@ -866,7 +888,7 @@
         width: 225%;
     }
     .future .wrapper {
-        padding: 75px 8%;
+        padding: 75px 5%;
     }
     .future .content p {
         margin: 40px 0 15px;
@@ -904,6 +926,9 @@
     .recruit .sectionL p,
     .quality p {
         font-size: 1.8rem;
+    }
+    .quality p {
+        line-height: 2.5rem;
     }
     .service .text p {
         line-height: 2.6rem;
@@ -952,18 +977,19 @@
         width: 225%;
     }
     .service .text {
-        width: 50%;
-        padding: 80px 5%;
+        width: 60%;
+        padding: 80px 0;
     }
     .service .text p {
         line-height: 2.4rem;
     }
     .future .content article {
-        line-height: 1.6rem;
+        line-height: 1.2rem;
     }
     .future .content p {
-        font-size: 1.75rem;
-        margin: 25px 0 8px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 30px 0 8px;
     }
     .recruit .sectionL {
         padding: 250px 0 80px 0;
@@ -975,7 +1001,7 @@
 
 @media screen and (max-width:700px) {
     .technology {
-        padding: 100px 8%;
+        padding: 100px 6%;
     }
     .service .text p,
     .service .text article {
@@ -1030,6 +1056,7 @@
     }
     .global.movein .content a .btnEffect {
         float: right;
+        margin-right: 35px;
     }
     .btnEffect {
         line-height: 40px;
@@ -1063,37 +1090,6 @@
     .application .text {
         padding: 50px 0 0;
     }
-    .service .img img {
-        width: 230%;
-    }
-    .service .text p {
-        line-height: 2.5rem;
-    }
-    .service .text {
-        width: 40%;
-    }
-    .future .wrapper {
-        padding: 65px 5%;
-    }
-    .future .content p {
-        letter-spacing: 1px;
-        margin: 20px 0 8px;
-    }
-    .future .content article {
-        line-height: 1.3rem;
-    }
-    .recruit .sectionR .text {
-        letter-spacing: 2px;
-        padding: 85px 5%;
-    }
-    .quality p {
-        padding: 85px 5%;
-        line-height: 3rem;
-        letter-spacing: 1px;
-    }
-}
-
-@media screen and (max-width:580px) {
     .service .img {
         display: none;
     }
@@ -1101,7 +1097,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        padding: 55px 5% 55px 50%;
+        padding: 55px 5% 55px 33%;
     }
     .service .text::after {
         content: '';
@@ -1116,20 +1112,35 @@
         opacity: .5;
     }
     .service .text article {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .service .text p {
-        margin-bottom: 5px;
+        line-height: 2rem;
+        margin-bottom: 10px;
     }
-    .recruit .sectionR .text,
+    .future .wrapper {
+        padding: 65px 5%;
+    }
+    .future .content p {
+        font-size: 1.1rem;
+        margin: 25px 0 5px;
+    }
+    .future .content article {
+        line-height: 1.3rem;
+    }
+    .recruit .sectionR .text {
+        padding: 85px 5%;
+    }
     .quality p {
-        padding: 75px 5%;
+        padding: 85px 5%;
+        line-height: 2rem;
     }
 }
 
-@media screen and (max-width:510px) {
-    .service .text {
-        padding: 55px 5% 55px 45%;
+@media screen and (max-width:580px) {
+    .recruit .sectionR .text,
+    .quality p {
+        padding: 75px 5%;
     }
 }
 
@@ -1176,6 +1187,9 @@
     .service .text p {
         margin-bottom: 20px;
     }
+    .service .text {
+        padding: 55px 10%;
+    }
     .technology {
         padding: 80px 10%;
     }
@@ -1208,11 +1222,10 @@
         font-size: 0.875rem;
     }
     .future .content p {
-        letter-spacing: .5px;
+        font-size: 1rem;
     }
     .future .content article {
         line-height: 1.1rem;
-        letter-spacing: .5px;
     }
     .future .content.middle {
         padding: 0 5%;
@@ -1220,16 +1233,12 @@
     .recruit .sectionL {
         padding: 150px 12% 80px;
     }
-    .recruit .sectionR .text {
-        letter-spacing: 1.5px;
-    }
     .recruit .sectionL article {
         margin: 0 0 45px;
     }
     .quality p {
-        padding: 80px 5%;
+        padding: 80px 6%;
         line-height: 2.1rem;
-        letter-spacing: .5px;
     }
 }
 
@@ -1257,7 +1266,7 @@
         margin-bottom: 15px;
     }
     .service .text {
-        padding: 75px 20% 55px;
+        padding: 75px 15% 55px;
     }
     .service .text::after {
         opacity: .2;
@@ -1279,9 +1288,6 @@
     }
     .recruit .sectionL article {
         margin: 0 0 40px;
-    }
-    .recruit .sectionR .text {
-        letter-spacing: 1px;
     }
     .recruit .sectionR .img .col {
         width: 50%;
@@ -1316,12 +1322,21 @@
         display: none;
     }
     .quality p {
+        padding: 80px 8%;
         font-size: 1.25rem;
         line-height: 1.8rem;
     }
 }
 
 @media screen and (max-width:380px) {
+    .technology article,
+    .global .content article,
+    .application .text article,
+    .service .text article,
+    .future .content article,
+    .recruit .sectionL article {
+        text-align: justify;
+    }
     .technology {
         padding: 60px 8%;
     }
@@ -1335,6 +1350,9 @@
     }
     .global .content {
         padding: 60px 8% 0;
+    }
+    .service .text {
+        padding: 75px 10% 55px;
     }
     .recruit .sectionL {
         padding: 120px 8% 65px;
@@ -1371,6 +1389,7 @@
     .recruit .sectionL article {
         font-size: 0.95rem;
         line-height: 1.7rem;
+        text-align: justify;
     }
     .future .content p {
         font-size: 1.1rem;
@@ -1391,9 +1410,7 @@
     }
     .recruit .sectionR .text {
         font-size: 1.75rem;
-    }
-    .service .text {
-        padding: 75px 15% 55px 20%;
+        letter-spacing: .5px;
     }
     .recruit .sectionR .img img {
         vertical-align: top;

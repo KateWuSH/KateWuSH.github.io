@@ -92,8 +92,8 @@
 .value .text p,
 .cis .down .text p {
     font-family: 'LevenimMT';
-    font-size: 3.75rem;
-    letter-spacing: 3px;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -111,10 +111,11 @@
 .info .intro article,
 .info .mission article,
 .concept .content .text article,
+.value .text article table,
 .value .text article ul li,
 .cis .down .text article {
     font-size: 1.5rem;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
     letter-spacing: .5px;
 }
 
@@ -168,11 +169,14 @@
 .value .text {
     width: calc(50% - 330px);
     background-color: white;
-    padding: 120px 100px 120px 200px;
+    padding: 120px 100px 120px 150px;
 }
 
-.value .text li b {
-    margin-right: 25px;
+.value .text article table th {
+    text-align: left;
+    padding-right: 25px;
+    letter-spacing: .5px;
+    vertical-align: top;
 }
 
 
