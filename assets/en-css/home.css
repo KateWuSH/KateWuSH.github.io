@@ -478,6 +478,15 @@
     }
 }
 
+@media screen and (max-width:1570px) {
+    .future .content p {
+        font-size: 2.4rem;
+    }
+    .future .content article {
+        line-height: 1.6rem;
+    }
+}
+
 @media screen and (max-width:1560px) {
     .technology {
         padding: 128px 24% 120px;
@@ -518,7 +527,7 @@
         line-height: 2.2rem;
     }
     .future .content article {
-        line-height: 1.8rem;
+        line-height: 1.4rem;
     }
     .global .content p,
     .recruit .sectionR .text {
@@ -625,6 +634,12 @@
     }
 }
 
+@media screen and (max-width:1330px) {
+    .future .content p {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width:1250px) {
     .service .text {
         padding: 110px 5% 0 15px;
@@ -674,7 +689,7 @@
         line-height: 2rem;
     }
     .future .content article {
-        line-height: 1.5rem;
+        line-height: 1.3rem;
     }
     .service .text article {
         line-height: 1.6rem;
@@ -706,6 +721,7 @@
     }
     .future .content p {
         font-size: 1.5rem;
+        font-weight: bold;
         margin: 40px 0 5px;
     }
 }
@@ -907,6 +923,13 @@
     }
 }
 
+@media screen and (max-width:850px) {
+    .future .content p {
+        margin: 40px 0 10px;
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width:800px) {
     .service .img img {
         width: 305%;
@@ -1000,6 +1023,13 @@
     }
 }
 
+@media screen and (max-width:730px) {
+    .future .content p {
+        font-size: 1.2rem;
+        margin: 30px 0 3px;
+    }
+}
+
 @media screen and (max-width:700px) {
     .technology {
         padding: 100px 6%;
@@ -1018,7 +1048,6 @@
     .technology p,
     .application .text p,
     .service .text p,
-    .future .content p,
     .recruit .sectionL p,
     .quality p {
         font-size: 1.6rem;
@@ -1038,12 +1067,22 @@
     .service .text article {
         line-height: 1.4rem;
     }
+    .future .content article {
+        line-height: 1.2rem;
+    }
     .service .text p {
         margin-bottom: 20px;
     }
     .global .content p,
     .recruit .sectionR .text {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .future .content p {
+        font-size: 1.1rem;
+        margin: 25px 0 3px;
     }
 }
 
