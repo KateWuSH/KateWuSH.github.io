@@ -68,6 +68,7 @@
     width: 100%;
     margin: auto;
     z-index: 0;
+    overflow: hidden;
 }
 
 .top-banner-pc-slick {
@@ -1199,6 +1200,9 @@
     .global .content {
         padding: 80px 8% 0;
     }
+    .global.movein .content a .btnEffect {
+        margin-right: 0;
+    }
     .global .bg {
         background-size: 768px 378px;
     }
@@ -1329,14 +1333,6 @@
 }
 
 @media screen and (max-width:380px) {
-    .technology article,
-    .global .content article,
-    .application .text article,
-    .service .text article,
-    .future .content article,
-    .recruit .sectionL article {
-        text-align: justify;
-    }
     .technology {
         padding: 60px 8%;
     }
@@ -1389,7 +1385,6 @@
     .recruit .sectionL article {
         font-size: 0.95rem;
         line-height: 1.7rem;
-        text-align: justify;
     }
     .future .content p {
         font-size: 1.1rem;

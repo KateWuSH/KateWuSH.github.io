@@ -68,6 +68,7 @@
     width: 100%;
     margin: auto;
     z-index: 0;
+    overflow: hidden;
 }
 
 .top-banner-pc-slick {
