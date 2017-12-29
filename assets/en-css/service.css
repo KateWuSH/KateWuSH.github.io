@@ -91,18 +91,24 @@
 
 .advantage .text p,
 .application .integration .text p {
-    font-size: 3.7rem;
+    font-family: 'LevenimMT';
+    font-size: 3.2rem;
     font-weight: bold;
+    letter-spacing: .5px;
     margin-bottom: 45px;
     color: #c765e3;
+}
+
+.application .integration .text p {
+    letter-spacing: 0;
 }
 
 .advantage .text article,
 .application .integration .text article,
 .application .item .text article {
     font-size: 1.5rem;
-    line-height: 2.8rem;
-    letter-spacing: 1px;
+    line-height: 2.6rem;
+    letter-spacing: .5px;
 }
 
 
@@ -177,7 +183,8 @@
 }
 
 .application .item .text p {
-    font-size: 3.3rem;
+    font-family: 'LevenimMT';
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 40px;
     color: #c765e3;
@@ -244,7 +251,6 @@
     font-size: 5.5rem;
     font-weight: bold;
     font-style: italic;
-    margin-right: 45px;
 }
 
 .innovation .text p {
@@ -279,19 +285,16 @@
     margin: 0 30px;
 }
 
-.future .dearm img {
-    margin-bottom: 40px;
-}
-
 .future .dearm p {
-    font-size: 2.5rem;
+    font-family: 'LevenimMT';
+    font-size: 2.3rem;
     color: #5091d9;
-    margin-bottom: 20px;
+    margin: 50px 0 10px;
 }
 
 .future .dearm article {
     font-size: 1.5rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 
@@ -309,27 +312,18 @@
     }
     .advantage .text p,
     .application .integration .text p {
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin-bottom: 35px;
     }
     .application .item .text p {
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin-bottom: 25px;
     }
     .advantage .text article,
     .application .integration .text article,
     .application .item .text article {
         font-size: 1.3rem;
-        line-height: 2.6rem;
-    }
-    .innovation .title {
-        font-size: 7rem;
-    }
-    .innovation .text p {
-        font-size: 3.3rem;
-    }
-    .innovation .text span {
-        font-size: 2.2rem;
+        line-height: 2.2rem;
     }
     .future .wrapper {
         margin: 85px 15%;
@@ -342,11 +336,21 @@
     }
 }
 
+@media screen and (max-width:1580px) {
+    .application .integration .text p {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+    }
+    .future .dearm p {
+        font-size: 2.1rem;
+    }
+}
+
 @media screen and (max-width:1440px) {
     .advantage .text p,
     .application .integration .text p {
         font-size: 2.8rem;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     .application .item .text p {
         font-size: 2.6rem;
@@ -361,7 +365,7 @@
         width: 140%;
     }
     .advantage .text {
-        padding: 105px 13% 0 16%;
+        padding: 70px 12% 0 16%;
     }
     .innovation .title {
         font-size: 6.6rem;
