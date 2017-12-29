@@ -497,8 +497,28 @@
 }
 
 @media screen and (max-width:900px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
     .value .text {
         width: 65%;
+    }
+}
+
+@media screen and (max-width:830px) {
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 65px 10%;
+    }
+    .value .text {
+        width: 70%;
     }
 }
 
@@ -521,10 +541,41 @@
     }
 }
 
+@media screen and (max-width:750px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2.75rem;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .value .wrapper {
+        padding: 365px 0 0;
+    }
+    .value .text {
+        width: 84%;
+        padding: 60px 8% 90px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2.5rem;
+    }
+}
+
 @media screen and (max-width:660px) {
     .value .text {
-        width: 80%;
-        padding: 60px 5%;
+        width: 84%;
+        padding: 40px 8% 90px;
     }
 }
 
@@ -561,10 +612,6 @@
         background: url(../../upload/about/handTablet.jpg) no-repeat center right;
         padding: 315px 0 0;
     }
-    .value .text {
-        width: 84%;
-        padding: 60px 8% 120px;
-    }
     .value .text article ul li {
         margin-bottom: 3px;
     }
@@ -580,10 +627,29 @@
     }
 }
 
+@media screen and (max-width:610px) {
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 60px 8%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 2.25rem;
+    }
+}
+
 @media screen and (max-width:550px) {
     .value .text {
-        width: 80%;
-        padding: 40px 10% 70px;
+        width: 84%;
+        padding: 40px 8% 85px;
     }
     .value .text article table {
         display: none;
@@ -599,19 +665,22 @@
     }
 }
 
-@media screen and (max-width:480px) {
-    .info .intro,
-    .info .mission,
-    .concept .content .text,
-    .concept .content .text:first-child {
-        padding: 45px 10%;
-    }
+@media screen and (max-width:520px) {
     .info .intro p,
     .info .mission p,
     .concept .content .text p,
     .value .text p,
     .cis .down .text p {
-        font-size: 2.25rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 45px 6%;
     }
     .concept .img {
         min-height: 600px;
@@ -623,7 +692,7 @@
     }
     .value .text {
         width: 88%;
-        padding: 60px 6%;
+        padding: 40px 6%;
     }
     .cis .down {
         padding: 1px 0 0 30px;
@@ -632,7 +701,7 @@
         transform: translateY(-30px);
     }
     .cis .down .text {
-        padding: 50px 10% 70px;
+        padding: 40px 6% 60px;
     }
     .cis .up img {
         margin-top: -55px;
@@ -643,43 +712,46 @@
     .main .topBanner {
         background: url(../../upload/about/topBgMobile.jpg) no-repeat;
     }
-}
-
-@media screen and (max-width:420px) {
     .info .intro p,
     .info .mission p,
     .concept .content .text p,
     .value .text p,
     .cis .down .text p {
-        font-size: 2rem;
-        letter-spacing: 0px;
-        margin-bottom: 10px;
+        font-size: 1.75rem;
     }
-    .value .text p {
-        margin-bottom: 15px;
-    }
+}
+
+@media screen and (max-width:420px) {
     .info .intro article,
     .info .mission article,
     .concept .content .text article,
     .value .text article ul li,
     .cis .down .text article {
         font-size: 1rem;
-        line-height: 1.8rem;
+        line-height: 1.4rem;
+    }
+    .info .intro,
+    .info .mission,
+    .concept .content .text,
+    .concept .content .text:first-child {
+        padding: 45px 8%;
     }
     .concept .img {
         min-height: 500px;
     }
     .value .text {
-        width: 80%;
-        padding: 60px 10%;
+        width: 84%;
+        padding: 40px 8% 60px;
+    }
+    .value .text p {
+        margin-bottom: 15px;
     }
     .value .text article ul li {
         line-height: 1.5rem;
         margin-bottom: 10px;
-        text-indent: -3.5rem;
     }
-    .value .text article ul {
-        margin-left: 17%;
+    .cis .down .text {
+        padding: 40px 8%;
     }
 }
 
@@ -689,10 +761,7 @@
     .concept .content .text p,
     .value .text p,
     .cis .down .text p {
-        font-size: 1.7rem;
-    }
-    .value .text article ul {
-        margin-left: 19%;
+        font-size: 1.5rem;
     }
 }
 
@@ -706,16 +775,19 @@
 }
 
 @media screen and (max-width:350px) {
-    .value .text article ul {
-        margin-left: 21%;
+    .info .intro p,
+    .info .mission p,
+    .concept .content .text p,
+    .value .text p,
+    .cis .down .text p {
+        font-size: 1.3rem;
+    }
+    .value .text p {
+        margin-bottom: 10px;
     }
 }
 
-@media screen and (max-width:330px) {
-    .value .text article ul {
-        margin-left: 22%;
-    }
-}
+@media screen and (max-width:330px) {}
 
 @media screen and (max-width:1250px) {}
 
