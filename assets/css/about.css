@@ -607,8 +607,16 @@
         padding: 300px 0 0;
     }
     .value .text {
-        width: 100%;
+        width: 88%;
         padding: 60px 6%;
+    }
+    .value .text article ul li {
+        line-height: 1.5rem;
+        margin-bottom: 10px;
+        text-indent: -60px;
+    }
+    .value .text article ul {
+        margin-left: 14%;
     }
     .cis .down {
         padding: 1px 0 0 30px;
