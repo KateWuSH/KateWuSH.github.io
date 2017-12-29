@@ -187,6 +187,7 @@ header {
 
 .main .topBanner {
     width: 100%;
+    position: relative;
 }
 
 .main .topBanner .text {
