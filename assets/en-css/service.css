@@ -156,6 +156,7 @@
 .application .item02,
 .application .item03 {
     display: flex;
+    justify-content: space-between;
 }
 
 .application .item01 {
@@ -249,6 +250,7 @@
 .innovation .title {
     font-family: 'AlpacaScarlettDemo';
     font-size: 5.5rem;
+    letter-spacing: 3px;
     font-weight: bold;
     font-style: italic;
 }
@@ -346,9 +348,23 @@
     }
 }
 
-@media screen and (max-width:1440px) {
-    .advantage .text p,
+@media screen and (max-width:1470px) {
     .application .integration .text p {
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:1455px) {
+    .future .dearm p {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 45px 0 5px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .advantage .text p {
         font-size: 2.8rem;
         margin-bottom: 15px;
     }
@@ -359,7 +375,10 @@
     .application .integration .text article,
     .application .item .text article {
         font-size: 1.25rem;
-        line-height: 2.4rem;
+        line-height: 2.2rem;
+    }
+    .application .integration .text article {
+        line-height: 2rem;
     }
     .advantage .img img {
         width: 140%;
@@ -368,59 +387,108 @@
         padding: 70px 12% 0 16%;
     }
     .innovation .title {
-        font-size: 6.6rem;
+        font-size: 4.8rem;
     }
     .innovation .text p {
-        font-size: 3rem;
-        margin: 10px 0 15px 110px;
+        font-size: 2.5rem;
+        margin: 35px 0 15px;
     }
     .innovation .text span {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .application .integration .img {
+        width: 55%;
+    }
+    .application .integration .text {
+        width: 45%;
+        padding: 60px 5% 0 10%;
     }
 }
 
 @media screen and (max-width:1300px) {
+    .advantage .text {
+        padding: 60px 6% 0 16%;
+        width: 60%;
+    }
+    .application .integration .text {
+        padding: 50px 5% 0 10%;
+    }
+    .application .integration .text p {
+        font-size: 2.4rem;
+        margin-bottom: 10px;
+    }
+    .application .item .imgFrame {
+        width: 35%;
+    }
+    .application .item .text {
+        width: 65%;
+    }
+    .application .item .text p {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
     .future .wrapper {
         margin: 85px 10%;
     }
 }
 
-@media screen and (max-width:1280px) {
-    .innovation .title {
-        font-size: 5.5rem;
+@media screen and (max-width:1240px) {
+    .advantage .text p {
+        font-size: 2.4rem;
     }
-    .innovation .text p {
-        font-size: 2.5rem;
-    }
-    .innovation .text span {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width:1220px) {
     .advantage .text {
-        padding: 65px 8% 0 16%;
+        padding: 70px 6% 0 16%;
+    }
+    .application .integration .img {
+        width: 60%;
     }
     .application .integration .text {
-        padding: 60px 5% 0;
+        width: 40%;
+        padding: 60px 5% 0 8%;
     }
-    .future .dearm {
-        width: 25%;
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article,
+    .future .dearm article {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+    .future .dearm article {
+        line-height: 1.6rem;
+    }
+    .application .integration .text p {
+        font-size: 2rem;
+    }
+    .application .integration .text article {
+        line-height: 1.5rem;
+    }
+    .application .item .text p {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    .innovation .title {
+        font-size: 4.2rem;
+        letter-spacing: 2px;
+    }
+    .innovation .text p {
+        font-size: 2rem;
+        margin: 40px 0 10px;
+    }
+    .innovation .text span {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
     }
 }
 
 @media screen and (max-width:1200px) {
-    .application .item .text p {
-        margin-bottom: 10px;
+    .application .integration .img {
+        width: 55%;
     }
-    .advantage .text article,
-    .application .integration .text article,
-    .application .item .text article {
-        font-size: 1.25rem;
-        line-height: 2rem;
-    }
-    .application .item .text .frame {
-        padding: 0 10%;
+    .application .integration .text {
+        width: 45%;
     }
 }
 
@@ -437,10 +505,6 @@
 }
 
 @media screen and (max-width:1120px) {
-    .advantage .text p,
-    .application .integration .text p {
-        margin-bottom: 15px;
-    }
     .advantage .text {
         padding: 45px 8% 0 16%;
     }
@@ -452,56 +516,71 @@
     }
 }
 
-@media screen and (max-width:1080px) {
-    .innovation .title {
-        font-size: 5rem;
-        margin-right: 25px;
-    }
-    .innovation .text p {
-        font-size: 2.4rem;
-        margin: 10px 0 10px 90px;
-    }
-    .innovation .text span {
-        font-size: 1.6rem;
-    }
-}
-
 @media screen and (max-width:1040px) {
-    .advantage .text p,
-    .application .integration .text p {
-        font-size: 2.3rem;
-        margin-bottom: 30px;
+    .advantage .img {
+        width: 48%;
     }
-    .advantage .text article,
-    .application .integration .text article,
-    .application .item .text article {
-        font-size: 1.05rem;
-        line-height: 2rem;
+    .advantage .text p {
+        margin-bottom: 5px;
+    }
+    .advantage .text {
+        padding: 45px 5% 0 16%;
+    }
+    .application .integration .text,
+    .application .integration .img {
+        width: 50%;
     }
     .application .item .text p {
         font-size: 2rem;
         margin-bottom: 15px;
     }
     .application .integration .text {
-        padding: 52px 5% 0;
+        padding: 45px 5% 0;
     }
-    .application .integration .img img {
-        width: 105%;
+    .application .item .text .frame {
+        padding: 0 10%;
     }
     .application .wrapper {
         margin: 0 5%;
     }
+    .innovation .title {
+        font-size: 3.8rem;
+        letter-spacing: 1.5px;
+    }
+    .future .wrapper {
+        margin: 85px 5%;
+    }
+    .future .dearm img {
+        width: 60%;
+    }
     .future .dearm p {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
+        font-size: 1.7rem;
     }
     .future .dearm article {
-        font-size: 1.25rem;
-        line-height: 1.6rem;
+        line-height: 1.4rem;
+    }
+    .future .dearm02 {
+        margin: 0 50px;
     }
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1000px) {
+    .advantage .img {
+        width: 47%;
+    }
+    .advantage .text {
+        padding: 35px 5% 0 16%;
+    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article,
+    .future .dearm article {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .future .dearm article {
+        line-height: 1.4rem;
+    }
     .innovation .wrapper {
         flex-wrap: wrap;
         padding: 0 10%;
@@ -514,30 +593,48 @@
         font-size: 2.4rem;
         margin: 10px 0;
         font-style: normal;
-        opacity: .7;
     }
     .innovation .text span {
         font-style: normal;
-        opacity: .7;
     }
     .innovation .content {
         padding: 320px 0 180px;
     }
+    .future .dearm p {
+        font-size: 1.6rem;
+    }
 }
 
 @media screen and (max-width:950px) {
-    .advantage .text p,
-    .application .integration .text p {
-        margin-bottom: 10px;
+    .innovation .title {
+        font-size: 3.4rem;
+        letter-spacing: 1px;
+    }
+    .innovation .text p {
+        font-size: 2rem;
+        margin: 40px 0 5px;
     }
 }
 
 @media screen and (max-width:920px) {
-    .application .integration .img {
-        margin-top: -40px;
+    .future .dearm p {
+        font-size: 1.5rem;
     }
-    .application .integration .text {
-        padding: 40px 7% 0;
+}
+
+@media screen and (max-width:900px) {
+    .advantage .text p,
+    .application .integration .text p {
+        margin-bottom: 0;
+    }
+    .application .integration .img {
+        margin-top: -25px;
+    }
+    .application .item .imgFrame {
+        width: 40%;
+    }
+    .application .item .text {
+        width: 60%;
     }
 }
 
@@ -549,33 +646,58 @@
         padding: 30px 5% 0 19%;
     }
     .future .dearm img {
-        width: 90%;
+        width: 80%;
     }
     .future .wrapper {
         margin: 85px 5%;
     }
-}
-
-@media screen and (max-width:860px) {
-    .application .integration .text {
-        padding: 20px 7% 0;
+    .future .dearm p {
+        font-size: 1.4rem;
     }
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:830px) {
+    .advantage .text p {
+        font-size: 2rem;
+    }
+    .advantage .text {
+        padding: 35px 5% 0 19%;
+    }
+    .application .integration .text {
+        padding: 40px 5% 0;
+    }
+    .application .integration .text article {
+        padding-left: 0;
+    }
+    .application .integration .text p {
+        font-size: 1.6rem;
+    }
     .advantage .text p,
     .application .integration .text p {
-        font-size: 2.2rem;
+        margin-bottom: 5px;
     }
     .advantage .text article,
     .application .integration .text article,
     .application .item .text article {
-        font-size: 1.03rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
     .application .item .text p {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 10px;
+    }
+    .application .item .text .frame {
+        padding: 0 8%;
+    }
+    .innovation .wrapper {
+        padding: 0 5%;
+    }
+    .future .dearm p {
+        font-size: 1.3rem;
+        margin: 35px 0 5px;
+    }
+    .future .dearm img {
+        width: 75%;
     }
 }
 
@@ -585,19 +707,28 @@
     }
 }
 
-@media screen and (max-width:780px) {
-    .future .dearm p {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-}
-
 @media screen and (max-width:768px) {
+    .advantage .text {
+        padding: 25px 3% 0 13%;
+    }
+    .advantage .text p {
+        margin-bottom: 0;
+        font-size: 1.8rem;
+    }
+    .advantage .img img {
+        width: 130%;
+    }
     .application .wrapper {
         margin: 0;
     }
     .application .integration .img img {
-        width: 110%;
+        width: 120%;
+    }
+    .application .item .imgFrame {
+        width: 35%;
+    }
+    .application .item .text {
+        width: 65%;
     }
     .application .item01 .text .frame {
         padding: 30px 8% 40px;
@@ -618,22 +749,53 @@
     .innovation .content {
         padding: 150px 0;
     }
-    .innovation .title {
-        font-size: 4rem;
-        margin: 0 0 15px 0;
-    }
     .innovation .text {
         text-align: center;
     }
+    .innovation .title {
+        font-size: 3rem;
+    }
     .innovation .text p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .innovation .text span {
+        font-size: 1rem;
+    }
+    .future .dearm p {
         font-size: 1.2rem;
+        margin: 25px 0 5px;
+    }
+    .future .dearm article {
+        line-height: 1.2rem;
+    }
+    .future .dearm02 {
+        margin: 0 40px;
     }
 }
 
 @media screen and (max-width:730px) {
+    .advantage .img img {
+        width: 115%;
+    }
+    .advantage.movein .text p,
+    .application .integration .text p {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article,
+    .future .dearm article {
+        font-size: 0.875rem;
+        line-height: 1.3rem;
+    }
+    .future .dearm article {
+        line-height: 1.1rem;
+    }
+    .advantage .text {
+        padding: 30px 3% 0 8%;
+    }
     .application .integration {
         flex-wrap: wrap;
     }
@@ -649,7 +811,7 @@
         text-align: center;
     }
     .application .integration .text {
-        padding: 30px 15%;
+        padding: 35px 15%;
     }
     .application .item .img {
         width: 30%;
@@ -657,35 +819,32 @@
     .application .item .text {
         width: 70%;
     }
+    .application .item .text p {
+        font-size: 1.4rem;
+    }
+    .application .item01 .text .frame {
+        padding: 30px 10% 40px;
+    }
     .future .dearm {
         width: 28%;
     }
     .future .dearm img {
-        width: 85%;
+        width: 75%;
+    }
+    .future .dearm p {
+        font-size: 1.1rem;
     }
 }
 
 @media screen and (max-width:690px) {
     .advantage .text {
-        padding: 20px 5% 0 19%;
+        padding: 20px 3% 0 8%;
     }
-    .advantage .text p,
-    .application .integration .text p {
-        font-size: 2rem;
-        margin-bottom: 5px;
-    }
-    .advantage .text article,
-    .application .integration .text article,
-    .application .item .text article {
-        font-size: 1rem;
-        line-height: 1.6rem;
-    }
-    .application .item .text p {
-        font-size: 1.8rem;
-        margin-bottom: 5px;
+    .advantage.movein .text p {
+        margin-bottom: 0px;
     }
     .innovation .title {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
     .innovation .content {
         padding: 120px 0;
@@ -693,24 +852,52 @@
 }
 
 @media screen and (max-width:640px) {
-    .future .dearm p {
-        font-size: 1.8rem;
-        margin-bottom: 6px;
-    }
+    .advantage .text article,
+    .application .integration .text article,
+    .application .item .text article,
     .future .dearm article {
-        font-size: 1rem;
-        line-height: 1.6rem;
+        line-height: 1.2rem;
+    }
+    .advantage .img img {
+        width: 125%;
+    }
+    .advantage .text {
+        padding: 25px 3% 0 11%;
+    }
+    .application .item .imgFrame {
+        width: 40%;
+    }
+    .application .item .text {
+        width: 60%;
+    }
+    .innovation .title {
+        font-size: 2.6rem;
+    }
+    .future .wrapper {
+        margin: 60px 5%;
+    }
+    .future .dearm {
+        width: calc(100% / 3);
+    }
+    .future .dearm img {
+        width: 70%;
+    }
+    .future .dearm02 {
+        margin: 0 25px;
     }
 }
 
-@media screen and (max-width:615px) {
+@media screen and (max-width:630px) {
     .advantage .img img {
-        height: 34%;
+        height: 32%;
         width: auto;
         transform: translateX(-50px);
     }
     .advantage .text {
-        padding: 32px 5% 0 19%;
+        padding: 32px 5% 0 16%;
+    }
+    .advantage .text p {
+        margin-bottom: 5px;
     }
 }
 
@@ -729,24 +916,34 @@
     }
 }
 
-@media screen and (max-width:580px) {
-    .future .dearm {
-        width: 25%;
+@media screen and (max-width:570px) {
+    .advantage .img img {
+        transform: translateX(-150px);
+        height: 34%;
     }
-    .future .dearm p {
-        font-size: 1.5rem;
+    .advantage .text {
+        padding: 32px 5% 0;
+    }
+    .advantage.movein .text p {
+        margin-bottom: 5px;
+    }
+    .innovation .title {
+        font-size: 2.3rem;
+    }
+    .innovation .text p {
+        font-size: 1.4rem;
+        margin: 35px 0 5px;
+    }
+    .innovation .text span {
+        font-size: 0.875rem;
+        letter-spacing: .5px;
     }
     .future .dearm article {
-        font-size: 0.875rem;
-        line-height: 1.2rem;
+        line-height: 1rem;
     }
 }
 
 @media screen and (max-width:550px) {
-    .advantage .img img {
-        transform: translateX(-130px);
-        height: 38%;
-    }
     .application .item01,
     .application .item03 {
         flex-wrap: wrap;
@@ -765,49 +962,36 @@
     .application .item .text .frame {
         padding: 0px 8% 40px;
     }
-    .innovation .title {
-        font-size: 3rem;
-        margin: 0 0 15px 0;
-    }
-    .innovation .text p {
-        font-size: 1.5rem;
-        margin: 5px 0;
-    }
-}
-
-@media screen and (max-width:540px) {
-    .future .dearm {
-        width: 27%;
-    }
 }
 
 @media screen and (max-width:500px) {
     .advantage .img img {
-        transform: translateX(-180px);
-        height: 41%;
+        transform: translateX(-175px);
+        height: 36%;
+    }
+    .advantage .text {
+        padding: 34px 3% 0;
     }
     .application .integration .text {
         padding: 30px 10%;
     }
-    .future .dearm {
-        width: 30%;
+    .innovation .title {
+        font-size: 2.1rem;
+        letter-spacing: .5px;
+    }
+    .innovation .text p {
+        font-size: 1.2rem;
+        margin: 25px 0 5px;
     }
 }
 
 @media screen and (max-width:480px) {
-    .advantage .img img {
-        transform: translateX(-195px);
-        height: 35%;
+    .advantage .img {
+        display: none;
     }
     .advantage .text {
-        padding: 32px 5% 0 11%;
-    }
-    .advantage .text p,
-    .application .integration .text p {
-        font-size: 1.7rem;
-    }
-    .application .item .text p {
-        font-size: 1.5rem;
+        padding: 40px 8%;
+        width: 100%;
     }
     .application .item .imgFrame {
         margin: 20px auto;
@@ -817,13 +1001,19 @@
     }
     .future .dearm img {
         width: 80%;
-        margin-bottom: 20px;
     }
     .future .dearm p {
         font-size: 1.25rem;
     }
     .future .wrapper {
         margin: 60px 5%;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .innovation .title {
+        font-size: 1.9rem;
+        letter-spacing: .5px;
     }
 }
 
@@ -858,20 +1048,8 @@
     .innovation .content {
         padding: 100px 0;
     }
-    .innovation .title {
-        font-size: 2.5rem;
-    }
-    .innovation .text p {
-        font-size: 1.2rem;
-        margin: 3px 0;
-    }
-    .innovation .text span {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
     .future .dearm img {
         width: 75%;
-        margin-bottom: 20px;
     }
     .future .dearm p {
         font-size: 1.1rem;
@@ -882,12 +1060,42 @@
     }
 }
 
-@media screen and (max-width:330px) {
+@media screen and (max-width:410px) {
+    .innovation .title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .innovation .title {
+        font-size: 1.6rem;
+    }
+    .innovation .text p {
+        font-size: 1rem;
+    }
+    .innovation .text span {
+        font-size: 0.75rem;
+        letter-spacing: 0px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .future .dearm01 img {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .future .dearm01 img {
+        width: 63%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .innovation .title {
+        font-size: 1.4rem;
+    }
     .future .dearm p {
         font-size: 1rem;
     }
 }
-
-@media screen and (max-width:360px) {}
-
-@media screen and (max-width:1680px) {}
