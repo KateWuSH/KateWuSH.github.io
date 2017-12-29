@@ -676,6 +676,13 @@
 }
 
 @media screen and (max-width:480px) {
+    .info .intro article,
+    .info .mission article,
+    .concept .content .text article,
+    .value .text article table,
+    .cis .down .text article {
+        text-align: left;
+    }
     .info .intro,
     .info .mission,
     .concept .content .text,
@@ -770,7 +777,11 @@
         padding: 220px 0 0;
     }
     .value .text {
+        width: 80%;
         padding: 30px 10%;
+    }
+    .value .text p {
+        margin-bottom: 10px;
     }
 }
 
@@ -781,9 +792,6 @@
     .value .text p,
     .cis .down .text p {
         font-size: 1.3rem;
-    }
-    .value .text p {
-        margin-bottom: 10px;
     }
 }
 
