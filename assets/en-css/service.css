@@ -1048,6 +1048,9 @@
     .innovation .content {
         padding: 100px 0;
     }
+    .innovation .title {
+        letter-spacing: 1px;
+    }
     .future .dearm img {
         width: 75%;
     }

@@ -1044,6 +1044,16 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:359px) {
+    .fixed-menu .content ul li p,
+    .fixed-menu .content .lang {
+        padding: 10px 40px;
+    }
+    .fixed-menu .content ul li ul li {
+        padding: 7px 40px;
+    }
+}
+
 @media screen and (max-width:320px) {
     .main .topBanner .text h1,
     .main .topBanner .text h2 {
