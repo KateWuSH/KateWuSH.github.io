@@ -354,33 +354,48 @@ body.menuOn .fixed-menu .menu-top .cross span:last-child {
     margin-bottom: 18px;
 }
 
-.fixed-menu .content .lang:hover,
-.fixed-menu .content ul li p:hover {
+.fixed-menu .content ul li p:hover,
+.fixed-menu .content .lang:hover {
     background-color: #269ac1;
     transition: .5s ease;
 }
 
-.fixed-menu .content .lang:hover a,
 .fixed-menu .content ul li p:hover a {
     color: white;
 }
 
-.fixed-menu .content ul li ul li:hover {
+.fixed-menu .content ul li ul li:hover,
+{
     background-color: #56b9da;
     transition: .5s ease;
 }
 
-.fixed-menu .content ul li ul li:hover a {
+.fixed-menu .content ul li ul li:hover a,
+.fixed-menu .content .lang:hover a {
     color: white;
 }
 
 .fixed-menu .content .lang {
     padding: 10px 85px;
     font-family: 'LevenimMT';
+    transition: .5s ease;
 }
 
 .fixed-menu .content .lang p {
     display: inline-block;
+    width: 100%;
+}
+
+.fixed-menu .content .lang .icon-sphere {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.fixed-menu .content .lang a {
+    display: block;
+    letter-spacing: .5px;
 }
 
 
@@ -411,7 +426,11 @@ footer .up h3 {
 footer .up p {
     font-size: 1.15rem;
     letter-spacing: 1px;
-    line-height: 2rem;
+    line-height: 1.5rem;
+}
+
+footer .up p:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 footer .down {
@@ -764,7 +783,7 @@ footer .down .decorate ul li:not(:last-child) {
     footer .up p {
         font-size: 1rem;
         letter-spacing: .5px;
-        line-height: 1.7rem;
+        line-height: 1.2rem;
     }
     footer .up h3 {
         margin-bottom: 30px;
@@ -844,13 +863,16 @@ footer .down .decorate ul li:not(:last-child) {
         font-size: 1.2rem;
     }
     footer .up h3 {
-        margin-bottom: 5px;
+        margin-bottom: 8px;
         font-size: 1rem;
     }
     footer .up p {
         font-size: 0.875rem;
         letter-spacing: .5px;
-        line-height: 1.4rem;
+        line-height: 1rem;
+    }
+    footer .up p:not(:last-child) {
+        margin-bottom: 8px;
     }
     footer .up .logo {
         padding-top: 30px;
@@ -885,6 +907,38 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:550px) {
+    footer .up {
+        flex-wrap: wrap-reverse;
+        padding: 35px 5%;
+    }
+    footer .up .info,
+    footer .up .logo {
+        width: 100%;
+    }
+    footer .up .logo {
+        padding-top: 0;
+        text-align: center;
+    }
+    footer .up .info {
+        padding: 0 5% 0 27%;
+    }
+    footer .up .logo img {
+        width: 65%;
+    }
+    footer .down {
+        flex-wrap: wrap;
+    }
+    footer .down .copyright {
+        text-align: center;
+        width: 100%;
+    }
+    footer .down .decorate {
+        width: 165px;
+        margin: 25px auto 0;
+    }
+}
+
 @media screen and (max-width:480px) {
     .top-menu-R {
         padding: 40px 25px 5px 0;
@@ -906,35 +960,6 @@ footer .down .decorate ul li:not(:last-child) {
     .main .topBanner .text article {
         font-size: 1rem;
         line-height: 1.5rem;
-    }
-    footer .up {
-        flex-wrap: wrap-reverse;
-        padding: 35px 5%;
-    }
-    footer .up .info,
-    footer .up .logo {
-        width: 100%;
-    }
-    footer .up .logo {
-        padding-top: 0;
-        text-align: center;
-    }
-    footer .up .info {
-        padding: 15px 5% 0 17%;
-    }
-    footer .up .logo img {
-        width: 65%;
-    }
-    footer .down {
-        flex-wrap: wrap;
-    }
-    footer .down .copyright {
-        text-align: center;
-        width: 100%;
-    }
-    footer .down .decorate {
-        width: 165px;
-        margin: 25px auto 0;
     }
     .fixed-hamburger.show {
         top: 0px;
@@ -992,7 +1017,7 @@ footer .down .decorate ul li:not(:last-child) {
         width: 60%;
     }
     footer .up .info {
-        margin: 10px 0 0 0;
+        padding: 0px 5% 0 20%;
     }
 }
 
@@ -1007,7 +1032,7 @@ footer .down .decorate ul li:not(:last-child) {
         width: 75%;
     }
     footer .up .info {
-        padding: 15px 5% 0 11%;
+        padding: 0 5% 0 15%;
     }
     footer .up .logo {
         text-align: left;

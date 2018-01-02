@@ -367,10 +367,25 @@ body.menuOn .fixed-menu .menu-top .cross span:last-child {
 
 .fixed-menu .content .lang {
     padding: 10px 85px;
+    font-family: 'LevenimMT';
+    transition: .5s ease;
 }
 
 .fixed-menu .content .lang p {
     display: inline-block;
+    width: 100%;
+}
+
+.fixed-menu .content .lang .icon-sphere {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: initial;
+}
+
+.fixed-menu .content .lang a {
+    display: block;
+    letter-spacing: .5px;
 }
 
 

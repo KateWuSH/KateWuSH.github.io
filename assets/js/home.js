@@ -4,7 +4,7 @@ $(document).ready(function() {
     // home topBanner
     $('.top-banner-pc-slick').slick({
         autoplay: true,
-        speed: 300,
+        speed: 600,
         dots: true,
         infinite: true,
         fade: true,
