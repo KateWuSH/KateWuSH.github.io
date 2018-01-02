@@ -228,6 +228,24 @@
     }
 }
 
+@media screen and (max-width:1230px) {
+    .info .content {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .info .content .down {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .info .content {
+        width: 75%;
+    }
+}
+
 @media screen and (max-width:1024px) {
     .main .topBanner .text {
         left: 0;
@@ -247,6 +265,30 @@
     }
     .mapSection .btnEffect {
         margin: 30px auto;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .info .content {
+        width: 85%;
+    }
+    .info .content .down {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .info .down .text:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .info .content {
+        width: 90%;
+    }
+    .info .content .down {
+        padding-top: 50px;
     }
 }
 
@@ -272,13 +314,17 @@
     .info .down .text:nth-child(3) span {
         margin-top: 0;
     }
+    .info .content .up p {
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
     .info .content .down {
         flex-wrap: wrap;
         width: 75%;
-        padding-top: 45px;
+        padding-top: 40px;
     }
     .info .down .text:nth-child(1) .img {
-        margin: 0 5px 0 8px;
+        margin: 0 3px;
     }
     .info .down .text {
         width: 100%;
@@ -291,7 +337,7 @@
         align-items: center;
     }
     .info .down .text:nth-child(2) {
-        margin: 20px 0;
+        margin: 15px 0 20px;
     }
     .info .down .text .img {
         text-align: center;
@@ -308,18 +354,30 @@
     }
 }
 
+@media screen and (max-width:580px) {
+    .info .content .down {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .info .content .down {
+        width: 95%;
+    }
+}
+
 @media screen and (max-width:480px) {
     .main .topBanner .text {
         top: 305px;
     }
     .info .content .up p {
-        font-size: 1.5rem;
-    }
-    .info .content .down {
-        width: 90%;
+        font-size: 1.25rem;
     }
     .info .down .text:nth-child(2) {
         margin: 10px 0 15px 0;
+    }
+    .info .down .text:nth-child(1) .img {
+        margin: 0 6px;
     }
     .mapSection .wrapper {
         width: 100%;
@@ -345,9 +403,6 @@
 }
 
 @media screen and (max-width:420px) {
-    .info .content .up p {
-        font-size: 1.25rem;
-    }
     .info .wrapper {
         padding: 65px 0 60px;
     }
@@ -364,12 +419,25 @@
         top: 230px;
         left: 65px;
     }
+    .info .content .up p {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.6rem;
+        padding: 0 30px 20px;
+        letter-spacing: 1px;
+    }
+    .info .content .down {
+        width: 80%;
+    }
+    .info .wrapper {
+        padding: 55px 0 50px;
+    }
+    .info .down .text:nth-child(1) .img {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width:380px) {
-    .info .content .down {
-        width: 95%;
-    }
     .main .topBanner .address {
         top: 230px;
         left: 70px;
@@ -378,12 +446,34 @@
         font-size: 1.25rem;
         line-height: 2rem;
     }
+    .info .down .text:nth-child(1) .img {
+        margin: 0 12px;
+    }
+    .info .content .down {
+        width: 85%;
+    }
 }
 
 @media screen and (max-width:360px) {
     .info .down .text .img {
         width: 45px;
     }
+    .info .down .text:nth-child(1) .img {
+        margin: 0 8px;
+    }
 }
 
-@media screen and (max-width:1250px) {}
+@media screen and (max-width:330px) {
+    .info .content .up p {
+        padding: 0 25px 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .info .down .text:nth-child(1) .img {
+        margin: 0 10px;
+    }
+    .info .content .down {
+        width: 95%;
+    }
+}
