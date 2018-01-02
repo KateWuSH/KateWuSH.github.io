@@ -841,6 +841,24 @@ footer .down .decorate ul li:not(:last-child) {
     }
 }
 
+@media screen and (max-width:680px) {
+    footer .down {
+        padding: 22px 5% 25px;
+    }
+    footer .down .decorate ul li:not(:last-child) {
+        margin-right: 15px;
+    }
+    footer .down .copyright {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        letter-spacing: .5px;
+        margin-top: 0px;
+    }
+    footer .down .copyright span {
+        display: block;
+    }
+}
+
 @media screen and (max-width:640px) {
     .top-menu-R {
         padding: 50px 40px 5px 0;
@@ -882,14 +900,6 @@ footer .down .decorate ul li:not(:last-child) {
     }
     footer .up {
         padding: 30px 5% 25px;
-    }
-    footer .down .decorate ul li:not(:last-child) {
-        margin-right: 15px;
-    }
-    footer .down .copyright {
-        font-size: 0.75rem;
-        letter-spacing: .5px;
-        margin-top: 0px;
     }
     .fixed-hamburger.show {
         top: 0;
