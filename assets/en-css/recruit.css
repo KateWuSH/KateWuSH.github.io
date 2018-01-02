@@ -519,7 +519,6 @@
     .titbits .title span,
     .vacancyList .content article {
         font-size: 1.25rem;
-        line-height: 2.25rem;
     }
     .info .benefit .list ul li {
         line-height: 1.8rem;
@@ -541,6 +540,26 @@
     }
 }
 
+@media screen and (max-width:1320px) {
+    .info .environment .text .content {
+        margin: 40px 12% 0;
+    }
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .info .environment .text span:first-child {
+        margin-bottom: 20px;
+    }
+    .info .environment .text p {
+        margin-bottom: 5px;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .titbits .title {
         padding: 65px 15% 45px;
@@ -552,10 +571,10 @@
 
 @media screen and (max-width:1150px) {
     .info .environment .text span:first-child {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .info .environment .text .content {
-        margin: 35px 10% 0;
+        margin: 65px 10% 0;
     }
     .info .benefit .list .listL {
         margin-right: 95px;
@@ -614,6 +633,12 @@
     .info .benefit .title p {
         margin-bottom: 15px;
     }
+    .info .environment .text .content {
+        margin: 30px 10% 0;
+    }
+    .info .environment .text span:first-child {
+        margin-bottom: 20px;
+    }
     .vacancyList .content h6 {
         margin-bottom: 20px;
     }
@@ -665,6 +690,12 @@
     }
 }
 
+@media screen and (max-width:980px) {
+    .info .benefit .list .listL {
+        margin-right: 85px;
+    }
+}
+
 @media screen and (max-width:960px) {
     .vacancyList .link a:not(:last-child) {
         margin-right: 15px;
@@ -677,6 +708,12 @@
     }
     .vacancyList .content {
         padding: 80px 5% 65px;
+    }
+    .info .benefit .list ul li,
+    .info .environment .text span,
+    .titbits .title span,
+    .vacancyList .content article {
+        line-height: 1.4rem;
     }
 }
 
@@ -702,10 +739,14 @@
     .titbits .title span,
     .vacancyList .content article {
         font-size: 1.25rem;
-        line-height: 2.5rem;
+        line-height: 2rem;
     }
     .info .environment .text .content {
         margin: 65px 10% 0;
+    }
+    .info .benefit .list .listL {
+        margin-right: 0;
+        width: 50%;
     }
     .info .benefit {
         padding: 50px 5%;
@@ -729,6 +770,21 @@
 @media screen and (max-width:880px) {
     .vacancyList .content {
         padding: 80px 10% 65px;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        line-height: 1.8rem;
+    }
+    .info .environment .text .content {
+        margin: 50px 10% 0;
+    }
+    .info .environment .text p {
+        margin-bottom: 10px;
     }
 }
 
@@ -801,7 +857,7 @@
     .titbits .title span,
     .vacancyList .content article {
         font-size: 1.1rem;
-        line-height: 2.2rem;
+        line-height: 1.6rem;
     }
     .vacancyList .content article,
     .info .benefit .list ul li {
@@ -946,9 +1002,15 @@
     .info .benefit .title p {
         margin-bottom: 20px;
     }
+    .info .environment .text span,
+    .info .benefit .list ul li,
+    .titbits .title span,
+    .vacancyList .content article {
+        line-height: 1.6rem;
+    }
     .info .benefit .list .frame,
     .info .benefit .list ul {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .info .benefit .list p,
     .vacancyList .content p {
@@ -956,6 +1018,9 @@
     }
     .info .benefit {
         padding: 40px 8% 25px;
+    }
+    .info .benefit .list p {
+        margin-bottom: 0;
     }
     .titbits .title {
         padding: 30px 8% 20px;
