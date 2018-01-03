@@ -652,6 +652,12 @@
     }
 }
 
+@media screen and (max-width:860px) {
+    .innovation .wrapper {
+        padding: 0 5%;
+    }
+}
+
 @media screen and (max-width:830px) {
     .advantage .text p {
         font-size: 2rem;
@@ -847,6 +853,15 @@
     }
 }
 
+@media screen and (max-width:660px) {
+    .future .dearm p {
+        margin: 37px 0 5px;
+    }
+    .future .dearm01 p {
+        margin: 15px 0 5px;
+    }
+}
+
 @media screen and (max-width:640px) {
     .advantage .text article,
     .application .integration .text article,
@@ -881,6 +896,10 @@
     .future .dearm02 {
         margin: 0 25px;
     }
+    .future .dearm p,
+    .future .dearm01 p {
+        margin: 25px 0 5px;
+    }
 }
 
 @media screen and (max-width:630px) {
@@ -894,6 +913,15 @@
     }
     .advantage .text p {
         margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    .future .dearm p {
+        margin: 37px 0 5px;
+    }
+    .future .dearm01 p {
+        margin: 15px 0 5px;
     }
 }
 
@@ -1004,6 +1032,9 @@
     .future .wrapper {
         margin: 60px 5%;
     }
+    .future .dearm:not(:first-child) p {
+        margin: 40px 0 5px;
+    }
 }
 
 @media screen and (max-width:460px) {
@@ -1057,6 +1088,9 @@
         font-size: 0.75rem;
         line-height: 1rem;
     }
+    .future .dearm:not(:first-child) p {
+        margin: 37px 0 5px;
+    }
 }
 
 @media screen and (max-width:410px) {
@@ -1082,6 +1116,9 @@
     .future .dearm01 img {
         width: 68%;
     }
+    .future .dearm:not(:first-child) p {
+        margin: 34px 0 5px;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -1096,5 +1133,11 @@
     }
     .future .dearm p {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .future .dearm:not(:first-child) p {
+        margin: 36px 0 5px;
     }
 }

@@ -364,8 +364,7 @@ body.menuOn .fixed-menu .menu-top .cross span:last-child {
     color: white;
 }
 
-.fixed-menu .content ul li ul li:hover,
-{
+.fixed-menu .content ul li ul li:hover {
     background-color: #56b9da;
     transition: .5s ease;
 }
