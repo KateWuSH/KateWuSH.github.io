@@ -18,51 +18,33 @@
     <link rel="stylesheet" type="text/css" href="../assets/en-css/common.css">
     <link rel="stylesheet" type="text/css" href="../assets/en-css/home.css">
     <script type="text/javascript">
-        if (typeof(Storage) !== 'undefined') {
-            //有記錄 -> 執行連結
-            console.log('record');
-            var record = localStorage.getItem("autoDetect");
-            if (record !== '') {
-                console.log('YES');
-            } else {
-                console.log('OH NO');
-
-            }
-
-
-        } else {
-            console.log('no-record');
-            //無記錄 -> 自動判斷
-            var lang = navigator.language || navigator.userLanguage;
-            var relang = lang.toLowerCase();
-            var url = 'http://www.pwernet.com/';
+        // 判斷語系 function
+        function detectLanguage() {
+            // 儲存記錄
+            localStorage.setItem("autoDetect", "YES");
+            // 語系判斷
+            var lang = navigator.language || navigator.userLanguage,
+                relang = lang.toLowerCase(),
+                url = '../';
             switch (relang) {
                 case "zh-tw":
                     window.location.replace(url);
                     break;
-
                 case "zh-cn":
                     window.location.replace(url);
                     break;
-
                 case "zh-hk":
                     window.location.replace(url);
                     break;
-
-                default:
-                    // 不用反應
-                    window.location.replace('http://www.pwernet.com/en');
             }
-
-            //存入自動判斷記錄
-            // Save data to the current local store
-            localStorage.setItem("autoDetect", "lang");
-
-            // Access some stored data
-            alert("autoDetect = " + localStorage.getItem("autoDetect"));
-
-
         }
+
+        // 判斷是否有儲存記錄
+        function checkAutoLanguage() {
+            var record = localStorage.getItem("autoDetect");
+            if (record == null) detectLanguage();
+        }
+        checkAutoLanguage();
     </script>
 </head>
 
